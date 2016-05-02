@@ -8,9 +8,4 @@
 
 #import <Foundation/Foundation.h>
 
-// Use this file to declare constants, especially those that change
-// between staging and production.
-
-// For example:
-//extern NSString * const SEAPIKey;
-//extern NSURL * const SEAPIRoot;
+static NSString *const kSEEnvironmentApiBaseURLKey = @"SEApiBaseURL";

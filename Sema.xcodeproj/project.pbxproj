@@ -9,9 +9,17 @@
 /* Begin PBXBuildFile section */
 		036A61EAF6146EA59BD29634 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A06B515E067379B8477A8245 /* libPods.a */; };
 		074C8AD7A4D403DECEE7F926 /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A5F5E57179B0D085AF4FF2 /* libPods-Specs.a */; };
+		1AC1D7241CD7678A00F9723A /* SEEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D7231CD7678A00F9723A /* SEEnvironment.m */; };
+		1AC1D7261CD773EA00F9723A /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AC1D7251CD773EA00F9723A /* Configuration.plist */; };
+		1AC1D72D1CD777B900F9723A /* SEApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D72C1CD777B900F9723A /* SEApiClient.m */; };
+		1AC1D7311CD7D23A00F9723A /* SERequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D7301CD7D23A00F9723A /* SERequests.m */; };
+		1AC1D7341CD7D38000F9723A /* SEUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D7331CD7D38000F9723A /* SEUser.m */; };
+		1AC1D73A1CD7D63C00F9723A /* SELoginUserParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D7391CD7D63C00F9723A /* SELoginUserParams.m */; };
+		1AC1D73D1CD7D8F700F9723A /* SERegisterUserParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D73C1CD7D8F700F9723A /* SERegisterUserParams.m */; };
+		1AC1D7401CD7DDBB00F9723A /* SEJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D73F1CD7DDBB00F9723A /* SEJSONResponseSerializer.m */; };
+		1AC1D7431CD7E07900F9723A /* SEUserSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D7421CD7E07900F9723A /* SEUserSerializer.m */; };
 		BD304C8118E672EA0034105E /* SEDummySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BD304C8018E672EA0034105E /* SEDummySpec.m */; };
 		BD304C8318E77F7E0034105E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD304C8218E77F7E0034105E /* Settings.bundle */; };
-		BD35136619BE274A00A19841 /* SEConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = BD35136519BE274A00A19841 /* SEConstants.m */; };
 		BD6951CF18EA4B0800F2F410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6951CE18EA4B0800F2F410 /* main.m */; };
 		BD934CD419C211F600B48551 /* AssetCatalogIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = BD934CD119C211F600B48551 /* AssetCatalogIdentifiers.m */; };
 		BD934CD519C211F600B48551 /* StoryboardIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = BD934CD319C211F600B48551 /* StoryboardIdentifiers.m */; };
@@ -34,6 +42,24 @@
 
 /* Begin PBXFileReference section */
 		12CC9EC171F3BB2114E66841 /* Pods-Specs.test_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.test_staging.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.test_staging.xcconfig"; sourceTree = "<group>"; };
+		1AC1D7221CD7678A00F9723A /* SEEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEEnvironment.h; sourceTree = "<group>"; };
+		1AC1D7231CD7678A00F9723A /* SEEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEEnvironment.m; sourceTree = "<group>"; };
+		1AC1D7251CD773EA00F9723A /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		1AC1D72B1CD777B900F9723A /* SEApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEApiClient.h; sourceTree = "<group>"; };
+		1AC1D72C1CD777B900F9723A /* SEApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEApiClient.m; sourceTree = "<group>"; };
+		1AC1D72F1CD7D23A00F9723A /* SERequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERequests.h; sourceTree = "<group>"; };
+		1AC1D7301CD7D23A00F9723A /* SERequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERequests.m; sourceTree = "<group>"; };
+		1AC1D7321CD7D38000F9723A /* SEUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEUser.h; sourceTree = "<group>"; };
+		1AC1D7331CD7D38000F9723A /* SEUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEUser.m; sourceTree = "<group>"; };
+		1AC1D7351CD7D5DE00F9723A /* SERequestParamsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERequestParamsProtocol.h; sourceTree = "<group>"; };
+		1AC1D7381CD7D63C00F9723A /* SELoginUserParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SELoginUserParams.h; sourceTree = "<group>"; };
+		1AC1D7391CD7D63C00F9723A /* SELoginUserParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SELoginUserParams.m; sourceTree = "<group>"; };
+		1AC1D73B1CD7D8F700F9723A /* SERegisterUserParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERegisterUserParams.h; sourceTree = "<group>"; };
+		1AC1D73C1CD7D8F700F9723A /* SERegisterUserParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERegisterUserParams.m; sourceTree = "<group>"; };
+		1AC1D73E1CD7DDBB00F9723A /* SEJSONResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEJSONResponseSerializer.h; sourceTree = "<group>"; };
+		1AC1D73F1CD7DDBB00F9723A /* SEJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEJSONResponseSerializer.m; sourceTree = "<group>"; };
+		1AC1D7411CD7E07900F9723A /* SEUserSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEUserSerializer.h; sourceTree = "<group>"; };
+		1AC1D7421CD7E07900F9723A /* SEUserSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEUserSerializer.m; sourceTree = "<group>"; };
 		2CB569C4CA54BBB2A8A3438F /* Pods.adhoc_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.adhoc_production.xcconfig; path = "Pods/Target Support Files/Pods/Pods.adhoc_production.xcconfig"; sourceTree = "<group>"; };
 		326C1F0145B5BE66CBCC67F1 /* Pods-Specs.test_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.test_production.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.test_production.xcconfig"; sourceTree = "<group>"; };
 		3EA32E3BEF65BE84130D7190 /* Pods.profile_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.profile_production.xcconfig; path = "Pods/Target Support Files/Pods/Pods.profile_production.xcconfig"; sourceTree = "<group>"; };
@@ -53,7 +79,6 @@
 		BD304C8018E672EA0034105E /* SEDummySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEDummySpec.m; sourceTree = "<group>"; };
 		BD304C8218E77F7E0034105E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BD35136419BE274A00A19841 /* SEConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEConstants.h; sourceTree = "<group>"; };
-		BD35136519BE274A00A19841 /* SEConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEConstants.m; sourceTree = "<group>"; };
 		BD49EA2C18EC842B00F73350 /* Sema-Environment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sema-Environment.h"; sourceTree = "<group>"; };
 		BD4E49501B8AC7BE004C140F /* Sema-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Sema-Debug.xcconfig"; sourceTree = "<group>"; };
 		BD4E49511B8AC7BE004C140F /* Sema-Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Sema-Profile.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +102,7 @@
 		BDDB996D18C3943B003EBC42 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BDDB997318C3943B003EBC42 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDB997C18C3943B003EBC42 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
-		BDF68AF01B713C3400153C8D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BDF68AF01B713C3400153C8D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Controllers/Main.storyboard; sourceTree = "<group>"; };
 		BDF68AF21B713C6200153C8D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		D5905E5F82BFFA7584BAD4C5 /* Pods-Specs.debug_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.debug_production.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.debug_production.xcconfig"; sourceTree = "<group>"; };
 		D803149862748E9E696037FB /* Pods-Specs.adhoc_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.adhoc_production.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.adhoc_production.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +129,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AC1D7201CD762C400F9723A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BDF68AF01B713C3400153C8D /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		1AC1D7211CD7674300F9723A /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				1AC1D7221CD7678A00F9723A /* SEEnvironment.h */,
+				1AC1D7231CD7678A00F9723A /* SEEnvironment.m */,
+				1AC1D7251CD773EA00F9723A /* Configuration.plist */,
+			);
+			name = Environment;
+			sourceTree = "<group>";
+		};
+		1AC1D7271CD7775300F9723A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1AC1D7291CD7776200F9723A /* Params */,
+				1AC1D7281CD7775B00F9723A /* Serializers */,
+				1AC1D72B1CD777B900F9723A /* SEApiClient.h */,
+				1AC1D72C1CD777B900F9723A /* SEApiClient.m */,
+				1AC1D72F1CD7D23A00F9723A /* SERequests.h */,
+				1AC1D7301CD7D23A00F9723A /* SERequests.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		1AC1D7281CD7775B00F9723A /* Serializers */ = {
+			isa = PBXGroup;
+			children = (
+				1AC1D73E1CD7DDBB00F9723A /* SEJSONResponseSerializer.h */,
+				1AC1D73F1CD7DDBB00F9723A /* SEJSONResponseSerializer.m */,
+				1AC1D7411CD7E07900F9723A /* SEUserSerializer.h */,
+				1AC1D7421CD7E07900F9723A /* SEUserSerializer.m */,
+			);
+			name = Serializers;
+			sourceTree = "<group>";
+		};
+		1AC1D7291CD7776200F9723A /* Params */ = {
+			isa = PBXGroup;
+			children = (
+				1AC1D7351CD7D5DE00F9723A /* SERequestParamsProtocol.h */,
+				1AC1D7381CD7D63C00F9723A /* SELoginUserParams.h */,
+				1AC1D7391CD7D63C00F9723A /* SELoginUserParams.m */,
+				1AC1D73B1CD7D8F700F9723A /* SERegisterUserParams.h */,
+				1AC1D73C1CD7D8F700F9723A /* SERegisterUserParams.m */,
+			);
+			name = Params;
+			sourceTree = "<group>";
+		};
 		55C5AA14CC157D6E10D487F9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +241,8 @@
 		BD574AFB18EA47FA00EDD66F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1AC1D7321CD7D38000F9723A /* SEUser.h */,
+				1AC1D7331CD7D38000F9723A /* SEUser.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,7 +253,6 @@
 				BD4E494F1B8AC7BE004C140F /* Configuration */,
 				BD934CCF19C211F600B48551 /* Generated */,
 				BD35136419BE274A00A19841 /* SEConstants.h */,
-				BD35136519BE274A00A19841 /* SEConstants.m */,
 				BD6951EA18EA54A800F2F410 /* Sema-Info.plist */,
 				BD49EA2C18EC842B00F73350 /* Sema-Environment.h */,
 			);
@@ -201,6 +281,7 @@
 		BDB71B2518EA46ED00579B97 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				1AC1D7211CD7674300F9723A /* Environment */,
 				BD574AFE18EA481500EDD66F /* Sema-Prefix.pch */,
 				BD6951CE18EA4B0800F2F410 /* main.m */,
 				BDDB996118C3943B003EBC42 /* SEAppDelegate.h */,
@@ -212,7 +293,6 @@
 		BDB71B2618EA471400579B97 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BDF68AF01B713C3400153C8D /* Main.storyboard */,
 				BDDB996A18C3943B003EBC42 /* SEViewController.h */,
 				BDDB996B18C3943B003EBC42 /* SEViewController.m */,
 			);
@@ -245,6 +325,8 @@
 		BDDB995818C3943B003EBC42 /* Sema */ = {
 			isa = PBXGroup;
 			children = (
+				1AC1D7271CD7775300F9723A /* API */,
+				1AC1D7201CD762C400F9723A /* Storyboards */,
 				BDB71B2618EA471400579B97 /* Controllers */,
 				BD574AFB18EA47FA00EDD66F /* Models */,
 				BD574AFA18EA47FA00EDD66F /* Library */,
@@ -372,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDF68AF31B713C6200153C8D /* LaunchScreen.xib in Resources */,
+				1AC1D7261CD773EA00F9723A /* Configuration.plist in Resources */,
 				BDDB996E18C3943B003EBC42 /* Images.xcassets in Resources */,
 				BD304C8318E77F7E0034105E /* Settings.bundle in Resources */,
 				BDF68AF11B713C3400153C8D /* Main.storyboard in Resources */,
@@ -560,12 +643,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD35136619BE274A00A19841 /* SEConstants.m in Sources */,
+				1AC1D72D1CD777B900F9723A /* SEApiClient.m in Sources */,
+				1AC1D7431CD7E07900F9723A /* SEUserSerializer.m in Sources */,
 				BDDB996318C3943B003EBC42 /* SEAppDelegate.m in Sources */,
 				BD934CD419C211F600B48551 /* AssetCatalogIdentifiers.m in Sources */,
+				1AC1D7311CD7D23A00F9723A /* SERequests.m in Sources */,
+				1AC1D7401CD7DDBB00F9723A /* SEJSONResponseSerializer.m in Sources */,
+				1AC1D73D1CD7D8F700F9723A /* SERegisterUserParams.m in Sources */,
 				BD934CD519C211F600B48551 /* StoryboardIdentifiers.m in Sources */,
 				BD6951CF18EA4B0800F2F410 /* main.m in Sources */,
 				BDDB996C18C3943B003EBC42 /* SEViewController.m in Sources */,
+				1AC1D7341CD7D38000F9723A /* SEUser.m in Sources */,
+				1AC1D73A1CD7D63C00F9723A /* SELoginUserParams.m in Sources */,
+				1AC1D7241CD7678A00F9723A /* SEEnvironment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
