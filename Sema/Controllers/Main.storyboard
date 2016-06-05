@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="VOX-nv-JkQ">
             <objects>
-                <viewController id="EZJ-tX-yxB" sceneMemberID="viewController">
+                <viewController id="EZJ-tX-yxB" customClass="SELoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="10C-ZN-b9N"/>
                         <viewControllerLayoutGuide type="bottom" id="QIC-gm-cIK"/>
@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="1672" y="405"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="SaK-Sj-lhA">
             <objects>
-                <viewController id="LSu-tL-keF" sceneMemberID="viewController">
+                <viewController id="LSu-tL-keF" customClass="SERegisterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S6U-So-ujj"/>
                         <viewControllerLayoutGuide type="bottom" id="fyo-Be-LSU"/>
@@ -108,7 +108,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ory-4c-bYS">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="fLR-ah-fYI"/>
+                        <barButtonItem key="leftBarButtonItem" title="Anuluj" id="fLR-ah-fYI">
+                            <connections>
+                                <action selector="cancelAction:" destination="LSu-tL-keF" id="n1S-vC-cjx"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Flb-XU-2O2" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		036A61EAF6146EA59BD29634 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A06B515E067379B8477A8245 /* libPods.a */; };
 		074C8AD7A4D403DECEE7F926 /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A5F5E57179B0D085AF4FF2 /* libPods-Specs.a */; };
+		1AC188A31D04541C00FB5B3E /* SELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC188A21D04541C00FB5B3E /* SELoginViewController.m */; };
+		1AC188A61D04547400FB5B3E /* SERegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC188A51D04547400FB5B3E /* SERegisterViewController.m */; };
 		1AC1D7241CD7678A00F9723A /* SEEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D7231CD7678A00F9723A /* SEEnvironment.m */; };
 		1AC1D7261CD773EA00F9723A /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AC1D7251CD773EA00F9723A /* Configuration.plist */; };
 		1AC1D72D1CD777B900F9723A /* SEApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D72C1CD777B900F9723A /* SEApiClient.m */; };
@@ -42,6 +44,10 @@
 
 /* Begin PBXFileReference section */
 		12CC9EC171F3BB2114E66841 /* Pods-Specs.test_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.test_staging.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.test_staging.xcconfig"; sourceTree = "<group>"; };
+		1AC188A11D04541C00FB5B3E /* SELoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SELoginViewController.h; sourceTree = "<group>"; };
+		1AC188A21D04541C00FB5B3E /* SELoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SELoginViewController.m; sourceTree = "<group>"; };
+		1AC188A41D04547400FB5B3E /* SERegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERegisterViewController.h; sourceTree = "<group>"; };
+		1AC188A51D04547400FB5B3E /* SERegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERegisterViewController.m; sourceTree = "<group>"; };
 		1AC1D7221CD7678A00F9723A /* SEEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEEnvironment.h; sourceTree = "<group>"; };
 		1AC1D7231CD7678A00F9723A /* SEEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEEnvironment.m; sourceTree = "<group>"; };
 		1AC1D7251CD773EA00F9723A /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
@@ -295,6 +301,10 @@
 			children = (
 				BDDB996A18C3943B003EBC42 /* SEViewController.h */,
 				BDDB996B18C3943B003EBC42 /* SEViewController.m */,
+				1AC188A11D04541C00FB5B3E /* SELoginViewController.h */,
+				1AC188A21D04541C00FB5B3E /* SELoginViewController.m */,
+				1AC188A41D04547400FB5B3E /* SERegisterViewController.h */,
+				1AC188A51D04547400FB5B3E /* SERegisterViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -644,11 +654,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC1D72D1CD777B900F9723A /* SEApiClient.m in Sources */,
+				1AC188A61D04547400FB5B3E /* SERegisterViewController.m in Sources */,
 				1AC1D7431CD7E07900F9723A /* SEUserSerializer.m in Sources */,
 				BDDB996318C3943B003EBC42 /* SEAppDelegate.m in Sources */,
 				BD934CD419C211F600B48551 /* AssetCatalogIdentifiers.m in Sources */,
 				1AC1D7311CD7D23A00F9723A /* SERequests.m in Sources */,
 				1AC1D7401CD7DDBB00F9723A /* SEJSONResponseSerializer.m in Sources */,
+				1AC188A31D04541C00FB5B3E /* SELoginViewController.m in Sources */,
 				1AC1D73D1CD7D8F700F9723A /* SERegisterUserParams.m in Sources */,
 				BD934CD519C211F600B48551 /* StoryboardIdentifiers.m in Sources */,
 				BD6951CF18EA4B0800F2F410 /* main.m in Sources */,
