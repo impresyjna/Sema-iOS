@@ -11,9 +11,9 @@
 
 @interface SELoginUserParams : NSObject <SERequestParamsProtocol>
 
-@property (nonatomic, strong, readonly) NSString *email;
+@property (nonatomic, strong, readonly) NSString *login;
 @property (nonatomic, strong, readonly) NSString *password;
 
-- (instancetype)initWithEmail:(NSString *)email password:(NSString *)password; 
+- (instancetype)initWithLogin:(NSString *)login password:(NSString *)password;
 
 @end

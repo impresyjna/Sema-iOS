@@ -10,10 +10,10 @@
 
 @implementation SELoginUserParams
 
-- (instancetype)initWithEmail:(NSString *)email password:(NSString *)password {
+- (instancetype)initWithLogin:(NSString *)login password:(NSString *)password {
     self = [super init];
     if (self) {
-        _email = email;
+        _login = login;
         _password = password;
     }
     return self;
@@ -22,7 +22,7 @@
 - (NSDictionary *)params {
     return @{
              @"session": @{
-                     @"email": _email,
+                     @"login": _login,
                      @"password": _password
                      }
              };

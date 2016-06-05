@@ -1,28 +1,137 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZPG-ZS-ETB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EZJ-tX-yxB">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="qlK-cu-r4O">
+        <scene sceneID="VOX-nv-JkQ">
             <objects>
-                <viewController id="ZPG-ZS-ETB" customClass="SEViewController" sceneMemberID="viewController">
+                <viewController id="EZJ-tX-yxB" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gAM-h5-vtO"/>
-                        <viewControllerLayoutGuide type="bottom" id="UfI-sx-StO"/>
+                        <viewControllerLayoutGuide type="top" id="10C-ZN-b9N"/>
+                        <viewControllerLayoutGuide type="bottom" id="QIC-gm-cIK"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bIH-hW-8tY">
+                    <view key="view" contentMode="scaleToFill" id="Ub8-lw-2az">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Sv7-R3-8Ww">
+                                <rect key="frame" x="40" y="70" width="520" height="327"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sema" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwd-9X-Qbp">
+                                        <rect key="frame" x="0.0" y="0.0" width="520" height="70"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="56"/>
+                                        <color key="textColor" red="0.27572983503341675" green="0.62328392267227173" blue="0.51743841171264648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Lbe-0K-vz3">
+                                        <rect key="frame" x="0.0" y="70" width="520" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="UyI-m2-ctC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hasło" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sdo-Qw-1S4">
+                                        <rect key="frame" x="0.0" y="130" width="520" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RXl-dQ-TAb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3h-nr-kCk">
+                                        <rect key="frame" x="0.0" y="190" width="520" height="46"/>
+                                        <color key="backgroundColor" red="0.27572983503341675" green="0.62328392267227173" blue="0.51743841171264648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="27"/>
+                                        <state key="normal" title="Zaloguj się">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nK-lm-Edl">
+                                        <rect key="frame" x="0.0" y="296" width="520" height="31"/>
+                                        <color key="backgroundColor" red="0.27572983503341675" green="0.62328392267227173" blue="0.51743841171264648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
+                                        <state key="normal" title="Nie posiadasz konta? Zarejestuj się">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="K9S-Ll-MYR" kind="presentation" id="DsR-WJ-w9o"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6nK-lm-Edl" firstAttribute="top" secondItem="z3h-nr-kCk" secondAttribute="bottom" constant="60" id="3n0-vP-Iwp"/>
+                                    <constraint firstItem="z3h-nr-kCk" firstAttribute="top" secondItem="sdo-Qw-1S4" secondAttribute="bottom" constant="10" id="qvQ-Vq-bAS"/>
+                                    <constraint firstItem="sdo-Qw-1S4" firstAttribute="top" secondItem="Lbe-0K-vz3" secondAttribute="bottom" constant="10" id="zGY-gb-JWx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.49411764705882355" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Qwd-9X-Qbp" secondAttribute="trailing" constant="40" id="GHK-9I-wRA"/>
+                            <constraint firstItem="Sv7-R3-8Ww" firstAttribute="top" secondItem="10C-ZN-b9N" secondAttribute="bottom" constant="30" id="WBm-4t-vGD"/>
+                            <constraint firstItem="Sv7-R3-8Ww" firstAttribute="centerX" secondItem="Ub8-lw-2az" secondAttribute="centerX" id="k7M-mP-cs2"/>
+                            <constraint firstItem="Qwd-9X-Qbp" firstAttribute="leading" secondItem="Ub8-lw-2az" secondAttribute="leading" constant="40" id="qO5-MQ-A74"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="khj-bR-Yqh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s1O-Gp-7Hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="405"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SaK-Sj-lhA">
+            <objects>
+                <viewController id="LSu-tL-keF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S6U-So-ujj"/>
+                        <viewControllerLayoutGuide type="bottom" id="fyo-Be-LSU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RgX-07-vXZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ory-4c-bYS">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="fLR-ah-fYI"/>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ifc-37-EbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Flb-XU-2O2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="431"/>
+            <point key="canvasLocation" x="3112" y="405"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FMD-dh-kI7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K9S-Ll-MYR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="udw-Kd-6DW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LSu-tL-keF" kind="relationship" relationship="rootViewController" id="Gyq-iH-Qw5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IgJ-wn-6Pv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2346" y="405"/>
         </scene>
     </scenes>
 </document>
