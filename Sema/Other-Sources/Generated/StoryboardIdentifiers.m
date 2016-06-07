@@ -8,6 +8,7 @@
 const struct SEMainStoryboardIDs SEMainStoryboardIDs = {
     .segues = {
         .afterRegister = @"SEAfterRegisterSegueID",
+        .afterLogin = @"SEAfterLoginSegueID",
     },
 
 };

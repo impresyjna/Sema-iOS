@@ -13,6 +13,7 @@
 		1AB8BA771D06D27F00B6F698 /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8BA761D06D27F00B6F698 /* NSString+Validation.m */; };
 		1AB8BA7A1D06D94800B6F698 /* UIAlertController+Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8BA791D06D94800B6F698 /* UIAlertController+Errors.m */; };
 		1AB8BA7D1D06DA5800B6F698 /* SEAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8BA7C1D06DA5800B6F698 /* SEAccount.m */; };
+		1AB8BA821D0723D600B6F698 /* SELoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8BA811D0723D600B6F698 /* SELoginViewModel.m */; };
 		1AC188A31D04541C00FB5B3E /* SELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC188A21D04541C00FB5B3E /* SELoginViewController.m */; };
 		1AC188A61D04547400FB5B3E /* SERegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC188A51D04547400FB5B3E /* SERegisterViewController.m */; };
 		1AC1D7241CD7678A00F9723A /* SEEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D7231CD7678A00F9723A /* SEEnvironment.m */; };
@@ -59,6 +60,8 @@
 		1AB8BA791D06D94800B6F698 /* UIAlertController+Errors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Errors.m"; sourceTree = "<group>"; };
 		1AB8BA7B1D06DA5800B6F698 /* SEAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEAccount.h; sourceTree = "<group>"; };
 		1AB8BA7C1D06DA5800B6F698 /* SEAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEAccount.m; sourceTree = "<group>"; };
+		1AB8BA801D0723D600B6F698 /* SELoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SELoginViewModel.h; sourceTree = "<group>"; };
+		1AB8BA811D0723D600B6F698 /* SELoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SELoginViewModel.m; sourceTree = "<group>"; };
 		1AC188A11D04541C00FB5B3E /* SELoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SELoginViewController.h; sourceTree = "<group>"; };
 		1AC188A21D04541C00FB5B3E /* SELoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SELoginViewController.m; sourceTree = "<group>"; };
 		1AC188A41D04547400FB5B3E /* SERegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERegisterViewController.h; sourceTree = "<group>"; };
@@ -186,6 +189,25 @@
 			children = (
 				1AB7826B1D0566DD002E0DA6 /* SERegisterViewModel.h */,
 				1AB7826C1D0566DD002E0DA6 /* SERegisterViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		1AB8BA7E1D0723AE00B6F698 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1AB8BA7F1D0723BB00B6F698 /* ViewModel */,
+				1AC188A11D04541C00FB5B3E /* SELoginViewController.h */,
+				1AC188A21D04541C00FB5B3E /* SELoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		1AB8BA7F1D0723BB00B6F698 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1AB8BA801D0723D600B6F698 /* SELoginViewModel.h */,
+				1AB8BA811D0723D600B6F698 /* SELoginViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -354,11 +376,10 @@
 		BDB71B2618EA471400579B97 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1AB8BA7E1D0723AE00B6F698 /* Login */,
 				1AB782691D05640C002E0DA6 /* Register */,
 				BDDB996A18C3943B003EBC42 /* SEViewController.h */,
 				BDDB996B18C3943B003EBC42 /* SEViewController.m */,
-				1AC188A11D04541C00FB5B3E /* SELoginViewController.h */,
-				1AC188A21D04541C00FB5B3E /* SELoginViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -670,6 +691,7 @@
 				BD6951CF18EA4B0800F2F410 /* main.m in Sources */,
 				BDDB996C18C3943B003EBC42 /* SEViewController.m in Sources */,
 				1AC1D7341CD7D38000F9723A /* SEUser.m in Sources */,
+				1AB8BA821D0723D600B6F698 /* SELoginViewModel.m in Sources */,
 				1AC1D73A1CD7D63C00F9723A /* SELoginUserParams.m in Sources */,
 				1AC1D7241CD7678A00F9723A /* SEEnvironment.m in Sources */,
 			);

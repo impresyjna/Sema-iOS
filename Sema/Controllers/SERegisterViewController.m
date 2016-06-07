@@ -34,10 +34,16 @@ static NSString *const SEAfterRegisterSegueID = @"SEAfterRegisterSegueID";
     
     _viewModel = [SERegisterViewModel new];
     
-    //[self registerForKeyboardNotifications];
+    [self registerForKeyboardNotifications];
     // Do any additional setup after loading the view.
 }
 
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [self.view endEditing:YES];
+}
 
 - (IBAction)cancelAction:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -69,10 +75,14 @@ static NSString *const SEAfterRegisterSegueID = @"SEAfterRegisterSegueID";
     self.viewModel.passwordConfirmation = _passwordConfirmationTextField.text;
 }
 
+- (IBAction)tapOnViewAction:(id)sender {
+    [self.view endEditing:YES];
+}
+
 #pragma mark -
 #pragma mark - Notifications
 
-/* - (void)registerForKeyboardNotifications {
+- (void)registerForKeyboardNotifications {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardWillShowNotification  object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardWillHideNotification object:nil];
 }
@@ -89,6 +99,6 @@ static NSString *const SEAfterRegisterSegueID = @"SEAfterRegisterSegueID";
     [UIView animateWithDuration:0.3 animations:^{
         [self.view layoutIfNeeded];
     }];
-} */
+}
 
 @end

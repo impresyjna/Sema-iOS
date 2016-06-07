@@ -83,14 +83,25 @@
                         <color key="backgroundColor" red="0.90196078431372551" green="0.49411764705882355" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Qwd-9X-Qbp" secondAttribute="trailing" constant="40" id="GHK-9I-wRA"/>
-                            <constraint firstItem="Sv7-R3-8Ww" firstAttribute="top" secondItem="10C-ZN-b9N" secondAttribute="bottom" constant="30" id="WBm-4t-vGD"/>
+                            <constraint firstItem="Sv7-R3-8Ww" firstAttribute="top" secondItem="10C-ZN-b9N" secondAttribute="bottom" constant="30" id="HHG-yN-J5Q"/>
                             <constraint firstItem="Sv7-R3-8Ww" firstAttribute="centerX" secondItem="Ub8-lw-2az" secondAttribute="centerX" id="k7M-mP-cs2"/>
                             <constraint firstItem="Qwd-9X-Qbp" firstAttribute="leading" secondItem="Ub8-lw-2az" secondAttribute="leading" constant="40" id="qO5-MQ-A74"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="XDA-OY-sVs" appends="YES" id="DZa-jk-tDg"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="khj-bR-Yqh"/>
+                    <connections>
+                        <segue destination="kmR-h5-Eqx" kind="presentation" identifier="SEAfterLoginSegueID" id="ETW-CB-mmD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1O-Gp-7Hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="XDA-OY-sVs">
+                    <connections>
+                        <action selector="tapOnViewAction:" destination="EZJ-tX-yxB" id="PBJ-Q1-cOE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1672" y="405"/>
         </scene>
@@ -289,6 +300,7 @@
                         <connections>
                             <outlet property="dataSource" destination="Ujy-3h-vlv" id="GaV-OA-4Me"/>
                             <outlet property="delegate" destination="Ujy-3h-vlv" id="KDw-Rr-gw2"/>
+                            <outletCollection property="gestureRecognizers" destination="lFu-zq-H1N" appends="YES" id="K1F-LE-aW8"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ciH-XZ-8fI">
@@ -308,6 +320,11 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gd7-RZ-xzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="lFu-zq-H1N">
+                    <connections>
+                        <action selector="tapOnViewAction:" destination="Ujy-3h-vlv" id="jxv-g1-eDZ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3073" y="405"/>
         </scene>
@@ -330,4 +347,7 @@
             <point key="canvasLocation" x="2348" y="405"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3Xu-Kx-8g6"/>
+    </inferredMetricsTieBreakers>
 </document>

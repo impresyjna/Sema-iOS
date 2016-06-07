@@ -8,6 +8,7 @@
 extern const struct SEMainStoryboardIDs {
     struct {
         __unsafe_unretained NSString *afterRegister;
+        __unsafe_unretained NSString *afterLogin;
     } segues;
 
 } SEMainStoryboardIDs;
