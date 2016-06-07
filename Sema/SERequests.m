@@ -15,7 +15,7 @@
 
 - (NSMutableURLRequest *)requestLoginUserWithParams:(SELoginUserParams *)params {
     return [self.requestSerializer requestWithMethod:@"POST"
-                                    URLString:[NSString stringWithFormat:@"%@/sessions",self.baseURL]
+                                    URLString:[NSString stringWithFormat:@"%@/sessions/login",self.baseURL]
                                     parameters:[params params]
                                         error:nil];
 }

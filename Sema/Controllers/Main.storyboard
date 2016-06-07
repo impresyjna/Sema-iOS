@@ -89,9 +89,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="khj-bR-Yqh"/>
-                    <connections>
-                        <segue destination="kmR-h5-Eqx" kind="presentation" identifier="SEAfterLoginSegueID" id="TaF-IG-7SK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1O-Gp-7Hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,7 +138,10 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u7e-4L-NNL">
                                                     <rect key="frame" x="106" y="7" width="454" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                    <connections>
+                                                        <action selector="textFieldTextHasChangedAction:" destination="Ujy-3h-vlv" eventType="editingChanged" id="VWd-ni-Dqt"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -164,7 +164,10 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ANf-hH-rmZ">
                                                     <rect key="frame" x="105" y="7" width="455" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                                                    <connections>
+                                                        <action selector="textFieldTextHasChangedAction:" destination="Ujy-3h-vlv" eventType="editingChanged" id="asE-iE-pvF"/>
+                                                    </connections>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGZ-k8-1HH">
                                                     <rect key="frame" x="40" y="11" width="41" height="21"/>
@@ -194,6 +197,9 @@
                                                     <rect key="frame" x="108" y="7" width="452" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    <connections>
+                                                        <action selector="textFieldTextHasChangedAction:" destination="Ujy-3h-vlv" eventType="editingChanged" id="ptS-qO-Ysa"/>
+                                                    </connections>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hasło" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bq-yt-XAc">
                                                     <rect key="frame" x="40" y="11" width="44" height="21"/>
@@ -223,6 +229,9 @@
                                                     <rect key="frame" x="172" y="7" width="388" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    <connections>
+                                                        <action selector="textFieldTextHasChangedAction:" destination="Ujy-3h-vlv" eventType="editingChanged" id="U6V-6G-D9p"/>
+                                                    </connections>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powtórz hasło" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljH-N9-tBP">
                                                     <rect key="frame" x="40" y="11" width="108" height="21"/>
@@ -290,11 +299,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="emailText" destination="ANf-hH-rmZ" id="mnd-zU-ZJj"/>
-                        <outlet property="loginText" destination="u7e-4L-NNL" id="QBG-wo-iqW"/>
+                        <outlet property="emailTextField" destination="ANf-hH-rmZ" id="hZL-Pt-Bat"/>
+                        <outlet property="loginTextField" destination="u7e-4L-NNL" id="MT4-wc-Shp"/>
                         <outlet property="passwordConfirmationTextField" destination="Ug6-gf-aY5" id="AcG-yD-6fL"/>
                         <outlet property="passwordTextField" destination="cpf-I5-n9j" id="TXg-2G-IOQ"/>
                         <outlet property="registerButton" destination="gjd-ec-sR3" id="NZg-ef-ngw"/>
+                        <segue destination="kmR-h5-Eqx" kind="presentation" identifier="SEAfterRegisterSegueID" id="3Xu-Kx-8g6"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gd7-RZ-xzk" userLabel="First Responder" sceneMemberID="firstResponder"/>

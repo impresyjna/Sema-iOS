@@ -5,17 +5,17 @@
 	<key>Debug_Production</key>
 	<dict>
 		<key>SEApiBaseURL</key>
-		<string>sema-web.dev</string>
+		<string>http://api.sema-web.dev</string>
 	</dict>
 	<key>Debug_Staging</key>
 	<dict>
 		<key>SEApiBaseURL</key>
-		<string>sema-web.dev</string>
+		<string>http://api.sema-web.dev</string>
 	</dict>
 	<key>Default</key>
 	<dict>
 		<key>SEApiBaseURL</key>
-		<string>sema-web.dev</string>
+		<string>http://api.sema-web.dev</string>
 	</dict>
 </dict>
 </plist>

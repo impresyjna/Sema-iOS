@@ -32,7 +32,7 @@
 
 -(void)registerWithCompletion:(SERegisterCompletionBlock)block{
     
-    NSError *validationError = [NSError new];
+    NSError *validationError;
     if (![self validateCredentials:&validationError]) {
         if (block) {
             block(NO, [UIAlertController alertControllerWithError:validationError]);

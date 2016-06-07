@@ -27,14 +27,14 @@
 
 @implementation SERegisterViewController
 
-static NSString *const SEAfterLoginSegueID = @"SEAfterLoginSegueID";
+static NSString *const SEAfterRegisterSegueID = @"SEAfterRegisterSegueID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     _viewModel = [SERegisterViewModel new];
     
-    [self registerForKeyboardNotifications];
+    //[self registerForKeyboardNotifications];
     // Do any additional setup after loading the view.
 }
 
@@ -58,14 +58,21 @@ static NSString *const SEAfterLoginSegueID = @"SEAfterLoginSegueID";
             return ;
         }
         
-        [wSelf performSegueWithIdentifier:SEAfterLoginSegueID sender:nil];
+        [wSelf performSegueWithIdentifier:SEAfterRegisterSegueID sender:nil];
     }];
+}
+
+- (IBAction)textFieldTextHasChangedAction:(id)sender {
+    self.viewModel.email = _emailTextField.text;
+    self.viewModel.login = _loginTextField.text;
+    self.viewModel.password = _passwordTextField.text;
+    self.viewModel.passwordConfirmation = _passwordConfirmationTextField.text;
 }
 
 #pragma mark -
 #pragma mark - Notifications
 
-- (void)registerForKeyboardNotifications {
+/* - (void)registerForKeyboardNotifications {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardWillShowNotification  object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardWillHideNotification object:nil];
 }
@@ -82,6 +89,6 @@ static NSString *const SEAfterLoginSegueID = @"SEAfterLoginSegueID";
     [UIView animateWithDuration:0.3 animations:^{
         [self.view layoutIfNeeded];
     }];
-}
+} */
 
 @end
