@@ -3,15 +3,23 @@ platform :ios, '8.0'
 
 # Uncomment this line if you need Swift support:
 # use_frameworks!
+target 'Sema' do
+  # Networking
+  pod 'AFNetworking', '~> 2.5'
+  pod 'Mantle'
 
-# Networking
-pod 'AFNetworking', '~> 2.5'
+  pod 'AUAccount', git: 'https://github.com/appunite/AUAccount.git', tag: '0.2.8'
+  pod 'FastCoding'
 
-# You may want...
-pod 'FormatterKit'    # For all your string formatting needs
-pod 'Mantle'          # Github's model framework
+  # Formatting
+  pod 'FormatterKit'    # For all your string formatting needs
 
+  # Progress hud
+  pod 'MBProgressHUD'
 
+  # Scroll
+  pod 'UIScrollView-InfiniteScroll'
+end
 # Inform CocoaPods that we use some custom build configurations
 # Leave this in place unless you've tweaked the project's targets and configurations.
 xcodeproj 'Sema',

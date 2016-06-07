@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		036A61EAF6146EA59BD29634 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A06B515E067379B8477A8245 /* libPods.a */; };
-		074C8AD7A4D403DECEE7F926 /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A5F5E57179B0D085AF4FF2 /* libPods-Specs.a */; };
+		1A4439E31D05772E00E96873 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4439E21D05772E00E96873 /* Game.storyboard */; };
+		1A4439E81D05881C00E96873 /* SESessionOperationsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4439E71D05881C00E96873 /* SESessionOperationsDispatcher.m */; };
+		1AB7826D1D0566DD002E0DA6 /* SERegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB7826C1D0566DD002E0DA6 /* SERegisterViewModel.m */; };
+		1AB8BA771D06D27F00B6F698 /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8BA761D06D27F00B6F698 /* NSString+Validation.m */; };
+		1AB8BA7A1D06D94800B6F698 /* UIAlertController+Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8BA791D06D94800B6F698 /* UIAlertController+Errors.m */; };
+		1AB8BA7D1D06DA5800B6F698 /* SEAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8BA7C1D06DA5800B6F698 /* SEAccount.m */; };
 		1AC188A31D04541C00FB5B3E /* SELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC188A21D04541C00FB5B3E /* SELoginViewController.m */; };
 		1AC188A61D04547400FB5B3E /* SERegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC188A51D04547400FB5B3E /* SERegisterViewController.m */; };
 		1AC1D7241CD7678A00F9723A /* SEEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D7231CD7678A00F9723A /* SEEnvironment.m */; };
@@ -30,6 +34,7 @@
 		BDDB996E18C3943B003EBC42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDB996D18C3943B003EBC42 /* Images.xcassets */; };
 		BDF68AF11B713C3400153C8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDF68AF01B713C3400153C8D /* Main.storyboard */; };
 		BDF68AF31B713C6200153C8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDF68AF21B713C6200153C8D /* LaunchScreen.xib */; };
+		BE300745DE41526506959DB6 /* libPods-Sema.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7571BC52D496B41A46A5ADF5 /* libPods-Sema.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +48,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12CC9EC171F3BB2114E66841 /* Pods-Specs.test_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.test_staging.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.test_staging.xcconfig"; sourceTree = "<group>"; };
+		1A4439E21D05772E00E96873 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
+		1A4439E61D05881C00E96873 /* SESessionOperationsDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESessionOperationsDispatcher.h; sourceTree = "<group>"; };
+		1A4439E71D05881C00E96873 /* SESessionOperationsDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESessionOperationsDispatcher.m; sourceTree = "<group>"; };
+		1AB7826B1D0566DD002E0DA6 /* SERegisterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERegisterViewModel.h; sourceTree = "<group>"; };
+		1AB7826C1D0566DD002E0DA6 /* SERegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERegisterViewModel.m; sourceTree = "<group>"; };
+		1AB8BA751D06D27F00B6F698 /* NSString+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validation.h"; sourceTree = "<group>"; };
+		1AB8BA761D06D27F00B6F698 /* NSString+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validation.m"; sourceTree = "<group>"; };
+		1AB8BA781D06D94800B6F698 /* UIAlertController+Errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Errors.h"; sourceTree = "<group>"; };
+		1AB8BA791D06D94800B6F698 /* UIAlertController+Errors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Errors.m"; sourceTree = "<group>"; };
+		1AB8BA7B1D06DA5800B6F698 /* SEAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEAccount.h; sourceTree = "<group>"; };
+		1AB8BA7C1D06DA5800B6F698 /* SEAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEAccount.m; sourceTree = "<group>"; };
 		1AC188A11D04541C00FB5B3E /* SELoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SELoginViewController.h; sourceTree = "<group>"; };
 		1AC188A21D04541C00FB5B3E /* SELoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SELoginViewController.m; sourceTree = "<group>"; };
 		1AC188A41D04547400FB5B3E /* SERegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERegisterViewController.h; sourceTree = "<group>"; };
@@ -66,22 +81,14 @@
 		1AC1D73F1CD7DDBB00F9723A /* SEJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEJSONResponseSerializer.m; sourceTree = "<group>"; };
 		1AC1D7411CD7E07900F9723A /* SEUserSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEUserSerializer.h; sourceTree = "<group>"; };
 		1AC1D7421CD7E07900F9723A /* SEUserSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEUserSerializer.m; sourceTree = "<group>"; };
-		2CB569C4CA54BBB2A8A3438F /* Pods.adhoc_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.adhoc_production.xcconfig; path = "Pods/Target Support Files/Pods/Pods.adhoc_production.xcconfig"; sourceTree = "<group>"; };
-		326C1F0145B5BE66CBCC67F1 /* Pods-Specs.test_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.test_production.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.test_production.xcconfig"; sourceTree = "<group>"; };
-		3EA32E3BEF65BE84130D7190 /* Pods.profile_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.profile_production.xcconfig; path = "Pods/Target Support Files/Pods/Pods.profile_production.xcconfig"; sourceTree = "<group>"; };
-		40BA951C2C05A8E480C4A89C /* Pods-Specs.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.distribution.xcconfig"; sourceTree = "<group>"; };
-		46A5F5E57179B0D085AF4FF2 /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D26DC1D97A4FF5AB8CC483F /* Pods-Specs.profile_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.profile_production.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.profile_production.xcconfig"; sourceTree = "<group>"; };
-		570039B4FD45DBAF5A8E969C /* Pods.test_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.test_production.xcconfig; path = "Pods/Target Support Files/Pods/Pods.test_production.xcconfig"; sourceTree = "<group>"; };
-		5AF873AF0F585B45C1E0F5B4 /* Pods.adhoc_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.adhoc_staging.xcconfig; path = "Pods/Target Support Files/Pods/Pods.adhoc_staging.xcconfig"; sourceTree = "<group>"; };
-		62820E5E5DCE1B7643DDFCAC /* Pods.debug_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug_production.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug_production.xcconfig"; sourceTree = "<group>"; };
-		6770FFEDF6A5EE7451E4DEDF /* Pods-Specs.adhoc_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.adhoc_staging.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.adhoc_staging.xcconfig"; sourceTree = "<group>"; };
-		6AE8431A4C79A1C8F2737EEB /* Pods.profile_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.profile_staging.xcconfig; path = "Pods/Target Support Files/Pods/Pods.profile_staging.xcconfig"; sourceTree = "<group>"; };
-		8B825A2DB6F2180BF8C6BAE6 /* Pods.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.distribution.xcconfig; path = "Pods/Target Support Files/Pods/Pods.distribution.xcconfig"; sourceTree = "<group>"; };
-		973497EBFED9FC87626B9E25 /* Pods.debug_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug_staging.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug_staging.xcconfig"; sourceTree = "<group>"; };
-		A06B515E067379B8477A8245 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9A22FEAECDB5B172A6420E4 /* Pods.test_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.test_staging.xcconfig; path = "Pods/Target Support Files/Pods/Pods.test_staging.xcconfig"; sourceTree = "<group>"; };
-		B9B99CA30A14373A9E910099 /* Pods-Specs.debug_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.debug_staging.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.debug_staging.xcconfig"; sourceTree = "<group>"; };
+		629D431888F0A369A9259832 /* Pods-Sema.test_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.test_staging.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.test_staging.xcconfig"; sourceTree = "<group>"; };
+		651157A0406A01719D20471F /* Pods-Sema.test_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.test_production.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.test_production.xcconfig"; sourceTree = "<group>"; };
+		65D6C5A3F357B669F53D9728 /* Pods-Sema.adhoc_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.adhoc_production.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.adhoc_production.xcconfig"; sourceTree = "<group>"; };
+		6AA66E91665142ABE23F0AB7 /* Pods-Sema.debug_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.debug_staging.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.debug_staging.xcconfig"; sourceTree = "<group>"; };
+		734A6695A19D8ACA6D52F59A /* Pods-Sema.adhoc_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.adhoc_staging.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.adhoc_staging.xcconfig"; sourceTree = "<group>"; };
+		7571BC52D496B41A46A5ADF5 /* libPods-Sema.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sema.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76299427AD6DF8A84EEA0FC4 /* Pods-Sema.profile_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.profile_staging.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.profile_staging.xcconfig"; sourceTree = "<group>"; };
+		90215170E45C9E0161A1E3D2 /* Pods-Sema.debug_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.debug_production.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.debug_production.xcconfig"; sourceTree = "<group>"; };
 		BD304C8018E672EA0034105E /* SEDummySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEDummySpec.m; sourceTree = "<group>"; };
 		BD304C8218E77F7E0034105E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BD35136419BE274A00A19841 /* SEConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEConstants.h; sourceTree = "<group>"; };
@@ -110,9 +117,8 @@
 		BDDB997C18C3943B003EBC42 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		BDF68AF01B713C3400153C8D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Controllers/Main.storyboard; sourceTree = "<group>"; };
 		BDF68AF21B713C6200153C8D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		D5905E5F82BFFA7584BAD4C5 /* Pods-Specs.debug_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.debug_production.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.debug_production.xcconfig"; sourceTree = "<group>"; };
-		D803149862748E9E696037FB /* Pods-Specs.adhoc_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.adhoc_production.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.adhoc_production.xcconfig"; sourceTree = "<group>"; };
-		D854A3C5B42BB78F9F14DC65 /* Pods-Specs.profile_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.profile_staging.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.profile_staging.xcconfig"; sourceTree = "<group>"; };
+		D9F8268D5065351F0F5CBBE1 /* Pods-Sema.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.distribution.xcconfig"; sourceTree = "<group>"; };
+		E6BAB3FAA275333377BA6AB7 /* Pods-Sema.profile_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.profile_production.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.profile_production.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036A61EAF6146EA59BD29634 /* libPods.a in Frameworks */,
+				BE300745DE41526506959DB6 /* libPods-Sema.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,17 +134,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				074C8AD7A4D403DECEE7F926 /* libPods-Specs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A4439E41D05812000E96873 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1A4439E91D05899D00E96873 /* Validations */,
+				1A4439E51D05862C00E96873 /* Operations */,
+				1AB8BA7B1D06DA5800B6F698 /* SEAccount.h */,
+				1AB8BA7C1D06DA5800B6F698 /* SEAccount.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		1A4439E51D05862C00E96873 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				1A4439E61D05881C00E96873 /* SESessionOperationsDispatcher.h */,
+				1A4439E71D05881C00E96873 /* SESessionOperationsDispatcher.m */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		1A4439E91D05899D00E96873 /* Validations */ = {
+			isa = PBXGroup;
+			children = (
+				1AB8BA751D06D27F00B6F698 /* NSString+Validation.h */,
+				1AB8BA761D06D27F00B6F698 /* NSString+Validation.m */,
+				1AB8BA781D06D94800B6F698 /* UIAlertController+Errors.h */,
+				1AB8BA791D06D94800B6F698 /* UIAlertController+Errors.m */,
+			);
+			name = Validations;
+			sourceTree = "<group>";
+		};
+		1AB782691D05640C002E0DA6 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				1AB7826A1D056420002E0DA6 /* ViewModel */,
+				1AC188A41D04547400FB5B3E /* SERegisterViewController.h */,
+				1AC188A51D04547400FB5B3E /* SERegisterViewController.m */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		1AB7826A1D056420002E0DA6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1AB7826B1D0566DD002E0DA6 /* SERegisterViewModel.h */,
+				1AB7826C1D0566DD002E0DA6 /* SERegisterViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		1AC1D7201CD762C400F9723A /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				BDF68AF01B713C3400153C8D /* Main.storyboard */,
+				1A4439E21D05772E00E96873 /* Game.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -189,29 +245,28 @@
 			name = Params;
 			sourceTree = "<group>";
 		};
-		55C5AA14CC157D6E10D487F9 /* Pods */ = {
+		28BFB1F90D64811C3D106467 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				973497EBFED9FC87626B9E25 /* Pods.debug_staging.xcconfig */,
-				62820E5E5DCE1B7643DDFCAC /* Pods.debug_production.xcconfig */,
-				B9A22FEAECDB5B172A6420E4 /* Pods.test_staging.xcconfig */,
-				570039B4FD45DBAF5A8E969C /* Pods.test_production.xcconfig */,
-				8B825A2DB6F2180BF8C6BAE6 /* Pods.distribution.xcconfig */,
-				5AF873AF0F585B45C1E0F5B4 /* Pods.adhoc_staging.xcconfig */,
-				2CB569C4CA54BBB2A8A3438F /* Pods.adhoc_production.xcconfig */,
-				6AE8431A4C79A1C8F2737EEB /* Pods.profile_staging.xcconfig */,
-				3EA32E3BEF65BE84130D7190 /* Pods.profile_production.xcconfig */,
-				B9B99CA30A14373A9E910099 /* Pods-Specs.debug_staging.xcconfig */,
-				D5905E5F82BFFA7584BAD4C5 /* Pods-Specs.debug_production.xcconfig */,
-				12CC9EC171F3BB2114E66841 /* Pods-Specs.test_staging.xcconfig */,
-				326C1F0145B5BE66CBCC67F1 /* Pods-Specs.test_production.xcconfig */,
-				40BA951C2C05A8E480C4A89C /* Pods-Specs.distribution.xcconfig */,
-				6770FFEDF6A5EE7451E4DEDF /* Pods-Specs.adhoc_staging.xcconfig */,
-				D803149862748E9E696037FB /* Pods-Specs.adhoc_production.xcconfig */,
-				D854A3C5B42BB78F9F14DC65 /* Pods-Specs.profile_staging.xcconfig */,
-				4D26DC1D97A4FF5AB8CC483F /* Pods-Specs.profile_production.xcconfig */,
+				6AA66E91665142ABE23F0AB7 /* Pods-Sema.debug_staging.xcconfig */,
+				90215170E45C9E0161A1E3D2 /* Pods-Sema.debug_production.xcconfig */,
+				629D431888F0A369A9259832 /* Pods-Sema.test_staging.xcconfig */,
+				651157A0406A01719D20471F /* Pods-Sema.test_production.xcconfig */,
+				D9F8268D5065351F0F5CBBE1 /* Pods-Sema.distribution.xcconfig */,
+				734A6695A19D8ACA6D52F59A /* Pods-Sema.adhoc_staging.xcconfig */,
+				65D6C5A3F357B669F53D9728 /* Pods-Sema.adhoc_production.xcconfig */,
+				76299427AD6DF8A84EEA0FC4 /* Pods-Sema.profile_staging.xcconfig */,
+				E6BAB3FAA275333377BA6AB7 /* Pods-Sema.profile_production.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD6236FA553282BAB59269F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7571BC52D496B41A46A5ADF5 /* libPods-Sema.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BD3CA8BA18D8A68600C993E0 /* Resources */ = {
@@ -299,12 +354,11 @@
 		BDB71B2618EA471400579B97 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1AB782691D05640C002E0DA6 /* Register */,
 				BDDB996A18C3943B003EBC42 /* SEViewController.h */,
 				BDDB996B18C3943B003EBC42 /* SEViewController.m */,
 				1AC188A11D04541C00FB5B3E /* SELoginViewController.h */,
 				1AC188A21D04541C00FB5B3E /* SELoginViewController.m */,
-				1AC188A41D04547400FB5B3E /* SERegisterViewController.h */,
-				1AC188A51D04547400FB5B3E /* SERegisterViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -314,9 +368,9 @@
 			children = (
 				BDDB995818C3943B003EBC42 /* Sema */,
 				BDDB997A18C3943B003EBC42 /* Specs */,
-				D36FABF09F1A984E257F1EAF /* Frameworks */,
-				55C5AA14CC157D6E10D487F9 /* Pods */,
 				BDDB995018C3943B003EBC42 /* Products */,
+				28BFB1F90D64811C3D106467 /* Pods */,
+				AD6236FA553282BAB59269F4 /* Frameworks */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -339,6 +393,7 @@
 				1AC1D7201CD762C400F9723A /* Storyboards */,
 				BDB71B2618EA471400579B97 /* Controllers */,
 				BD574AFB18EA47FA00EDD66F /* Models */,
+				1A4439E41D05812000E96873 /* Helpers */,
 				BD574AFA18EA47FA00EDD66F /* Library */,
 				BD3CA8BA18D8A68600C993E0 /* Resources */,
 				BD574B0318EA481500EDD66F /* Views */,
@@ -366,15 +421,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D36FABF09F1A984E257F1EAF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A06B515E067379B8477A8245 /* libPods.a */,
-				46A5F5E57179B0D085AF4FF2 /* libPods-Specs.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -382,17 +428,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDDB998418C3943B003EBC42 /* Build configuration list for PBXNativeTarget "Sema" */;
 			buildPhases = (
-				CE78B447D2424EDEAEAB74EB /* Check Pods Manifest.lock */,
+				EADD9DFA0B4A2390A55E60D9 /* [CP] Check Pods Manifest.lock */,
 				BDF4202019B8F31200FE6C13 /* Generate Storyboard Identifier File */,
 				BD79800C19C0CF3E0087DCCA /* Generate Asset Catalog Identifier File */,
 				BDDB994B18C3943B003EBC42 /* Sources */,
 				BDDB994C18C3943B003EBC42 /* Frameworks */,
 				BD36522718CE89C6009107A7 /* Increment Build Number */,
 				BDDB994D18C3943B003EBC42 /* Resources */,
-				5934C2BEC75D4C51B3689E07 /* Copy Pods Resources */,
 				BDC7F36218EBA5EE0045D4BD /* Remove Unused Localizations */,
 				BD35136319BE21BD00A19841 /* Badge App Icons */,
-				39C981DC16D867281773C28F /* Embed Pods Frameworks */,
+				DB4ED46866499C7FC97B9879 /* [CP] Embed Pods Frameworks */,
+				AE7962412D74E8D6E580B775 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -407,12 +453,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDDB998718C3943B003EBC42 /* Build configuration list for PBXNativeTarget "Specs" */;
 			buildPhases = (
-				295A078AF08D45C99B314B81 /* Check Pods Manifest.lock */,
 				BDDB996F18C3943B003EBC42 /* Sources */,
 				BDDB997018C3943B003EBC42 /* Frameworks */,
 				BDDB997118C3943B003EBC42 /* Resources */,
-				A20A1E42928D4423912BE388 /* Copy Pods Resources */,
-				24CF772DB41806DAC2DF5758 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -463,6 +506,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4439E31D05772E00E96873 /* Game.storyboard in Resources */,
 				BDF68AF31B713C6200153C8D /* LaunchScreen.xib in Resources */,
 				1AC1D7261CD773EA00F9723A /* Configuration.plist in Resources */,
 				BDDB996E18C3943B003EBC42 /* Images.xcassets in Resources */,
@@ -481,79 +525,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		24CF772DB41806DAC2DF5758 /* Embed Pods Frameworks */ = {
+		AE7962412D74E8D6E580B775 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Specs/Pods-Specs-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		295A078AF08D45C99B314B81 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		39C981DC16D867281773C28F /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5934C2BEC75D4C51B3689E07 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A20A1E42928D4423912BE388 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Specs/Pods-Specs-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sema/Pods-Sema-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD35136319BE21BD00A19841 /* Badge App Icons */ = {
@@ -631,14 +615,29 @@
 			shellScript = "# This script walks the storyboards in your project and creates\n# StoryboardIdentifiers.{h,m} with constants for all the segue,\n# reuse, restoration, and storyboard identifiers.\n# The generated files live in the Other Sources group.\n\n# If this is not desired behavior for you, or you don't use\n# storyboards, feel free to remove this build phase and the\n# generated files in Other Sources.\n\n# If you would like constants generated for restoration IDs,\n# uncomment this line:\n#export NEED_RESTORATION_IDS=1\n\n\"${SRCROOT}/Scripts/GenerateStoryboardIDs.py\"";
 			showEnvVarsInLog = 0;
 		};
-		CE78B447D2424EDEAEAB74EB /* Check Pods Manifest.lock */ = {
+		DB4ED46866499C7FC97B9879 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sema/Pods-Sema-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EADD9DFA0B4A2390A55E60D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,11 +657,16 @@
 				1AC1D7431CD7E07900F9723A /* SEUserSerializer.m in Sources */,
 				BDDB996318C3943B003EBC42 /* SEAppDelegate.m in Sources */,
 				BD934CD419C211F600B48551 /* AssetCatalogIdentifiers.m in Sources */,
+				1A4439E81D05881C00E96873 /* SESessionOperationsDispatcher.m in Sources */,
 				1AC1D7311CD7D23A00F9723A /* SERequests.m in Sources */,
+				1AB8BA7D1D06DA5800B6F698 /* SEAccount.m in Sources */,
 				1AC1D7401CD7DDBB00F9723A /* SEJSONResponseSerializer.m in Sources */,
 				1AC188A31D04541C00FB5B3E /* SELoginViewController.m in Sources */,
 				1AC1D73D1CD7D8F700F9723A /* SERegisterUserParams.m in Sources */,
+				1AB7826D1D0566DD002E0DA6 /* SERegisterViewModel.m in Sources */,
 				BD934CD519C211F600B48551 /* StoryboardIdentifiers.m in Sources */,
+				1AB8BA7A1D06D94800B6F698 /* UIAlertController+Errors.m in Sources */,
+				1AB8BA771D06D27F00B6F698 /* NSString+Validation.m in Sources */,
 				BD6951CF18EA4B0800F2F410 /* main.m in Sources */,
 				BDDB996C18C3943B003EBC42 /* SEViewController.m in Sources */,
 				1AC1D7341CD7D38000F9723A /* SEUser.m in Sources */,
@@ -703,7 +707,7 @@
 		};
 		BD49EA2118EC611D00F73350 /* Debug_Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62820E5E5DCE1B7643DDFCAC /* Pods.debug_production.xcconfig */;
+			baseConfigurationReference = 90215170E45C9E0161A1E3D2 /* Pods-Sema.debug_production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_ID_SUFFIX = .prod;
@@ -720,7 +724,6 @@
 		};
 		BD49EA2218EC611D00F73350 /* Debug_Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5905E5F82BFFA7584BAD4C5 /* Pods-Specs.debug_production.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sema.app/Sema";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -750,7 +753,7 @@
 		};
 		BD49EA2418EC612E00F73350 /* Test_Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 570039B4FD45DBAF5A8E969C /* Pods.test_production.xcconfig */;
+			baseConfigurationReference = 651157A0406A01719D20471F /* Pods-Sema.test_production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_ID_SUFFIX = .prod;
@@ -767,7 +770,6 @@
 		};
 		BD49EA2518EC612E00F73350 /* Test_Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 326C1F0145B5BE66CBCC67F1 /* Pods-Specs.test_production.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sema.app/Sema";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -797,7 +799,7 @@
 		};
 		BD49EA2718EC614F00F73350 /* AdHoc_Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CB569C4CA54BBB2A8A3438F /* Pods.adhoc_production.xcconfig */;
+			baseConfigurationReference = 65D6C5A3F357B669F53D9728 /* Pods-Sema.adhoc_production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_ID_SUFFIX = .prod;
@@ -814,7 +816,6 @@
 		};
 		BD49EA2818EC614F00F73350 /* AdHoc_Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D803149862748E9E696037FB /* Pods-Specs.adhoc_production.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sema.app/Sema";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -844,7 +845,7 @@
 		};
 		BD49EA2A18EC62DD00F73350 /* Profile_Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EA32E3BEF65BE84130D7190 /* Pods.profile_production.xcconfig */;
+			baseConfigurationReference = E6BAB3FAA275333377BA6AB7 /* Pods-Sema.profile_production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_ID_SUFFIX = .prod;
@@ -861,7 +862,6 @@
 		};
 		BD49EA2B18EC62DD00F73350 /* Profile_Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D26DC1D97A4FF5AB8CC483F /* Pods-Specs.profile_production.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sema.app/Sema";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -891,7 +891,7 @@
 		};
 		BDD67CDC18DFAB85008ECBBD /* AdHoc_Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AF873AF0F585B45C1E0F5B4 /* Pods.adhoc_staging.xcconfig */;
+			baseConfigurationReference = 734A6695A19D8ACA6D52F59A /* Pods-Sema.adhoc_staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_ID_SUFFIX = .staging;
@@ -908,7 +908,6 @@
 		};
 		BDD67CDD18DFAB85008ECBBD /* AdHoc_Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6770FFEDF6A5EE7451E4DEDF /* Pods-Specs.adhoc_staging.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sema.app/Sema";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -949,7 +948,7 @@
 		};
 		BDDB998518C3943B003EBC42 /* Debug_Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 973497EBFED9FC87626B9E25 /* Pods.debug_staging.xcconfig */;
+			baseConfigurationReference = 6AA66E91665142ABE23F0AB7 /* Pods-Sema.debug_staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_ID_SUFFIX = .staging;
@@ -966,7 +965,7 @@
 		};
 		BDDB998618C3943B003EBC42 /* Distribution */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B825A2DB6F2180BF8C6BAE6 /* Pods.distribution.xcconfig */;
+			baseConfigurationReference = D9F8268D5065351F0F5CBBE1 /* Pods-Sema.distribution.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_ID_SUFFIX = "";
@@ -983,7 +982,6 @@
 		};
 		BDDB998818C3943B003EBC42 /* Debug_Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9B99CA30A14373A9E910099 /* Pods-Specs.debug_staging.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sema.app/Sema";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1003,7 +1001,6 @@
 		};
 		BDDB998918C3943B003EBC42 /* Distribution */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40BA951C2C05A8E480C4A89C /* Pods-Specs.distribution.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sema.app/Sema";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1033,7 +1030,7 @@
 		};
 		BDF1757B18C3986D008BD9C6 /* Profile_Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AE8431A4C79A1C8F2737EEB /* Pods.profile_staging.xcconfig */;
+			baseConfigurationReference = 76299427AD6DF8A84EEA0FC4 /* Pods-Sema.profile_staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_ID_SUFFIX = .staging;
@@ -1050,7 +1047,6 @@
 		};
 		BDF1757C18C3986D008BD9C6 /* Profile_Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D854A3C5B42BB78F9F14DC65 /* Pods-Specs.profile_staging.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sema.app/Sema";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1080,7 +1076,7 @@
 		};
 		BDF1757E18C39BD3008BD9C6 /* Test_Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9A22FEAECDB5B172A6420E4 /* Pods.test_staging.xcconfig */;
+			baseConfigurationReference = 629D431888F0A369A9259832 /* Pods-Sema.test_staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_ID_SUFFIX = .staging;
@@ -1097,7 +1093,6 @@
 		};
 		BDF1757F18C39BD3008BD9C6 /* Test_Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12CC9EC171F3BB2114E66841 /* Pods-Specs.test_staging.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sema.app/Sema";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -12,9 +12,10 @@
 @interface SERegisterUserParams : NSObject <SERequestParamsProtocol>
 
 @property (nonatomic, strong, readonly) NSString *email;
+@property (nonatomic, strong, readonly) NSString *login;
 @property (nonatomic, strong, readonly) NSString *password;
 @property (nonatomic, strong, readonly) NSString *passwordConfirmation;
 
-- (instancetype)initWithEmail:(NSString *)email password:(NSString *)password passwordConfirmation:(NSString *)passwordConfirmation;
+- (instancetype)initWithEmail:(NSString *)email login:(NSString *)login password:(NSString *)password passwordConfirmation:(NSString *)passwordConfirmation;
 
 @end

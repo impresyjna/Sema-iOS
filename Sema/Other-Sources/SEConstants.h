@@ -9,3 +9,4 @@
 #import <Foundation/Foundation.h>
 
 static NSString *const kSEEnvironmentApiBaseURLKey = @"SEApiBaseURL";
+static NSString *const kSEErrorDomain = @"com.impresyjna.sema.error-domain";

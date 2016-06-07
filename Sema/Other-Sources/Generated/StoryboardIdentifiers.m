@@ -3,3 +3,11 @@
 
 #import "StoryboardIdentifiers.h"
 
+#pragma mark Main
+
+const struct SEMainStoryboardIDs SEMainStoryboardIDs = {
+    .segues = {
+        .afterLogin = @"SEAfterLoginSegueID",
+    },
+
+};

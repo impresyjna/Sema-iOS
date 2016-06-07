@@ -10,10 +10,11 @@
 
 @implementation SERegisterUserParams
 
-- (instancetype)initWithEmail:(NSString *)email password:(NSString *)password passwordConfirmation:(NSString *)passwordConfirmation {
+- (instancetype)initWithEmail:(NSString *)email login:(NSString *)login password:(NSString *)password passwordConfirmation:(NSString *)passwordConfirmation {
     self = [super init];
     if (self) {
         _email = email;
+        _login = login;
         _password = password;
         _passwordConfirmation = passwordConfirmation;
     }
@@ -24,6 +25,7 @@
     return @{
              @"user": @{
                      @"email":_email,
+                     @"login":_login,
                      @"password":_password,
                      @"password_confirmation":_passwordConfirmation
                      }

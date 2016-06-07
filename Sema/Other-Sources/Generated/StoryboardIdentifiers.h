@@ -3,3 +3,11 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma mark Main
+
+extern const struct SEMainStoryboardIDs {
+    struct {
+        __unsafe_unretained NSString *afterLogin;
+    } segues;
+
+} SEMainStoryboardIDs;

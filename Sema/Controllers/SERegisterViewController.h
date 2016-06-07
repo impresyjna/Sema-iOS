@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SERegisterViewController : UIViewController
+@interface SERegisterViewController : UITableViewController
 
 @end
