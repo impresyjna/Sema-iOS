@@ -32,6 +32,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textFieldTextHasChangedAction:" destination="EZJ-tX-yxB" eventType="editingChanged" id="oKJ-rk-XtW"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hasło" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sdo-Qw-1S4">
                                         <rect key="frame" x="0.0" y="130" width="520" height="50"/>
@@ -39,7 +42,10 @@
                                             <constraint firstAttribute="height" constant="50" id="RXl-dQ-TAb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="textFieldTextHasChangedAction:" destination="EZJ-tX-yxB" eventType="editingChanged" id="hRl-7T-uN8"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3h-nr-kCk">
                                         <rect key="frame" x="0.0" y="190" width="520" height="46"/>
@@ -54,6 +60,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginAction:" destination="EZJ-tX-yxB" eventType="touchUpInside" id="Cie-A8-ZOb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nK-lm-Edl">
                                         <rect key="frame" x="0.0" y="296" width="520" height="31"/>
@@ -93,6 +102,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="khj-bR-Yqh"/>
                     <connections>
+                        <outlet property="loginTextField" destination="Lbe-0K-vz3" id="ZV1-vw-qRG"/>
+                        <outlet property="passwordTextField" destination="sdo-Qw-1S4" id="20G-Lg-JbF"/>
                         <segue destination="kmR-h5-Eqx" kind="presentation" identifier="SEAfterLoginSegueID" id="ETW-CB-mmD"/>
                     </connections>
                 </viewController>
@@ -348,6 +359,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3Xu-Kx-8g6"/>
+        <segue reference="ETW-CB-mmD"/>
     </inferredMetricsTieBreakers>
 </document>
