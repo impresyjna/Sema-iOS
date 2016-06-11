@@ -14,6 +14,7 @@
     return @{
                 @"uId":@"id",
                 @"email":@"email",
+                @"login":@"login",
                 @"authToken":@"auth_token"
              };
 }

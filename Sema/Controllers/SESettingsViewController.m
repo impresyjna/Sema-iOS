@@ -26,8 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _viewModel = [SESettingsViewModel new];
-    //self.loginTextField.text = [SEAccount account].user.login;
-    NSLog([SEAccount account].user.login);
+    self.loginTextField.text = [SEAccount account].user.login;
     [self registerForKeyboardNotifications];
     // Do any additional setup after loading the view.
 }

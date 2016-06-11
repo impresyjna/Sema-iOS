@@ -10,14 +10,4 @@
 
 @implementation SEAccount
 
-@dynamic user;
-
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        self.accountName = @"Sema";
-    }
-    return self;
-}
-
 @end
