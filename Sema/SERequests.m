@@ -27,6 +27,13 @@
                                                error:nil]; 
 }
 
+- (NSMutableURLRequest *)requestAddNewQuestionWithParams:(SENewQuestionParams *)params {
+    return [self.requestSerializer requestWithMethod:@"POST"
+                                           URLString:[NSString stringWithFormat:@"%@/questions", self.baseURL]
+                                           parameters:[params params]
+                                               error:nil]; 
+}
+
 #pragma mark -
 #pragma mark - Users
 

@@ -1,26 +1,165 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fIU-HH-ISJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PqI-5r-rqH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="eQA-cF-pOy">
+        <!--Friends-->
+        <scene sceneID="XqL-c6-LvA">
             <objects>
-                <viewController id="fIU-HH-ISJ" sceneMemberID="viewController">
+                <viewController title="Friends" id="yuB-S4-tRd" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="j9t-BX-uQG"/>
-                        <viewControllerLayoutGuide type="bottom" id="d3d-na-3iT"/>
+                        <viewControllerLayoutGuide type="top" id="nWa-HE-5uh"/>
+                        <viewControllerLayoutGuide type="bottom" id="KC2-IX-D1I"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="D1v-ox-4be">
+                    <view key="view" contentMode="scaleToFill" id="T6m-34-w0u">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="19A-vg-DUa"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4FX-FC-02S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRh-rL-uf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="464" y="356"/>
+            <point key="canvasLocation" x="489" y="435"/>
+        </scene>
+        <!--AddQuestion-->
+        <scene sceneID="VP3-o3-kGx">
+            <objects>
+                <viewController title="AddQuestion" id="haw-d0-jPu" customClass="SEAddQuestionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hBZ-fx-k8y"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yp6-Av-R7O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i7x-Yk-2W3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dodaj nowe pytanie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSI-Dh-uLE">
+                                <rect key="frame" x="40" y="100" width="520" height="25"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
+                                <color key="textColor" red="0.27572983503341675" green="0.62328392267227173" blue="0.51743841171264648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Treść pytania" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bba-Ie-eeH">
+                                <rect key="frame" x="40" y="165" width="520" height="30"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldTextHasChangedAction:" destination="haw-d0-jPu" eventType="editingChanged" id="w2t-dq-6Y4"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYK-3e-mU2">
+                                <rect key="frame" x="40" y="211" width="520" height="30"/>
+                                <color key="backgroundColor" red="0.27572983503341675" green="0.62328392267227173" blue="0.51743841171264648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Zgłoś">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addNewQuestionAction:" destination="haw-d0-jPu" eventType="touchUpInside" id="9Iu-ej-eZV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vSI-Dh-uLE" secondAttribute="trailing" constant="40" id="3rA-PF-abd"/>
+                            <constraint firstAttribute="trailing" secondItem="TYK-3e-mU2" secondAttribute="trailing" constant="40" id="3xG-a3-WeC"/>
+                            <constraint firstItem="TYK-3e-mU2" firstAttribute="leading" secondItem="i7x-Yk-2W3" secondAttribute="leading" constant="40" id="Hpg-wS-AIt"/>
+                            <constraint firstItem="vSI-Dh-uLE" firstAttribute="centerX" secondItem="i7x-Yk-2W3" secondAttribute="centerX" id="Kg5-DS-SUB"/>
+                            <constraint firstItem="vSI-Dh-uLE" firstAttribute="top" secondItem="i7x-Yk-2W3" secondAttribute="topMargin" constant="100" id="Qrc-En-Hz2"/>
+                            <constraint firstItem="bba-Ie-eeH" firstAttribute="centerX" secondItem="i7x-Yk-2W3" secondAttribute="centerX" id="UBI-oe-c8O"/>
+                            <constraint firstItem="vSI-Dh-uLE" firstAttribute="leading" secondItem="i7x-Yk-2W3" secondAttribute="leading" constant="40" id="Vui-Ig-SHl"/>
+                            <constraint firstItem="TYK-3e-mU2" firstAttribute="top" secondItem="bba-Ie-eeH" secondAttribute="bottom" constant="16" id="WiO-Bn-tTc"/>
+                            <constraint firstItem="TYK-3e-mU2" firstAttribute="centerX" secondItem="i7x-Yk-2W3" secondAttribute="centerX" id="esy-gh-hDL"/>
+                            <constraint firstAttribute="trailing" secondItem="bba-Ie-eeH" secondAttribute="trailing" constant="40" id="gEW-lv-t19"/>
+                            <constraint firstItem="bba-Ie-eeH" firstAttribute="top" secondItem="vSI-Dh-uLE" secondAttribute="bottom" constant="40" id="jfu-ec-Lkt"/>
+                            <constraint firstItem="bba-Ie-eeH" firstAttribute="leading" secondItem="i7x-Yk-2W3" secondAttribute="leading" constant="40" id="mAZ-u9-kCI"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xqM-PC-h5e" appends="YES" id="wFg-Oy-4ZC"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="PJ0-t0-K16"/>
+                    <connections>
+                        <outlet property="questionContentTextView" destination="bba-Ie-eeH" id="J19-DW-v3l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5aA-L7-rE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xqM-PC-h5e">
+                    <connections>
+                        <action selector="tapOnViewAction:" destination="haw-d0-jPu" id="AvK-2X-HAz"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-777" y="799"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="rde-xg-1PN">
+            <objects>
+                <viewController title="Settings" id="0sP-IL-zKp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DWF-OJ-pbE"/>
+                        <viewControllerLayoutGuide type="bottom" id="O6V-gD-PzW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7qQ-ur-rBT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="V3F-jP-8ho"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGM-JL-cUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-147" y="799"/>
+        </scene>
+        <!--Rooms-->
+        <scene sceneID="m4B-iw-9cP">
+            <objects>
+                <viewController title="Rooms" id="0xN-wZ-rcr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qa6-me-GlN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y2n-j8-spW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Rooms" id="v2e-Qd-Kb4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.27572983503341675" green="0.62328392267227173" blue="0.51743841171264648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="XIJ-L0-T5t">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PeW-Xw-nin" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="489" y="-230"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="w2f-z2-d3z">
+            <objects>
+                <tabBarController id="PqI-5r-rqH" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="oe9-C7-bWP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0xN-wZ-rcr" kind="relationship" relationship="viewControllers" id="Xt5-Qm-DMm"/>
+                        <segue destination="yuB-S4-tRd" kind="relationship" relationship="viewControllers" id="Epn-sb-JGo"/>
+                        <segue destination="0sP-IL-zKp" kind="relationship" relationship="viewControllers" id="mhd-Tl-a7o"/>
+                        <segue destination="haw-d0-jPu" kind="relationship" relationship="viewControllers" id="L23-Vp-ayA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oef-Dp-iGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-339" y="25"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.27572983503341675" green="0.62328392267227173" blue="0.51743841171264648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

@@ -3,3 +3,8 @@
 
 #import "AssetCatalogIdentifiers.h"
 
+@implementation SEImagesCatalog
+
++(UIImage *)icSettings { return [UIImage imageNamed:@"ic_settings"]; }
+
+@end

@@ -3,3 +3,8 @@
 
 #import <Foundation/Foundation.h>
 
+@interface SEImagesCatalog: NSObject
+
++(UIImage *)icSettings;
+
+@end

@@ -59,6 +59,14 @@
     return validConfirmation;
 }
 
+-(BOOL)isValidQuestionContent:(NSError *__autoreleasing *)error {
+    BOOL lengthValid = self.length > 0;
+    if (!lengthValid && error) {
+        *error = [self errorWithMessage:@"It has to be content of the question"];
+    }
+    return lengthValid;
+}
+
 #pragma mark -
 #pragma mark - Private
 

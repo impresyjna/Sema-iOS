@@ -9,10 +9,12 @@
 #import <AFNetworking/AFNetworking.h>
 #import "SELoginUserParams.h"
 #import "SERegisterUserParams.h"
+#import "SENewQuestionParams.h"
 
 @interface AFHTTPSessionManager (SERequests)
 
 - (NSMutableURLRequest *)requestLoginUserWithParams:(SELoginUserParams *)params;
-- (NSMutableURLRequest *)requestRegisterUserWithParams:(SERegisterUserParams *)params; 
+- (NSMutableURLRequest *)requestRegisterUserWithParams:(SERegisterUserParams *)params;
+- (NSMutableURLRequest *)requestAddNewQuestionWithParams:(SENewQuestionParams *)params;
 
 @end

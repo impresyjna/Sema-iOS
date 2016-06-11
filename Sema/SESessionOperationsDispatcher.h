@@ -17,6 +17,7 @@
 //Serializers
 #import "SEUserSerializer.h"
 
+
 typedef void(^SESessionOperationsDispatcherCompletionBlock)(BOOL success, SEUser *user, NSError *error);
 
 @interface SESessionOperationsDispatcher : NSObject

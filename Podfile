@@ -13,6 +13,7 @@ target 'Sema' do
 
   # Formatting
   pod 'FormatterKit'    # For all your string formatting needs
+  pod 'Toast', '~> 3.0'
 
   # Progress hud
   pod 'MBProgressHUD'
