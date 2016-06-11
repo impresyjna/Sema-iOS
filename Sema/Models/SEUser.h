@@ -12,6 +12,7 @@
 
 @property (nonatomic, assign, readonly) NSInteger uId;
 @property (nonatomic, strong, readonly) NSString *email;
+@property (nonatomic, strong, readonly) NSString *login;
 @property (nonatomic, strong, readonly) NSString *authToken;
 
 @end

@@ -103,7 +103,8 @@
         <!--Settings-->
         <scene sceneID="rde-xg-1PN">
             <objects>
-                <viewController title="Settings" id="0sP-IL-zKp" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGM-JL-cUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Settings" id="0sP-IL-zKp" customClass="SESettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DWF-OJ-pbE"/>
                         <viewControllerLayoutGuide type="bottom" id="O6V-gD-PzW"/>
@@ -111,11 +112,117 @@
                     <view key="view" contentMode="scaleToFill" id="7qQ-ur-rBT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70s-Xr-Gs6">
+                                <rect key="frame" x="40" y="64" width="520" height="38"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                <color key="textColor" red="0.27572983503341675" green="0.62328392267227173" blue="0.51743841171264648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xfy-LC-cTf">
+                                <rect key="frame" x="40" y="142" width="520" height="30"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rin-TJ-z5V">
+                                <rect key="frame" x="40" y="188" width="520" height="30"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hasło" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yWB-km-MaP">
+                                <rect key="frame" x="40" y="234" width="520" height="30"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohg-fN-CCL">
+                                <rect key="frame" x="40" y="326" width="520" height="30"/>
+                                <color key="backgroundColor" red="0.27572983503341675" green="0.62328392267227173" blue="0.51743841171264648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Zapisz zmiany">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="updateUserAction:" destination="0sP-IL-zKp" eventType="touchUpInside" id="r1H-KF-YEU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfW-Zu-QOS">
+                                <rect key="frame" x="40" y="396" width="520" height="30"/>
+                                <color key="backgroundColor" red="0.27572983503341675" green="0.62328392267227173" blue="0.51743841171264648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Wyloguj się">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logOutUserAction:" destination="0sP-IL-zKp" eventType="touchUpInside" id="XpH-6P-Ple"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Potwierdzenie nowego hasła" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3EY-gB-ab5">
+                                <rect key="frame" x="40" y="280" width="520" height="30"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yWB-km-MaP" secondAttribute="trailing" constant="40" id="0Uz-e9-cZE"/>
+                            <constraint firstItem="tfW-Zu-QOS" firstAttribute="leading" secondItem="7qQ-ur-rBT" secondAttribute="leading" constant="40" id="1NN-q0-zBL"/>
+                            <constraint firstItem="3EY-gB-ab5" firstAttribute="centerX" secondItem="7qQ-ur-rBT" secondAttribute="centerX" id="1bz-Gw-CXD"/>
+                            <constraint firstAttribute="trailing" secondItem="Ohg-fN-CCL" secondAttribute="trailing" constant="40" id="2RQ-98-DLe"/>
+                            <constraint firstItem="Rin-TJ-z5V" firstAttribute="centerX" secondItem="Xfy-LC-cTf" secondAttribute="centerX" id="4UH-MW-Vce"/>
+                            <constraint firstItem="Xfy-LC-cTf" firstAttribute="top" secondItem="70s-Xr-Gs6" secondAttribute="bottom" constant="40" id="4iy-xj-Cjb"/>
+                            <constraint firstItem="Ohg-fN-CCL" firstAttribute="leading" secondItem="7qQ-ur-rBT" secondAttribute="leading" constant="40" id="8RD-71-Gef">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="Xfy-LC-cTf" firstAttribute="leading" secondItem="7qQ-ur-rBT" secondAttribute="leading" constant="40" id="A0o-hF-5Z7"/>
+                            <constraint firstItem="3EY-gB-ab5" firstAttribute="leading" secondItem="7qQ-ur-rBT" secondAttribute="leading" constant="40" id="Fh1-l6-hJD"/>
+                            <constraint firstItem="Ohg-fN-CCL" firstAttribute="top" secondItem="3EY-gB-ab5" secondAttribute="bottom" constant="16" id="HD1-lo-FCb"/>
+                            <constraint firstAttribute="trailing" secondItem="Rin-TJ-z5V" secondAttribute="trailing" constant="40" id="KPX-52-5ej"/>
+                            <constraint firstAttribute="trailing" secondItem="Xfy-LC-cTf" secondAttribute="trailing" constant="40" id="ML4-Q4-H36"/>
+                            <constraint firstItem="Rin-TJ-z5V" firstAttribute="leading" secondItem="7qQ-ur-rBT" secondAttribute="leading" constant="40" id="NXb-SJ-i7B"/>
+                            <constraint firstAttribute="trailing" secondItem="70s-Xr-Gs6" secondAttribute="trailing" constant="40" id="NYh-Tx-HZF"/>
+                            <constraint firstItem="70s-Xr-Gs6" firstAttribute="centerX" secondItem="7qQ-ur-rBT" secondAttribute="centerX" id="PeI-Fv-Omd"/>
+                            <constraint firstItem="tfW-Zu-QOS" firstAttribute="top" secondItem="Ohg-fN-CCL" secondAttribute="bottom" constant="40" id="PmV-7F-hYh"/>
+                            <constraint firstItem="yWB-km-MaP" firstAttribute="centerX" secondItem="7qQ-ur-rBT" secondAttribute="centerX" id="Rgc-RL-aSc"/>
+                            <constraint firstItem="70s-Xr-Gs6" firstAttribute="leading" secondItem="7qQ-ur-rBT" secondAttribute="leading" constant="40" id="XH6-aT-hmT"/>
+                            <constraint firstItem="yWB-km-MaP" firstAttribute="top" secondItem="Rin-TJ-z5V" secondAttribute="bottom" constant="16" id="bS7-kZ-8dG"/>
+                            <constraint firstItem="Ohg-fN-CCL" firstAttribute="centerX" secondItem="7qQ-ur-rBT" secondAttribute="centerX" id="bpc-OQ-aix"/>
+                            <constraint firstAttribute="trailing" secondItem="tfW-Zu-QOS" secondAttribute="trailing" constant="40" id="cbI-4o-GY8"/>
+                            <constraint firstItem="70s-Xr-Gs6" firstAttribute="top" secondItem="7qQ-ur-rBT" secondAttribute="topMargin" constant="64" id="eu5-jF-9pW"/>
+                            <constraint firstItem="Rin-TJ-z5V" firstAttribute="top" secondItem="Xfy-LC-cTf" secondAttribute="bottom" constant="16" id="gl1-Mc-UCw"/>
+                            <constraint firstAttribute="trailing" secondItem="3EY-gB-ab5" secondAttribute="trailing" constant="40" id="m6b-9z-vbb"/>
+                            <constraint firstItem="3EY-gB-ab5" firstAttribute="top" secondItem="yWB-km-MaP" secondAttribute="bottom" constant="16" id="mKb-ND-RXe"/>
+                            <constraint firstItem="yWB-km-MaP" firstAttribute="leading" secondItem="7qQ-ur-rBT" secondAttribute="leading" constant="40" id="vVK-0r-NyD"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="E8n-kB-oIr" appends="YES" id="FNH-N9-wwy"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="V3F-jP-8ho"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Rin-TJ-z5V" id="d1H-QU-fRh"/>
+                        <outlet property="loginTextField" destination="Xfy-LC-cTf" id="XFf-Fu-4Tj"/>
+                        <outlet property="passwordConfirmationTextField" destination="3EY-gB-ab5" id="GjS-yv-TAW"/>
+                        <outlet property="passwordTextField" destination="yWB-km-MaP" id="Lgs-p5-Wuy"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oGM-JL-cUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="E8n-kB-oIr">
+                    <connections>
+                        <action selector="tapOnViewAction:" destination="0sP-IL-zKp" id="Cqz-Im-9WI"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-147" y="799"/>
         </scene>
@@ -152,8 +259,8 @@
                     <connections>
                         <segue destination="0xN-wZ-rcr" kind="relationship" relationship="viewControllers" id="Xt5-Qm-DMm"/>
                         <segue destination="yuB-S4-tRd" kind="relationship" relationship="viewControllers" id="Epn-sb-JGo"/>
-                        <segue destination="0sP-IL-zKp" kind="relationship" relationship="viewControllers" id="mhd-Tl-a7o"/>
                         <segue destination="haw-d0-jPu" kind="relationship" relationship="viewControllers" id="L23-Vp-ayA"/>
+                        <segue destination="0sP-IL-zKp" kind="relationship" relationship="viewControllers" id="mhd-Tl-a7o"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oef-Dp-iGO" userLabel="First Responder" sceneMemberID="firstResponder"/>

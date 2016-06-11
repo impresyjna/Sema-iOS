@@ -56,9 +56,9 @@
             [wSelf.view makeToast:@"Zgłoszenie zostało przyjęte."
                         duration:2.0
                         position:CSToastPositionCenter];
-            _questionContentTextView.text = @""; 
         }
     }];
+    _questionContentTextView.text = @"";
 }
 
 - (IBAction)textFieldTextHasChangedAction:(id)sender {
