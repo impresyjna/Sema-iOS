@@ -15,6 +15,8 @@
 
 - (NSMutableURLRequest *)requestLoginUserWithParams:(SELoginUserParams *)params;
 - (NSMutableURLRequest *)requestRegisterUserWithParams:(SERegisterUserParams *)params;
+- (NSMutableURLRequest *)requestLogoutCurrentUser;
+
 - (NSMutableURLRequest *)requestAddNewQuestionWithParams:(SENewQuestionParams *)params;
 
 @end

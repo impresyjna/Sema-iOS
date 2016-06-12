@@ -29,9 +29,13 @@ static NSString *const SEAfterLoginSegueID = @"SEAfterLoginSegueID";
     [super viewDidLoad];
     
     _viewModel = [SELoginViewModel new];
-    
     [self registerForKeyboardNotifications];
     // Do any additional setup after loading the view.
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    _loginTextField.text = @"";
+    _passwordTextField.text = @"";
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

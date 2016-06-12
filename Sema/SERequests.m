@@ -27,6 +27,13 @@
                                                error:nil]; 
 }
 
+- (NSMutableURLRequest *)requestLogoutCurrentUser {
+    return [self.requestSerializer requestWithMethod:@"DELETE"
+                                           URLString:[NSString stringWithFormat:@"%@/sessions/logout",self.baseURL]
+                                          parameters:nil
+                                               error:nil];
+}
+
 - (NSMutableURLRequest *)requestAddNewQuestionWithParams:(SENewQuestionParams *)params {
     return [self.requestSerializer requestWithMethod:@"POST"
                                            URLString:[NSString stringWithFormat:@"%@/questions", self.baseURL]

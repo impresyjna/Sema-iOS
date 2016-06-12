@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^SESettingsViewModelCompletionBlock)(BOOL success, UIAlertController *alert);
 @interface SESettingsViewModel : NSObject
+
+- (void) logoutWithCompletion: (SESettingsViewModelCompletionBlock)block;
 
 @end

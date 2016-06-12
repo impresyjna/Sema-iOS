@@ -3,6 +3,15 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma mark Game
+
+extern const struct SEGameStoryboardIDs {
+    struct {
+        __unsafe_unretained NSString *tabBar;
+    } viewControllers;
+
+} SEGameStoryboardIDs;
+
 #pragma mark Main
 
 extern const struct SEMainStoryboardIDs {
@@ -10,5 +19,9 @@ extern const struct SEMainStoryboardIDs {
         __unsafe_unretained NSString *afterRegister;
         __unsafe_unretained NSString *afterLogin;
     } segues;
+
+    struct {
+        __unsafe_unretained NSString *login;
+    } viewControllers;
 
 } SEMainStoryboardIDs;

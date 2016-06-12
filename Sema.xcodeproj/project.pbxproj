@@ -17,6 +17,9 @@
 		1A5BC3F11D0C6A77004165EE /* SEQuestionOperationsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC3F01D0C6A77004165EE /* SEQuestionOperationsDispatcher.m */; };
 		1A5BC3F51D0C9647004165EE /* SESettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC3F41D0C9647004165EE /* SESettingsViewController.m */; };
 		1A5BC3F91D0C966A004165EE /* SESettingsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC3F81D0C966A004165EE /* SESettingsViewModel.m */; };
+		1A5BC3FE1D0D94F1004165EE /* SEEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC3FD1D0D94F1004165EE /* SEEditProfileViewController.m */; };
+		1A5BC4011D0D9505004165EE /* SEEditProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC4001D0D9505004165EE /* SEEditProfileViewModel.m */; };
+		1A5BC4051D0DAD7D004165EE /* SESplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC4041D0DAD7D004165EE /* SESplashViewController.m */; };
 		1AB7826D1D0566DD002E0DA6 /* SERegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB7826C1D0566DD002E0DA6 /* SERegisterViewModel.m */; };
 		1AB8BA771D06D27F00B6F698 /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8BA761D06D27F00B6F698 /* NSString+Validation.m */; };
 		1AB8BA7A1D06D94800B6F698 /* UIAlertController+Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8BA791D06D94800B6F698 /* UIAlertController+Errors.m */; };
@@ -76,6 +79,12 @@
 		1A5BC3F41D0C9647004165EE /* SESettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESettingsViewController.m; sourceTree = "<group>"; };
 		1A5BC3F71D0C966A004165EE /* SESettingsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESettingsViewModel.h; sourceTree = "<group>"; };
 		1A5BC3F81D0C966A004165EE /* SESettingsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESettingsViewModel.m; sourceTree = "<group>"; };
+		1A5BC3FC1D0D94F1004165EE /* SEEditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEEditProfileViewController.h; sourceTree = "<group>"; };
+		1A5BC3FD1D0D94F1004165EE /* SEEditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEEditProfileViewController.m; sourceTree = "<group>"; };
+		1A5BC3FF1D0D9505004165EE /* SEEditProfileViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEEditProfileViewModel.h; sourceTree = "<group>"; };
+		1A5BC4001D0D9505004165EE /* SEEditProfileViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEEditProfileViewModel.m; sourceTree = "<group>"; };
+		1A5BC4031D0DAD7D004165EE /* SESplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESplashViewController.h; sourceTree = "<group>"; };
+		1A5BC4041D0DAD7D004165EE /* SESplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESplashViewController.m; sourceTree = "<group>"; };
 		1AB7826B1D0566DD002E0DA6 /* SERegisterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERegisterViewModel.h; sourceTree = "<group>"; };
 		1AB7826C1D0566DD002E0DA6 /* SERegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERegisterViewModel.m; sourceTree = "<group>"; };
 		1AB8BA751D06D27F00B6F698 /* NSString+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validation.h"; sourceTree = "<group>"; };
@@ -222,6 +231,7 @@
 		1A5BC3F21D0C9623004165EE /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				1A5BC3FA1D0D9499004165EE /* EditProfile */,
 				1A5BC3F61D0C964B004165EE /* ViewModel */,
 				1A5BC3F31D0C9647004165EE /* SESettingsViewController.h */,
 				1A5BC3F41D0C9647004165EE /* SESettingsViewController.m */,
@@ -236,6 +246,34 @@
 				1A5BC3F81D0C966A004165EE /* SESettingsViewModel.m */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		1A5BC3FA1D0D9499004165EE /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				1A5BC3FB1D0D94A6004165EE /* ViewModel */,
+				1A5BC3FC1D0D94F1004165EE /* SEEditProfileViewController.h */,
+				1A5BC3FD1D0D94F1004165EE /* SEEditProfileViewController.m */,
+			);
+			name = EditProfile;
+			sourceTree = "<group>";
+		};
+		1A5BC3FB1D0D94A6004165EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A5BC3FF1D0D9505004165EE /* SEEditProfileViewModel.h */,
+				1A5BC4001D0D9505004165EE /* SEEditProfileViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		1A5BC4021D0DAD4E004165EE /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				1A5BC4031D0DAD7D004165EE /* SESplashViewController.h */,
+				1A5BC4041D0DAD7D004165EE /* SESplashViewController.m */,
+			);
+			name = Splash;
 			sourceTree = "<group>";
 		};
 		1AB782691D05640C002E0DA6 /* Register */ = {
@@ -446,6 +484,7 @@
 		BDB71B2618EA471400579B97 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1A5BC4021D0DAD4E004165EE /* Splash */,
 				1A5BC3F21D0C9623004165EE /* Settings */,
 				1A5BC3E11D0C4F30004165EE /* AddQuestion */,
 				1AB8BA7E1D0723AE00B6F698 /* Login */,
@@ -751,12 +790,14 @@
 				BDDB996318C3943B003EBC42 /* SEAppDelegate.m in Sources */,
 				BD934CD419C211F600B48551 /* AssetCatalogIdentifiers.m in Sources */,
 				1A5BC3E41D0C5119004165EE /* SEAddQuestionViewController.m in Sources */,
+				1A5BC3FE1D0D94F1004165EE /* SEEditProfileViewController.m in Sources */,
 				1A4439E81D05881C00E96873 /* SESessionOperationsDispatcher.m in Sources */,
 				1AC1D7311CD7D23A00F9723A /* SERequests.m in Sources */,
 				1A5BC3E81D0C513E004165EE /* SEAddQuestionViewModel.m in Sources */,
 				1AB8BA7D1D06DA5800B6F698 /* SEAccount.m in Sources */,
 				1AC1D7401CD7DDBB00F9723A /* SEJSONResponseSerializer.m in Sources */,
 				1AC188A31D04541C00FB5B3E /* SELoginViewController.m in Sources */,
+				1A5BC4011D0D9505004165EE /* SEEditProfileViewModel.m in Sources */,
 				1AC1D73D1CD7D8F700F9723A /* SERegisterUserParams.m in Sources */,
 				1A5BC3F91D0C966A004165EE /* SESettingsViewModel.m in Sources */,
 				1A5BC3EB1D0C6436004165EE /* SEQuestionSerializer.m in Sources */,
@@ -764,6 +805,7 @@
 				BD934CD519C211F600B48551 /* StoryboardIdentifiers.m in Sources */,
 				1AB8BA7A1D06D94800B6F698 /* UIAlertController+Errors.m in Sources */,
 				1A5BC3F51D0C9647004165EE /* SESettingsViewController.m in Sources */,
+				1A5BC4051D0DAD7D004165EE /* SESplashViewController.m in Sources */,
 				1AB8BA771D06D27F00B6F698 /* NSString+Validation.m in Sources */,
 				BD6951CF18EA4B0800F2F410 /* main.m in Sources */,
 				1A5BC3E01D0C491E004165EE /* SENewQuestionParams.m in Sources */,

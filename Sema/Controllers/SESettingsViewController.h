@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SESettingsViewController : UIViewController
+@interface SESettingsViewController : UITableViewController
 
 @end

@@ -10,4 +10,10 @@
 
 @implementation SEAccount
 
+@dynamic user;
+
+- (BOOL)isLoggedIn {
+    return self.user != nil;
+}
+
 @end

@@ -3,12 +3,25 @@
 
 #import "StoryboardIdentifiers.h"
 
+#pragma mark Game
+
+const struct SEGameStoryboardIDs SEGameStoryboardIDs = {
+    .viewControllers = {
+        .tabBar = @"GameTabBarController",
+    },
+
+};
+
 #pragma mark Main
 
 const struct SEMainStoryboardIDs SEMainStoryboardIDs = {
     .segues = {
         .afterRegister = @"SEAfterRegisterSegueID",
         .afterLogin = @"SEAfterLoginSegueID",
+    },
+
+    .viewControllers = {
+        .login = @"SELoginViewController",
     },
 
 };

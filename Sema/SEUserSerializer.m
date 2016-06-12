@@ -12,7 +12,7 @@
 
 - (id)responseObjectForResponse:(NSURLResponse *)response data:(NSData *)data error:(NSError *__autoreleasing  _Nullable *)error {
     NSDictionary *json = [super responseObjectForResponse:response data:data error:error];
-    SEUser *user = [MTLJSONAdapter modelOfClass:SEUser.class fromJSONDictionary:json error:nil];
+    SEUser *user = [MTLJSONAdapter modelOfClass:SEUser.class fromJSONDictionary:json[@"user"] error:nil];
     
     NSMutableDictionary *results = [[NSMutableDictionary alloc] init];
     

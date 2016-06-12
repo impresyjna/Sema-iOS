@@ -11,6 +11,8 @@
 //Environment
 #import "SEEnvironment.h"
 
+#import "SEAccount.h"
+
 @implementation SEApiClient
 
 + (instancetype)sharedManager {
@@ -32,6 +34,26 @@
         [jsonSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
         
         [self setRequestSerializer:jsonSerializer];
+        
+        // update `X-AUTH-TOKEN` block
+        void (^authTokenBlock)(void) = ^{
+            // get auth token
+            NSString *token = [[SEAccount account] authenticationToken:nil];
+            
+            // add HTTP header
+            [jsonSerializer setValue:token forHTTPHeaderField:@"Authorization"];
+        };
+        
+        if ([[SEAccount account] isLoggedIn]) {
+            // update `X-AUTH-TOKEN`
+            authTokenBlock();
+        }
+        
+        // we should invalidate that value on every login
+        [[NSNotificationCenter defaultCenter] addObserverForName:AUAccountDidLoginUserNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
+            // update `X-AUTH-TOKEN`
+            authTokenBlock();
+        }];
         
         // handle error globally
         [[NSNotificationCenter defaultCenter] addObserverForName:AFNetworkingOperationDidFinishNotification object:nil queue:nil usingBlock:^(NSNotification *note) {

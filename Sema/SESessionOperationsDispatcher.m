@@ -50,7 +50,7 @@
 }
 
 - (void)logoutUserWithCompletion:(SESessionOperationsDispatcherCompletionBlock)block {
-    /* NSURLRequest *request = [[SEApiClient sharedManager] requestLogoutCurrentUser];
+    NSURLRequest *request = [[SEApiClient sharedManager] requestLogoutCurrentUser];
     
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     
@@ -64,7 +64,7 @@
         }
     }];
     
-    [[SEApiClient sharedManager] enqueueOperation:operation]; */
+    [[SEApiClient sharedManager] enqueueOperation:operation];
 }
 
 

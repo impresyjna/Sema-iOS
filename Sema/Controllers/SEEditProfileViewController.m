@@ -1,29 +1,34 @@
 //
-//  SESettingsViewController.m
+//  SEEditProfileViewController.m
 //  Sema
 //
-//  Created by Joanna Furmaniak on 11.06.2016.
+//  Created by Joanna Furmaniak on 12.06.2016.
 //  Copyright © 2016 The Company. All rights reserved.
 //
 
-#import "SESettingsViewController.h"
-
-#import "SESettingsViewModel.h"
+#import "SEEditProfileViewController.h"
+//View Model
+#import "SEEditProfileViewModel.h"
 
 //Views
 #import "MBProgressHUD.h"
+@interface SEEditProfileViewController ()
+@property (weak, nonatomic) IBOutlet UITableViewCell *loginTextField;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UIView *theNewPasswordTextField;
+@property (weak, nonatomic) IBOutlet UITextField *theNewPasswordConfirmationTextField;
 
-@interface SESettingsViewController ()
-
-@property (strong, nonatomic) SESettingsViewModel *viewModel;
+@property (strong, nonatomic) SEEditProfileViewModel *viewModel;
 
 @end
 
-@implementation SESettingsViewController
+@implementation SEEditProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _viewModel = [SESettingsViewModel new];
+    
+    _viewModel = [SEEditProfileViewModel new];
+    
     [self registerForKeyboardNotifications];
     // Do any additional setup after loading the view.
 }
@@ -34,25 +39,17 @@
     [self.view endEditing:YES];
 }
 
-- (IBAction)logOutUserAction:(id)sender {
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    
-    [self.view endEditing:YES];
-    
-    __weak typeof (self) wSelf = self;
-    [_viewModel logoutWithCompletion:^(BOOL success, UIAlertController *alert) {
-        [MBProgressHUD hideHUDForView:wSelf.view animated:YES];
-        
-        if (!success && alert) {
-            [wSelf presentViewController:alert animated:YES completion:nil];
-            
-            return ;
-        }
-        
-        [wSelf dismissViewControllerAnimated:YES completion:nil];
-    }];
+
+- (IBAction)saveAction:(id)sender {
 }
 
+- (IBAction)cancelAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)tapOnViewAction:(id)sender {
+    [self.view endEditing:YES];
+}
 
 #pragma mark -
 #pragma mark - Notifications
