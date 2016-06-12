@@ -12,6 +12,15 @@
 
 @dynamic user;
 
+- (instancetype)init {
+    self = [super init];
+    if(self) {
+       self.accountName = @"Sema";
+       self.serviceName = @"Sema-service";
+    }
+    return self;
+}
+
 - (BOOL)isLoggedIn {
     return self.user != nil;
 }

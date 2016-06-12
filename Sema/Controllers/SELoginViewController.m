@@ -34,6 +34,7 @@ static NSString *const SEAfterLoginSegueID = @"SEAfterLoginSegueID";
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     _loginTextField.text = @"";
     _passwordTextField.text = @"";
 }
@@ -63,7 +64,10 @@ static NSString *const SEAfterLoginSegueID = @"SEAfterLoginSegueID";
             return ;
         }
         
-        [wSelf performSegueWithIdentifier:SEAfterLoginSegueID sender:nil];
+        UIViewController *gameTabBarController = [[UIStoryboard storyboardWithName:@"Game" bundle:nil] instantiateViewControllerWithIdentifier:@"GameTabBarController"];
+        [wSelf presentViewController:gameTabBarController animated:YES completion:^{
+            [[[UIApplication sharedApplication] keyWindow] setRootViewController:gameTabBarController];
+        }];
     }];
 }
 

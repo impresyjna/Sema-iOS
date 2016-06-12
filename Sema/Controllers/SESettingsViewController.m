@@ -13,6 +13,7 @@
 //Views
 #import "MBProgressHUD.h"
 
+
 @interface SESettingsViewController ()
 
 @property (strong, nonatomic) SESettingsViewModel *viewModel;
@@ -48,7 +49,10 @@
             
             return ;
         }
-        [self dismissViewControllerAnimated:YES completion:nil];
+        UIViewController *loginViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SELoginViewController"];
+        [wSelf presentViewController:loginViewController animated:YES completion:^{
+            [[[UIApplication sharedApplication] keyWindow] setRootViewController:loginViewController];
+        }];
     }];
     
 }

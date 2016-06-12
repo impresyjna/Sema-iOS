@@ -20,15 +20,16 @@
     }
     return self;
 }
-
 - (NSDictionary *)params {
+    NSMutableDictionary *userParams = [NSMutableDictionary new];
+    [userParams setObject:_email forKey:@"email"];
+    [userParams setObject:_login forKey:@"login"];
+    if(_password.length>0) {
+        [userParams setObject:_password forKey:@"password"];
+        [userParams setObject:_passwordConfirmation forKey:@"password_confirmation"];
+    }
     return @{
-             @"user": @{
-                     @"email":_email,
-                     @"login":_login,
-                     @"password":_password,
-                     @"password_confirmation":_passwordConfirmation
-                     }
+             @"user": userParams
              };
 }
 

@@ -59,9 +59,8 @@
 #pragma mark - Private
 
 - (BOOL)validateCredentials:(NSError *__autoreleasing *)error {
-    return [self.email isValidEmail:error] &&
-    [self.password isValidPassword:error] &&
-    [self.passwordConfirmation isValidPasswordConfirmation:self.password error:error];
+    return [self.email isValidEmail:error] && [self.login isValidLogin:error] && (self.password.length + self.passwordConfirmation.length == 0 || ([self.password isValidPassword:error] &&
+    [self.passwordConfirmation isValidPasswordConfirmation:self.password error:error]));
 }
 
 @end

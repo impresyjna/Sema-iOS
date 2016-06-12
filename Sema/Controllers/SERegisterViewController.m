@@ -64,7 +64,10 @@ static NSString *const SEAfterRegisterSegueID = @"SEAfterRegisterSegueID";
             return ;
         }
         
-        [wSelf performSegueWithIdentifier:SEAfterRegisterSegueID sender:nil];
+        UIViewController *gameTabBarController = [[UIStoryboard storyboardWithName:@"Game" bundle:nil] instantiateViewControllerWithIdentifier:@"GameTabBarController"];
+        [wSelf presentViewController:gameTabBarController animated:YES completion:^{
+            [[[UIApplication sharedApplication] keyWindow] setRootViewController:gameTabBarController];
+        }];
     }];
 }
 
