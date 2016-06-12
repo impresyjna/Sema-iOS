@@ -111,7 +111,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="783" y="1147"/>
+            <point key="canvasLocation" x="697" y="1147"/>
         </scene>
         <!--Edycja profilu-->
         <scene sceneID="Ihd-0H-0Gw">
@@ -157,6 +157,9 @@
                                                     <rect key="frame" x="40" y="7" width="520" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textFieldTextHasChangedAction:" destination="zJ5-bH-2eT" eventType="editingChanged" id="JY7-LE-nEt"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -177,6 +180,9 @@
                                                     <rect key="frame" x="40" y="7" width="520" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textFieldTextHasChangedAction:" destination="zJ5-bH-2eT" eventType="editingChanged" id="1ZC-RU-OEs"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -201,6 +207,9 @@
                                                     <rect key="frame" x="40" y="7" width="520" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textFieldTextHasChangedAction:" destination="zJ5-bH-2eT" eventType="editingChanged" id="x6X-th-AW1"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -221,6 +230,9 @@
                                                     <rect key="frame" x="40" y="7" width="520" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textFieldTextHasChangedAction:" destination="zJ5-bH-2eT" eventType="editingChanged" id="x4T-f0-cxe"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -253,9 +265,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="Yqf-Qz-rAn" id="vMO-Sf-HhP"/>
-                        <outlet property="loginTextField" destination="eFJ-nM-uWV" id="4tB-zp-P3D"/>
+                        <outlet property="loginTextField" destination="KLx-1v-Izk" id="Kgc-tj-A7r"/>
                         <outlet property="theNewPasswordConfirmationTextField" destination="Eu7-Av-jAe" id="ETl-KQ-UmH"/>
-                        <outlet property="theNewPasswordTextField" destination="ait-fH-PNy" id="XOJ-gg-tGb"/>
+                        <outlet property="theNewPasswordTextField" destination="ait-fH-PNy" id="7pZ-nz-K8M"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7s-fF-OFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -265,7 +277,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1454" y="1147"/>
+            <point key="canvasLocation" x="1418" y="1147"/>
         </scene>
         <!--AddQuestion-->
         <scene sceneID="VP3-o3-kGx">

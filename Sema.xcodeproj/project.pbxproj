@@ -20,6 +20,7 @@
 		1A5BC3FE1D0D94F1004165EE /* SEEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC3FD1D0D94F1004165EE /* SEEditProfileViewController.m */; };
 		1A5BC4011D0D9505004165EE /* SEEditProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC4001D0D9505004165EE /* SEEditProfileViewModel.m */; };
 		1A5BC4051D0DAD7D004165EE /* SESplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC4041D0DAD7D004165EE /* SESplashViewController.m */; };
+		1A5BC4081D0DB593004165EE /* SEUserOperationsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC4071D0DB593004165EE /* SEUserOperationsDispatcher.m */; };
 		1AB7826D1D0566DD002E0DA6 /* SERegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB7826C1D0566DD002E0DA6 /* SERegisterViewModel.m */; };
 		1AB8BA771D06D27F00B6F698 /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8BA761D06D27F00B6F698 /* NSString+Validation.m */; };
 		1AB8BA7A1D06D94800B6F698 /* UIAlertController+Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8BA791D06D94800B6F698 /* UIAlertController+Errors.m */; };
@@ -85,6 +86,8 @@
 		1A5BC4001D0D9505004165EE /* SEEditProfileViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEEditProfileViewModel.m; sourceTree = "<group>"; };
 		1A5BC4031D0DAD7D004165EE /* SESplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESplashViewController.h; sourceTree = "<group>"; };
 		1A5BC4041D0DAD7D004165EE /* SESplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESplashViewController.m; sourceTree = "<group>"; };
+		1A5BC4061D0DB593004165EE /* SEUserOperationsDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEUserOperationsDispatcher.h; sourceTree = "<group>"; };
+		1A5BC4071D0DB593004165EE /* SEUserOperationsDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEUserOperationsDispatcher.m; sourceTree = "<group>"; };
 		1AB7826B1D0566DD002E0DA6 /* SERegisterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERegisterViewModel.h; sourceTree = "<group>"; };
 		1AB7826C1D0566DD002E0DA6 /* SERegisterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERegisterViewModel.m; sourceTree = "<group>"; };
 		1AB8BA751D06D27F00B6F698 /* NSString+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validation.h"; sourceTree = "<group>"; };
@@ -194,6 +197,8 @@
 				1A4439E71D05881C00E96873 /* SESessionOperationsDispatcher.m */,
 				1A5BC3EF1D0C6A77004165EE /* SEQuestionOperationsDispatcher.h */,
 				1A5BC3F01D0C6A77004165EE /* SEQuestionOperationsDispatcher.m */,
+				1A5BC4061D0DB593004165EE /* SEUserOperationsDispatcher.h */,
+				1A5BC4071D0DB593004165EE /* SEUserOperationsDispatcher.m */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -815,6 +820,7 @@
 				1A5BC3F11D0C6A77004165EE /* SEQuestionOperationsDispatcher.m in Sources */,
 				1AB8BA821D0723D600B6F698 /* SELoginViewModel.m in Sources */,
 				1AC1D73A1CD7D63C00F9723A /* SELoginUserParams.m in Sources */,
+				1A5BC4081D0DB593004165EE /* SEUserOperationsDispatcher.m in Sources */,
 				1AC1D7241CD7678A00F9723A /* SEEnvironment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

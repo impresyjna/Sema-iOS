@@ -48,9 +48,9 @@
             
             return ;
         }
-        
-        [wSelf dismissViewControllerAnimated:YES completion:nil];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }];
+    
 }
 
 

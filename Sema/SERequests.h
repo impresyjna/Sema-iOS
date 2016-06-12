@@ -13,9 +13,12 @@
 
 @interface AFHTTPSessionManager (SERequests)
 
+
 - (NSMutableURLRequest *)requestLoginUserWithParams:(SELoginUserParams *)params;
 - (NSMutableURLRequest *)requestRegisterUserWithParams:(SERegisterUserParams *)params;
 - (NSMutableURLRequest *)requestLogoutCurrentUser;
+
+- (NSMutableURLRequest *)requestUpdateUserWithParams:(SERegisterUserParams *)params;
 
 - (NSMutableURLRequest *)requestAddNewQuestionWithParams:(SENewQuestionParams *)params;
 

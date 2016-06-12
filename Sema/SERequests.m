@@ -8,6 +8,8 @@
 
 #import "SERequests.h"
 
+#import "SEAccount.h"
+
 @implementation  AFHTTPSessionManager (SERequests)
 
 #pragma mark - 
@@ -31,6 +33,13 @@
     return [self.requestSerializer requestWithMethod:@"DELETE"
                                            URLString:[NSString stringWithFormat:@"%@/sessions/logout",self.baseURL]
                                           parameters:nil
+                                               error:nil];
+}
+
+- (NSMutableURLRequest *)requestUpdateUserWithParams:(SERegisterUserParams *)params {
+    return [self.requestSerializer requestWithMethod:@"PUT"
+                                           URLString:[NSString stringWithFormat:@"%@/users/%d",self.baseURL, [SEAccount account].user.uId]
+                                          parameters:[params params]
                                                error:nil];
 }
 
