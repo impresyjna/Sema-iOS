@@ -14,7 +14,7 @@
 
 @implementation SEFriendshipViewModel
 
-- (NSInteger)numberOfSubjects {
+- (NSInteger)numberOfFriendships {
     return (NSInteger)_friendships.count;
 }
 

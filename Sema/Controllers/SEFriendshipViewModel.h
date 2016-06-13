@@ -23,7 +23,7 @@
 typedef void(^SEFriendshipsViewModelFetchSubjectsCompletion)(NSArray <SEFriendship *> *friendships, UIAlertController *alert);
 @interface SEFriendshipViewModel : NSObject
 
-- (NSInteger)numberOfSubjects;
+- (NSInteger)numberOfFriendships;
 
 - (SEFriendship *)friendshipForIndexPath:(NSIndexPath *)indexPath;
 - (SEFriendshipCellViewModel *)cellViewModelForIndexPath:(NSIndexPath *)indexPath;

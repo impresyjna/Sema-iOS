@@ -36,7 +36,7 @@
     _viewModel = [SEFriendshipViewModel new];
     
     __weak typeof (self) wSelf = self;
-    [_viewModel fetchFriendshipsWithCompletionBlock:^(NSArray<SEFriendship *> *subjects, UIAlertController *alert) {
+    [_viewModel fetchFriendshipsWithCompletionBlock:^(NSArray<SEFriendship *> *friendships, UIAlertController *alert) {
         if (alert) {
             [wSelf presentViewController:alert animated:YES completion:nil];
             return ;
@@ -50,7 +50,7 @@
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.viewModel numberOfSubjects];
+    return [self.viewModel numberOfFriendships];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -67,7 +67,7 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    SEFriendship *friendship = [self.viewModel friendshipForIndexPath:indexPath];
+    //SEFriendship *friendship = [self.viewModel friendshipForIndexPath:indexPath];
     
     //[self.delegate loginPicker:self didPickActionSubject:friendship];
     [self.navigationController popViewControllerAnimated:YES];

@@ -27,7 +27,7 @@
 		1A5BC4161D0E244B004165EE /* SEFriendshipViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC4151D0E244B004165EE /* SEFriendshipViewModel.m */; };
 		1A5BC41D1D0E9DF2004165EE /* SETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC41C1D0E9DF2004165EE /* SETableViewCell.m */; };
 		1A5BC4261D0EA1C9004165EE /* SEFriendshipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC4251D0EA1C9004165EE /* SEFriendshipCell.m */; };
-		1A5BC4281D0EA1ED004165EE /* FriendshipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BC4271D0EA1ED004165EE /* FriendshipCell.xib */; };
+		1A5BC4281D0EA1ED004165EE /* SEFriendshipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BC4271D0EA1ED004165EE /* SEFriendshipCell.xib */; };
 		1A5BC42B1D0EA55B004165EE /* SEFriendshipCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC42A1D0EA55B004165EE /* SEFriendshipCellViewModel.m */; };
 		1A5BC42F1D0EB99B004165EE /* SEFriendshipsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC42E1D0EB99B004165EE /* SEFriendshipsService.m */; };
 		1AB7826D1D0566DD002E0DA6 /* SERegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB7826C1D0566DD002E0DA6 /* SERegisterViewModel.m */; };
@@ -109,7 +109,7 @@
 		1A5BC41C1D0E9DF2004165EE /* SETableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SETableViewCell.m; sourceTree = "<group>"; };
 		1A5BC4241D0EA1C9004165EE /* SEFriendshipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEFriendshipCell.h; sourceTree = "<group>"; };
 		1A5BC4251D0EA1C9004165EE /* SEFriendshipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEFriendshipCell.m; sourceTree = "<group>"; };
-		1A5BC4271D0EA1ED004165EE /* FriendshipCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendshipCell.xib; sourceTree = "<group>"; };
+		1A5BC4271D0EA1ED004165EE /* SEFriendshipCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SEFriendshipCell.xib; sourceTree = "<group>"; };
 		1A5BC4291D0EA55B004165EE /* SEFriendshipCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEFriendshipCellViewModel.h; sourceTree = "<group>"; };
 		1A5BC42A1D0EA55B004165EE /* SEFriendshipCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEFriendshipCellViewModel.m; sourceTree = "<group>"; };
 		1A5BC42D1D0EB99B004165EE /* SEFriendshipsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEFriendshipsService.h; sourceTree = "<group>"; };
@@ -334,7 +334,7 @@
 			children = (
 				1A5BC4241D0EA1C9004165EE /* SEFriendshipCell.h */,
 				1A5BC4251D0EA1C9004165EE /* SEFriendshipCell.m */,
-				1A5BC4271D0EA1ED004165EE /* FriendshipCell.xib */,
+				1A5BC4271D0EA1ED004165EE /* SEFriendshipCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -720,7 +720,7 @@
 			files = (
 				1A4439E31D05772E00E96873 /* Game.storyboard in Resources */,
 				BDF68AF31B713C6200153C8D /* LaunchScreen.xib in Resources */,
-				1A5BC4281D0EA1ED004165EE /* FriendshipCell.xib in Resources */,
+				1A5BC4281D0EA1ED004165EE /* SEFriendshipCell.xib in Resources */,
 				1AC1D7261CD773EA00F9723A /* Configuration.plist in Resources */,
 				BDDB996E18C3943B003EBC42 /* Images.xcassets in Resources */,
 				BD304C8318E77F7E0034105E /* Settings.bundle in Resources */,

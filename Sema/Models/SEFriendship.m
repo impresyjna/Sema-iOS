@@ -12,12 +12,12 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"fid":@"id",
+             @"fId":@"id",
              @"friend":@"friend"
              };
 }
 
-+ (NSValueTransformer *)friendJSONTransformer {
++ (NSValueTransformer *)friendURLJSONTransformer {
     return [MTLJSONAdapter dictionaryTransformerWithModelClass:SEUser.class];
 }
 

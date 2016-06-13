@@ -6,11 +6,11 @@
 //  Copyright © 2016 The Company. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <Mantle/Mantle.h>
 
 #import "SEUser.h"
 
-@interface SEFriendship : NSObject
+@interface SEFriendship : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, assign, readonly) NSInteger fId;
 @property (nonatomic, strong, readonly) SEUser *friend;

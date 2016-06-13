@@ -12,7 +12,10 @@
 
 - (id)responseObjectForResponse:(NSURLResponse *)response data:(NSData *)data error:(NSError *__autoreleasing  _Nullable *)error {
     NSDictionary *json = [super responseObjectForResponse:response data:data error:error];
-    NSArray *friendships = [MTLJSONAdapter modelsOfClass:SEFriendship.class fromJSONArray:json[@"friendships"] error:nil];
+    NSArray *friendships = @[];
+    if(json[@"friendships"] != nil) {
+        friendships = [MTLJSONAdapter modelsOfClass:SEFriendship.class fromJSONArray:json[@"friendships"] error:nil];
+    }
     NSMutableDictionary *results = [[NSMutableDictionary alloc] init];
     
     if (friendships) {
