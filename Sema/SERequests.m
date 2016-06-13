@@ -36,6 +36,9 @@
                                                error:nil];
 }
 
+#pragma mark -
+#pragma mark - Users
+
 - (NSMutableURLRequest *)requestUpdateUserWithParams:(SERegisterUserParams *)params {
     return [self.requestSerializer requestWithMethod:@"PUT"
                                            URLString:[NSString stringWithFormat:@"%@/users/%d",self.baseURL, [SEAccount account].user.uId]
@@ -43,16 +46,25 @@
                                                error:nil];
 }
 
+#pragma mark -
+#pragma mark - Questions
+
 - (NSMutableURLRequest *)requestAddNewQuestionWithParams:(SENewQuestionParams *)params {
     return [self.requestSerializer requestWithMethod:@"POST"
                                            URLString:[NSString stringWithFormat:@"%@/questions", self.baseURL]
-                                           parameters:[params params]
-                                               error:nil]; 
+                                          parameters:[params params]
+                                               error:nil];
 }
 
 #pragma mark -
-#pragma mark - Users
+#pragma mark - Friendships
 
+- (NSMutableURLRequest *)requestFriendshipIndex {
+    return [self.requestSerializer requestWithMethod:@"GET"
+                                           URLString:[NSString stringWithFormat:@"%@/friendships",self.baseURL]
+                                          parameters:nil
+                                               error:nil];
+}
 
 
 @end

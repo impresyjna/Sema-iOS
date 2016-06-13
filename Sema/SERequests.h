@@ -22,4 +22,6 @@
 
 - (NSMutableURLRequest *)requestAddNewQuestionWithParams:(SENewQuestionParams *)params;
 
+- (NSMutableURLRequest *)requestFriendshipIndex; 
+
 @end
