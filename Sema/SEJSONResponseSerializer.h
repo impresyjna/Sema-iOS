@@ -7,6 +7,7 @@
 //
 
 #import <AFNetworking/AFNetworking.h>
+#import "SEError.h"
 
 @interface SEJSONResponseSerializer : AFJSONResponseSerializer
 

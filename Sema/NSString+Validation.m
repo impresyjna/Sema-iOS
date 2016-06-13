@@ -67,6 +67,14 @@
     return lengthValid;
 }
 
+- (BOOL)isValidFriendLogin:(NSError *__autoreleasing *)error {
+    BOOL lengthValid = self.length > 0;
+    if (!lengthValid && error) {
+        *error = [self errorWithMessage:@"It has to be friend login"];
+    }
+     return lengthValid;
+}
+
 #pragma mark -
 #pragma mark - Private
 

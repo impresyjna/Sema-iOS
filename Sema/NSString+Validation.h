@@ -15,5 +15,6 @@
 - (BOOL)isValidLogin:(NSError **)error;
 - (BOOL)isValidPasswordConfirmation:(NSString *)password error:(NSError **)error;
 - (BOOL)isValidQuestionContent:(NSError **)error;
+- (BOOL)isValidFriendLogin:(NSError **)error;
 
 @end

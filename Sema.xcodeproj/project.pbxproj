@@ -46,6 +46,11 @@
 		1AC1D73D1CD7D8F700F9723A /* SERegisterUserParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D73C1CD7D8F700F9723A /* SERegisterUserParams.m */; };
 		1AC1D7401CD7DDBB00F9723A /* SEJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D73F1CD7DDBB00F9723A /* SEJSONResponseSerializer.m */; };
 		1AC1D7431CD7E07900F9723A /* SEUserSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D7421CD7E07900F9723A /* SEUserSerializer.m */; };
+		1AE6ED781D0F3A2100349BB3 /* SEFriendParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED771D0F3A2100349BB3 /* SEFriendParams.m */; };
+		1AE6ED7C1D0F405D00349BB3 /* SEAddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED7B1D0F405D00349BB3 /* SEAddFriendViewController.m */; };
+		1AE6ED801D0F407C00349BB3 /* SEAddFriendViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED7F1D0F407C00349BB3 /* SEAddFriendViewModel.m */; };
+		1AE6ED831D0F425000349BB3 /* SEFriendshipOperationsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED821D0F425000349BB3 /* SEFriendshipOperationsDispatcher.m */; };
+		1AE6ED861D0F4DBF00349BB3 /* SEError.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED851D0F4DBF00349BB3 /* SEError.m */; };
 		BD304C8118E672EA0034105E /* SEDummySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BD304C8018E672EA0034105E /* SEDummySpec.m */; };
 		BD304C8318E77F7E0034105E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD304C8218E77F7E0034105E /* Settings.bundle */; };
 		BD6951CF18EA4B0800F2F410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6951CE18EA4B0800F2F410 /* main.m */; };
@@ -146,6 +151,16 @@
 		1AC1D73F1CD7DDBB00F9723A /* SEJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEJSONResponseSerializer.m; sourceTree = "<group>"; };
 		1AC1D7411CD7E07900F9723A /* SEUserSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEUserSerializer.h; sourceTree = "<group>"; };
 		1AC1D7421CD7E07900F9723A /* SEUserSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEUserSerializer.m; sourceTree = "<group>"; };
+		1AE6ED761D0F3A2100349BB3 /* SEFriendParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEFriendParams.h; sourceTree = "<group>"; };
+		1AE6ED771D0F3A2100349BB3 /* SEFriendParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEFriendParams.m; sourceTree = "<group>"; };
+		1AE6ED7A1D0F405D00349BB3 /* SEAddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEAddFriendViewController.h; sourceTree = "<group>"; };
+		1AE6ED7B1D0F405D00349BB3 /* SEAddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEAddFriendViewController.m; sourceTree = "<group>"; };
+		1AE6ED7E1D0F407C00349BB3 /* SEAddFriendViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEAddFriendViewModel.h; sourceTree = "<group>"; };
+		1AE6ED7F1D0F407C00349BB3 /* SEAddFriendViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEAddFriendViewModel.m; sourceTree = "<group>"; };
+		1AE6ED811D0F425000349BB3 /* SEFriendshipOperationsDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEFriendshipOperationsDispatcher.h; sourceTree = "<group>"; };
+		1AE6ED821D0F425000349BB3 /* SEFriendshipOperationsDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEFriendshipOperationsDispatcher.m; sourceTree = "<group>"; };
+		1AE6ED841D0F4DBF00349BB3 /* SEError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEError.h; sourceTree = "<group>"; };
+		1AE6ED851D0F4DBF00349BB3 /* SEError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEError.m; sourceTree = "<group>"; };
 		629D431888F0A369A9259832 /* Pods-Sema.test_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.test_staging.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.test_staging.xcconfig"; sourceTree = "<group>"; };
 		651157A0406A01719D20471F /* Pods-Sema.test_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.test_production.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.test_production.xcconfig"; sourceTree = "<group>"; };
 		65D6C5A3F357B669F53D9728 /* Pods-Sema.adhoc_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.adhoc_production.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.adhoc_production.xcconfig"; sourceTree = "<group>"; };
@@ -225,6 +240,8 @@
 				1A5BC3F01D0C6A77004165EE /* SEQuestionOperationsDispatcher.m */,
 				1A5BC4061D0DB593004165EE /* SEUserOperationsDispatcher.h */,
 				1A5BC4071D0DB593004165EE /* SEUserOperationsDispatcher.m */,
+				1AE6ED811D0F425000349BB3 /* SEFriendshipOperationsDispatcher.h */,
+				1AE6ED821D0F425000349BB3 /* SEFriendshipOperationsDispatcher.m */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -444,8 +461,29 @@
 				1AC1D73C1CD7D8F700F9723A /* SERegisterUserParams.m */,
 				1A5BC3DE1D0C491E004165EE /* SENewQuestionParams.h */,
 				1A5BC3DF1D0C491E004165EE /* SENewQuestionParams.m */,
+				1AE6ED761D0F3A2100349BB3 /* SEFriendParams.h */,
+				1AE6ED771D0F3A2100349BB3 /* SEFriendParams.m */,
 			);
 			name = Params;
+			sourceTree = "<group>";
+		};
+		1AE6ED791D0F3F9000349BB3 /* AddFriend */ = {
+			isa = PBXGroup;
+			children = (
+				1AE6ED7D1D0F406A00349BB3 /* ViewModel */,
+				1AE6ED7A1D0F405D00349BB3 /* SEAddFriendViewController.h */,
+				1AE6ED7B1D0F405D00349BB3 /* SEAddFriendViewController.m */,
+			);
+			name = AddFriend;
+			sourceTree = "<group>";
+		};
+		1AE6ED7D1D0F406A00349BB3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1AE6ED7E1D0F407C00349BB3 /* SEAddFriendViewModel.h */,
+				1AE6ED7F1D0F407C00349BB3 /* SEAddFriendViewModel.m */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		28BFB1F90D64811C3D106467 /* Pods */ = {
@@ -511,6 +549,8 @@
 				1A5BC3ED1D0C64DB004165EE /* SEQuestion.m */,
 				1A5BC40C1D0E087B004165EE /* SEFriendship.h */,
 				1A5BC40D1D0E087B004165EE /* SEFriendship.m */,
+				1AE6ED841D0F4DBF00349BB3 /* SEError.h */,
+				1AE6ED851D0F4DBF00349BB3 /* SEError.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -563,6 +603,7 @@
 		BDB71B2618EA471400579B97 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1AE6ED791D0F3F9000349BB3 /* AddFriend */,
 				1A5BC40F1D0E22BF004165EE /* Friends */,
 				1A5BC4021D0DAD4E004165EE /* Splash */,
 				1A5BC3F21D0C9623004165EE /* Settings */,
@@ -871,17 +912,20 @@
 				1A5BC41D1D0E9DF2004165EE /* SETableViewCell.m in Sources */,
 				1AC1D7431CD7E07900F9723A /* SEUserSerializer.m in Sources */,
 				BDDB996318C3943B003EBC42 /* SEAppDelegate.m in Sources */,
+				1AE6ED801D0F407C00349BB3 /* SEAddFriendViewModel.m in Sources */,
 				BD934CD419C211F600B48551 /* AssetCatalogIdentifiers.m in Sources */,
 				1A5BC3E41D0C5119004165EE /* SEAddQuestionViewController.m in Sources */,
 				1A5BC3FE1D0D94F1004165EE /* SEEditProfileViewController.m in Sources */,
 				1A4439E81D05881C00E96873 /* SESessionOperationsDispatcher.m in Sources */,
 				1A5BC40E1D0E087B004165EE /* SEFriendship.m in Sources */,
+				1AE6ED861D0F4DBF00349BB3 /* SEError.m in Sources */,
 				1AC1D7311CD7D23A00F9723A /* SERequests.m in Sources */,
 				1A5BC3E81D0C513E004165EE /* SEAddQuestionViewModel.m in Sources */,
 				1AB8BA7D1D06DA5800B6F698 /* SEAccount.m in Sources */,
 				1AC1D7401CD7DDBB00F9723A /* SEJSONResponseSerializer.m in Sources */,
 				1AC188A31D04541C00FB5B3E /* SELoginViewController.m in Sources */,
 				1A5BC4011D0D9505004165EE /* SEEditProfileViewModel.m in Sources */,
+				1AE6ED781D0F3A2100349BB3 /* SEFriendParams.m in Sources */,
 				1AC1D73D1CD7D8F700F9723A /* SERegisterUserParams.m in Sources */,
 				1A5BC3F91D0C966A004165EE /* SESettingsViewModel.m in Sources */,
 				1A5BC3EB1D0C6436004165EE /* SEQuestionSerializer.m in Sources */,
@@ -892,11 +936,13 @@
 				1AB8BA7A1D06D94800B6F698 /* UIAlertController+Errors.m in Sources */,
 				1A5BC4261D0EA1C9004165EE /* SEFriendshipCell.m in Sources */,
 				1A5BC3F51D0C9647004165EE /* SESettingsViewController.m in Sources */,
+				1AE6ED7C1D0F405D00349BB3 /* SEAddFriendViewController.m in Sources */,
 				1A5BC4051D0DAD7D004165EE /* SESplashViewController.m in Sources */,
 				1AB8BA771D06D27F00B6F698 /* NSString+Validation.m in Sources */,
 				BD6951CF18EA4B0800F2F410 /* main.m in Sources */,
 				1A5BC3E01D0C491E004165EE /* SENewQuestionParams.m in Sources */,
 				1A5BC42B1D0EA55B004165EE /* SEFriendshipCellViewModel.m in Sources */,
+				1AE6ED831D0F425000349BB3 /* SEFriendshipOperationsDispatcher.m in Sources */,
 				BDDB996C18C3943B003EBC42 /* SEViewController.m in Sources */,
 				1A5BC3EE1D0C64DB004165EE /* SEQuestion.m in Sources */,
 				1AC1D7341CD7D38000F9723A /* SEUser.m in Sources */,

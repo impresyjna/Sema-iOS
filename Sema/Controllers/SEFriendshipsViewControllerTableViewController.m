@@ -23,6 +23,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Initialize Refresh Control
+    UIRefreshControl *refreshControl = [UIRefreshControl new];
+    
+    // Configure Refresh Control
+    [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:refreshControl];
     
     [self.tableView registerNib:[SEFriendshipCell nib]
          forCellReuseIdentifier:[SEFriendshipCell reuseIdentifier]];
@@ -30,6 +36,12 @@
     self.tableView.rowHeight = [SEFriendshipCell height];
     
     [self setupViewModel];
+}
+
+- (void)refresh:(UIRefreshControl *)refreshControl {
+    // Do your job, when done:
+    [self setupViewModel];
+    [refreshControl endRefreshing];
 }
 
 - (void)setupViewModel {

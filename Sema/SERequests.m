@@ -66,5 +66,12 @@
                                                error:nil];
 }
 
+- (NSMutableURLRequest *)requestAddFriendshipWithParams:(SEFriendParams *)params {
+    return [self.requestSerializer requestWithMethod:@"POST"
+                                           URLString:[NSString stringWithFormat:@"%@/friendships",self.baseURL]
+                                          parameters:[params params]
+                                               error:nil];
+}
+
 
 @end

@@ -381,12 +381,90 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="zu4-hO-1Sm">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LaY-2d-BZH"/>
+                        <barButtonItem key="backBarButtonItem" title="Wróć" id="WhU-gz-hx5"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LaY-2d-BZH">
+                            <connections>
+                                <segue destination="sFz-eN-UdD" kind="show" id="4Ww-XW-yhr"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bK-rF-oqp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1303" y="433"/>
+            <point key="canvasLocation" x="1285" y="433"/>
+        </scene>
+        <!--Add Friend View Controller-->
+        <scene sceneID="asf-w6-Vcp">
+            <objects>
+                <viewController id="sFz-eN-UdD" customClass="SEAddFriendViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QDq-CO-ejv"/>
+                        <viewControllerLayoutGuide type="bottom" id="CP8-o5-qWZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OMR-Kg-xbE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login przyjaciela" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Non-cd-DaW">
+                                <rect key="frame" x="40" y="178" width="520" height="30"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldTextHasChangedAction:" destination="sFz-eN-UdD" eventType="editingChanged" id="pnV-2C-YTa"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dodaj przyjaciela" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9e-fk-Sry">
+                                <rect key="frame" x="40" y="100" width="520" height="38"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                <color key="textColor" red="0.27572983499999998" green="0.62328392269999999" blue="0.51743841170000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmN-9W-Tg5">
+                                <rect key="frame" x="40" y="232" width="520" height="37"/>
+                                <color key="backgroundColor" red="0.27572983499999998" green="0.62328392269999999" blue="0.51743841170000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
+                                <state key="normal" title="Dodaj">
+                                    <color key="titleColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addFriendAction:" destination="sFz-eN-UdD" eventType="touchUpInside" id="gDm-7W-s6e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="P9e-fk-Sry" firstAttribute="leading" secondItem="OMR-Kg-xbE" secondAttribute="leading" constant="40" id="6Hm-Ph-SCR"/>
+                            <constraint firstAttribute="trailing" secondItem="P9e-fk-Sry" secondAttribute="trailing" constant="40" id="CDg-6i-3eh"/>
+                            <constraint firstItem="Non-cd-DaW" firstAttribute="top" secondItem="P9e-fk-Sry" secondAttribute="bottom" constant="40" id="DsN-Sc-OGT"/>
+                            <constraint firstItem="P9e-fk-Sry" firstAttribute="centerX" secondItem="OMR-Kg-xbE" secondAttribute="centerX" id="E5a-Pd-Exw"/>
+                            <constraint firstItem="PmN-9W-Tg5" firstAttribute="top" secondItem="Non-cd-DaW" secondAttribute="bottom" constant="24" id="Wtl-jH-Vbd"/>
+                            <constraint firstItem="P9e-fk-Sry" firstAttribute="top" secondItem="OMR-Kg-xbE" secondAttribute="topMargin" constant="100" id="eBo-xd-0nP"/>
+                            <constraint firstAttribute="trailing" secondItem="PmN-9W-Tg5" secondAttribute="trailing" constant="40" id="nYR-fb-jEf"/>
+                            <constraint firstItem="Non-cd-DaW" firstAttribute="leading" secondItem="OMR-Kg-xbE" secondAttribute="leading" constant="40" id="sSa-Kl-ehP"/>
+                            <constraint firstItem="PmN-9W-Tg5" firstAttribute="leading" secondItem="OMR-Kg-xbE" secondAttribute="leading" constant="40" id="xyt-Zp-53b"/>
+                            <constraint firstAttribute="trailing" secondItem="Non-cd-DaW" secondAttribute="trailing" constant="40" id="zTc-8j-HTg"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="bFs-eG-rma" appends="YES" id="pUN-C1-g1H"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="friendLoginTextField" destination="Non-cd-DaW" id="B8P-Pp-tax"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6c-Dn-XbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bFs-eG-rma">
+                    <connections>
+                        <action selector="tapOnViewAction:" destination="sFz-eN-UdD" id="0X1-Kz-rK8"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2039" y="429"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="w2f-z2-d3z">

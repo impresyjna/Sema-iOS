@@ -10,6 +10,7 @@
 #import "SELoginUserParams.h"
 #import "SERegisterUserParams.h"
 #import "SENewQuestionParams.h"
+#import "SEFriendParams.h"
 
 @interface AFHTTPSessionManager (SERequests)
 
@@ -22,6 +23,7 @@
 
 - (NSMutableURLRequest *)requestAddNewQuestionWithParams:(SENewQuestionParams *)params;
 
-- (NSMutableURLRequest *)requestFriendshipIndex; 
+- (NSMutableURLRequest *)requestFriendshipIndex;
+- (NSMutableURLRequest *)requestAddFriendshipWithParams:(SEFriendParams *)params; 
 
 @end
