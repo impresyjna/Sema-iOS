@@ -23,7 +23,7 @@
 		1A5BC4081D0DB593004165EE /* SEUserOperationsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC4071D0DB593004165EE /* SEUserOperationsDispatcher.m */; };
 		1A5BC40B1D0E062F004165EE /* SEFriendshipsSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC40A1D0E062F004165EE /* SEFriendshipsSerializer.m */; };
 		1A5BC40E1D0E087B004165EE /* SEFriendship.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC40D1D0E087B004165EE /* SEFriendship.m */; };
-		1A5BC4121D0E22DF004165EE /* SEFriendshipsViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC4111D0E22DF004165EE /* SEFriendshipsViewControllerTableViewController.m */; };
+		1A5BC4121D0E22DF004165EE /* SEFriendshipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC4111D0E22DF004165EE /* SEFriendshipsViewController.m */; };
 		1A5BC4161D0E244B004165EE /* SEFriendshipViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC4151D0E244B004165EE /* SEFriendshipViewModel.m */; };
 		1A5BC41D1D0E9DF2004165EE /* SETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC41C1D0E9DF2004165EE /* SETableViewCell.m */; };
 		1A5BC4261D0EA1C9004165EE /* SEFriendshipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC4251D0EA1C9004165EE /* SEFriendshipCell.m */; };
@@ -51,6 +51,14 @@
 		1AE6ED801D0F407C00349BB3 /* SEAddFriendViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED7F1D0F407C00349BB3 /* SEAddFriendViewModel.m */; };
 		1AE6ED831D0F425000349BB3 /* SEFriendshipOperationsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED821D0F425000349BB3 /* SEFriendshipOperationsDispatcher.m */; };
 		1AE6ED861D0F4DBF00349BB3 /* SEError.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED851D0F4DBF00349BB3 /* SEError.m */; };
+		1AE6ED891D0F5F4B00349BB3 /* SERoomsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED881D0F5F4B00349BB3 /* SERoomsService.m */; };
+		1AE6ED8C1D0F6D6B00349BB3 /* SERoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED8B1D0F6D6B00349BB3 /* SERoom.m */; };
+		1AE6ED8F1D0F76F700349BB3 /* SERoomsSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED8E1D0F76F700349BB3 /* SERoomsSerializer.m */; };
+		1AE6ED931D0F789A00349BB3 /* SERoomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED921D0F789A00349BB3 /* SERoomsViewController.m */; };
+		1AE6ED981D0F795800349BB3 /* SERoomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED971D0F795800349BB3 /* SERoomCell.m */; };
+		1AE6ED9A1D0F796F00349BB3 /* SERoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE6ED991D0F796F00349BB3 /* SERoomCell.xib */; };
+		1AE6ED9D1D0F79CD00349BB3 /* SERoomsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED9C1D0F79CD00349BB3 /* SERoomsViewModel.m */; };
+		1AE6EDA01D0F7A5B00349BB3 /* SERoomCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED9F1D0F7A5B00349BB3 /* SERoomCellViewModel.m */; };
 		BD304C8118E672EA0034105E /* SEDummySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BD304C8018E672EA0034105E /* SEDummySpec.m */; };
 		BD304C8318E77F7E0034105E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD304C8218E77F7E0034105E /* Settings.bundle */; };
 		BD6951CF18EA4B0800F2F410 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6951CE18EA4B0800F2F410 /* main.m */; };
@@ -106,8 +114,8 @@
 		1A5BC40A1D0E062F004165EE /* SEFriendshipsSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEFriendshipsSerializer.m; sourceTree = "<group>"; };
 		1A5BC40C1D0E087B004165EE /* SEFriendship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEFriendship.h; sourceTree = "<group>"; };
 		1A5BC40D1D0E087B004165EE /* SEFriendship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEFriendship.m; sourceTree = "<group>"; };
-		1A5BC4101D0E22DF004165EE /* SEFriendshipsViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEFriendshipsViewControllerTableViewController.h; sourceTree = "<group>"; };
-		1A5BC4111D0E22DF004165EE /* SEFriendshipsViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEFriendshipsViewControllerTableViewController.m; sourceTree = "<group>"; };
+		1A5BC4101D0E22DF004165EE /* SEFriendshipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEFriendshipsViewController.h; sourceTree = "<group>"; };
+		1A5BC4111D0E22DF004165EE /* SEFriendshipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEFriendshipsViewController.m; sourceTree = "<group>"; };
 		1A5BC4141D0E244B004165EE /* SEFriendshipViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEFriendshipViewModel.h; sourceTree = "<group>"; };
 		1A5BC4151D0E244B004165EE /* SEFriendshipViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEFriendshipViewModel.m; sourceTree = "<group>"; };
 		1A5BC41B1D0E9DF2004165EE /* SETableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETableViewCell.h; sourceTree = "<group>"; };
@@ -161,6 +169,21 @@
 		1AE6ED821D0F425000349BB3 /* SEFriendshipOperationsDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEFriendshipOperationsDispatcher.m; sourceTree = "<group>"; };
 		1AE6ED841D0F4DBF00349BB3 /* SEError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEError.h; sourceTree = "<group>"; };
 		1AE6ED851D0F4DBF00349BB3 /* SEError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEError.m; sourceTree = "<group>"; };
+		1AE6ED871D0F5F4B00349BB3 /* SERoomsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERoomsService.h; sourceTree = "<group>"; };
+		1AE6ED881D0F5F4B00349BB3 /* SERoomsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERoomsService.m; sourceTree = "<group>"; };
+		1AE6ED8A1D0F6D6B00349BB3 /* SERoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERoom.h; sourceTree = "<group>"; };
+		1AE6ED8B1D0F6D6B00349BB3 /* SERoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERoom.m; sourceTree = "<group>"; };
+		1AE6ED8D1D0F76F700349BB3 /* SERoomsSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERoomsSerializer.h; sourceTree = "<group>"; };
+		1AE6ED8E1D0F76F700349BB3 /* SERoomsSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERoomsSerializer.m; sourceTree = "<group>"; };
+		1AE6ED911D0F789A00349BB3 /* SERoomsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERoomsViewController.h; sourceTree = "<group>"; };
+		1AE6ED921D0F789A00349BB3 /* SERoomsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERoomsViewController.m; sourceTree = "<group>"; };
+		1AE6ED961D0F795800349BB3 /* SERoomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERoomCell.h; sourceTree = "<group>"; };
+		1AE6ED971D0F795800349BB3 /* SERoomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERoomCell.m; sourceTree = "<group>"; };
+		1AE6ED991D0F796F00349BB3 /* SERoomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SERoomCell.xib; sourceTree = "<group>"; };
+		1AE6ED9B1D0F79CD00349BB3 /* SERoomsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERoomsViewModel.h; sourceTree = "<group>"; };
+		1AE6ED9C1D0F79CD00349BB3 /* SERoomsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERoomsViewModel.m; sourceTree = "<group>"; };
+		1AE6ED9E1D0F7A5B00349BB3 /* SERoomCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERoomCellViewModel.h; sourceTree = "<group>"; };
+		1AE6ED9F1D0F7A5B00349BB3 /* SERoomCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERoomCellViewModel.m; sourceTree = "<group>"; };
 		629D431888F0A369A9259832 /* Pods-Sema.test_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.test_staging.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.test_staging.xcconfig"; sourceTree = "<group>"; };
 		651157A0406A01719D20471F /* Pods-Sema.test_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.test_production.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.test_production.xcconfig"; sourceTree = "<group>"; };
 		65D6C5A3F357B669F53D9728 /* Pods-Sema.adhoc_production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sema.adhoc_production.xcconfig"; path = "Pods/Target Support Files/Pods-Sema/Pods-Sema.adhoc_production.xcconfig"; sourceTree = "<group>"; };
@@ -329,8 +352,8 @@
 			children = (
 				1A5BC41A1D0E9C4B004165EE /* Views */,
 				1A5BC4131D0E2434004165EE /* ViewModel */,
-				1A5BC4101D0E22DF004165EE /* SEFriendshipsViewControllerTableViewController.h */,
-				1A5BC4111D0E22DF004165EE /* SEFriendshipsViewControllerTableViewController.m */,
+				1A5BC4101D0E22DF004165EE /* SEFriendshipsViewController.h */,
+				1A5BC4111D0E22DF004165EE /* SEFriendshipsViewController.m */,
 			);
 			name = Friends;
 			sourceTree = "<group>";
@@ -361,6 +384,8 @@
 			children = (
 				1A5BC42D1D0EB99B004165EE /* SEFriendshipsService.h */,
 				1A5BC42E1D0EB99B004165EE /* SEFriendshipsService.m */,
+				1AE6ED871D0F5F4B00349BB3 /* SERoomsService.h */,
+				1AE6ED881D0F5F4B00349BB3 /* SERoomsService.m */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -447,6 +472,8 @@
 				1A5BC3EA1D0C6436004165EE /* SEQuestionSerializer.m */,
 				1A5BC4091D0E062F004165EE /* SEFriendshipsSerializer.h */,
 				1A5BC40A1D0E062F004165EE /* SEFriendshipsSerializer.m */,
+				1AE6ED8D1D0F76F700349BB3 /* SERoomsSerializer.h */,
+				1AE6ED8E1D0F76F700349BB3 /* SERoomsSerializer.m */,
 			);
 			name = Serializers;
 			sourceTree = "<group>";
@@ -484,6 +511,38 @@
 				1AE6ED7F1D0F407C00349BB3 /* SEAddFriendViewModel.m */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		1AE6ED901D0F787A00349BB3 /* Rooms */ = {
+			isa = PBXGroup;
+			children = (
+				1AE6ED951D0F791200349BB3 /* Views */,
+				1AE6ED941D0F790C00349BB3 /* ViewModel */,
+				1AE6ED911D0F789A00349BB3 /* SERoomsViewController.h */,
+				1AE6ED921D0F789A00349BB3 /* SERoomsViewController.m */,
+			);
+			name = Rooms;
+			sourceTree = "<group>";
+		};
+		1AE6ED941D0F790C00349BB3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1AE6ED9B1D0F79CD00349BB3 /* SERoomsViewModel.h */,
+				1AE6ED9C1D0F79CD00349BB3 /* SERoomsViewModel.m */,
+				1AE6ED9E1D0F7A5B00349BB3 /* SERoomCellViewModel.h */,
+				1AE6ED9F1D0F7A5B00349BB3 /* SERoomCellViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		1AE6ED951D0F791200349BB3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1AE6ED961D0F795800349BB3 /* SERoomCell.h */,
+				1AE6ED971D0F795800349BB3 /* SERoomCell.m */,
+				1AE6ED991D0F796F00349BB3 /* SERoomCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		28BFB1F90D64811C3D106467 /* Pods */ = {
@@ -551,6 +610,8 @@
 				1A5BC40D1D0E087B004165EE /* SEFriendship.m */,
 				1AE6ED841D0F4DBF00349BB3 /* SEError.h */,
 				1AE6ED851D0F4DBF00349BB3 /* SEError.m */,
+				1AE6ED8A1D0F6D6B00349BB3 /* SERoom.h */,
+				1AE6ED8B1D0F6D6B00349BB3 /* SERoom.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -603,6 +664,7 @@
 		BDB71B2618EA471400579B97 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1AE6ED901D0F787A00349BB3 /* Rooms */,
 				1AE6ED791D0F3F9000349BB3 /* AddFriend */,
 				1A5BC40F1D0E22BF004165EE /* Friends */,
 				1A5BC4021D0DAD4E004165EE /* Splash */,
@@ -763,6 +825,7 @@
 				BDF68AF31B713C6200153C8D /* LaunchScreen.xib in Resources */,
 				1A5BC4281D0EA1ED004165EE /* SEFriendshipCell.xib in Resources */,
 				1AC1D7261CD773EA00F9723A /* Configuration.plist in Resources */,
+				1AE6ED9A1D0F796F00349BB3 /* SERoomCell.xib in Resources */,
 				BDDB996E18C3943B003EBC42 /* Images.xcassets in Resources */,
 				BD304C8318E77F7E0034105E /* Settings.bundle in Resources */,
 				BDF68AF11B713C3400153C8D /* Main.storyboard in Resources */,
@@ -906,6 +969,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AE6ED981D0F795800349BB3 /* SERoomCell.m in Sources */,
 				1AC1D72D1CD777B900F9723A /* SEApiClient.m in Sources */,
 				1AC188A61D04547400FB5B3E /* SERegisterViewController.m in Sources */,
 				1A5BC4161D0E244B004165EE /* SEFriendshipViewModel.m in Sources */,
@@ -922,6 +986,7 @@
 				1AC1D7311CD7D23A00F9723A /* SERequests.m in Sources */,
 				1A5BC3E81D0C513E004165EE /* SEAddQuestionViewModel.m in Sources */,
 				1AB8BA7D1D06DA5800B6F698 /* SEAccount.m in Sources */,
+				1AE6ED9D1D0F79CD00349BB3 /* SERoomsViewModel.m in Sources */,
 				1AC1D7401CD7DDBB00F9723A /* SEJSONResponseSerializer.m in Sources */,
 				1AC188A31D04541C00FB5B3E /* SELoginViewController.m in Sources */,
 				1A5BC4011D0D9505004165EE /* SEEditProfileViewModel.m in Sources */,
@@ -932,7 +997,7 @@
 				1AB7826D1D0566DD002E0DA6 /* SERegisterViewModel.m in Sources */,
 				BD934CD519C211F600B48551 /* StoryboardIdentifiers.m in Sources */,
 				1A5BC42F1D0EB99B004165EE /* SEFriendshipsService.m in Sources */,
-				1A5BC4121D0E22DF004165EE /* SEFriendshipsViewControllerTableViewController.m in Sources */,
+				1A5BC4121D0E22DF004165EE /* SEFriendshipsViewController.m in Sources */,
 				1AB8BA7A1D06D94800B6F698 /* UIAlertController+Errors.m in Sources */,
 				1A5BC4261D0EA1C9004165EE /* SEFriendshipCell.m in Sources */,
 				1A5BC3F51D0C9647004165EE /* SESettingsViewController.m in Sources */,
@@ -941,12 +1006,17 @@
 				1AB8BA771D06D27F00B6F698 /* NSString+Validation.m in Sources */,
 				BD6951CF18EA4B0800F2F410 /* main.m in Sources */,
 				1A5BC3E01D0C491E004165EE /* SENewQuestionParams.m in Sources */,
+				1AE6ED931D0F789A00349BB3 /* SERoomsViewController.m in Sources */,
 				1A5BC42B1D0EA55B004165EE /* SEFriendshipCellViewModel.m in Sources */,
 				1AE6ED831D0F425000349BB3 /* SEFriendshipOperationsDispatcher.m in Sources */,
+				1AE6ED891D0F5F4B00349BB3 /* SERoomsService.m in Sources */,
+				1AE6EDA01D0F7A5B00349BB3 /* SERoomCellViewModel.m in Sources */,
 				BDDB996C18C3943B003EBC42 /* SEViewController.m in Sources */,
 				1A5BC3EE1D0C64DB004165EE /* SEQuestion.m in Sources */,
+				1AE6ED8C1D0F6D6B00349BB3 /* SERoom.m in Sources */,
 				1AC1D7341CD7D38000F9723A /* SEUser.m in Sources */,
 				1A5BC3F11D0C6A77004165EE /* SEQuestionOperationsDispatcher.m in Sources */,
+				1AE6ED8F1D0F76F700349BB3 /* SERoomsSerializer.m in Sources */,
 				1A5BC40B1D0E062F004165EE /* SEFriendshipsSerializer.m in Sources */,
 				1AB8BA821D0723D600B6F698 /* SELoginViewModel.m in Sources */,
 				1AC1D73A1CD7D63C00F9723A /* SELoginUserParams.m in Sources */,

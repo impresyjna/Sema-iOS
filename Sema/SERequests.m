@@ -73,5 +73,16 @@
                                                error:nil];
 }
 
+#pragma mark - 
+#pragma mark - Rooms
+
+- (NSMutableURLRequest *)requestRoomIndex {
+    return [self.requestSerializer requestWithMethod:@"GET"
+                                           URLString:[NSString stringWithFormat:@"%@/rooms",self.baseURL]
+                                          parameters:nil
+                                               error:nil];
+}
+
+
 
 @end

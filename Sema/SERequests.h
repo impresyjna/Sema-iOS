@@ -24,6 +24,8 @@
 - (NSMutableURLRequest *)requestAddNewQuestionWithParams:(SENewQuestionParams *)params;
 
 - (NSMutableURLRequest *)requestFriendshipIndex;
-- (NSMutableURLRequest *)requestAddFriendshipWithParams:(SEFriendParams *)params; 
+- (NSMutableURLRequest *)requestAddFriendshipWithParams:(SEFriendParams *)params;
+
+- (NSMutableURLRequest *)requestRoomIndex;
 
 @end

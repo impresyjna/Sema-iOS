@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SEFriendshipsViewControllerTableViewController : UITableViewController
+@interface SEFriendshipsViewController : UITableViewController
 
 @end
