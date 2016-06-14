@@ -11,6 +11,7 @@
 #import "SERegisterUserParams.h"
 #import "SENewQuestionParams.h"
 #import "SEFriendParams.h"
+#import "SERoomParams.h"
 
 @interface AFHTTPSessionManager (SERequests)
 
@@ -27,5 +28,7 @@
 - (NSMutableURLRequest *)requestAddFriendshipWithParams:(SEFriendParams *)params;
 
 - (NSMutableURLRequest *)requestRoomIndex;
+- (NSMutableURLRequest *)requestRoomUsersIndexWithParams:(SERoomParams *)params;
+
 
 @end

@@ -372,6 +372,34 @@
             </objects>
             <point key="canvasLocation" x="1285" y="433"/>
         </scene>
+        <!--Room View Controller-->
+        <scene sceneID="GsM-1r-3ff">
+            <objects>
+                <tableViewController storyboardIdentifier="RoomView" id="hi1-h1-5VC" customClass="SERoomViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="M2W-Is-8cO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Kxb-v1-7Io">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kxb-v1-7Io" id="xaU-H2-k1g">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hi1-h1-5VC" id="A2I-DK-jux"/>
+                            <outlet property="delegate" destination="hi1-h1-5VC" id="6xj-aK-dHo"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nsf-1M-80l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2089" y="-276"/>
+        </scene>
         <!--Add Friend View Controller-->
         <scene sceneID="asf-w6-Vcp">
             <objects>
@@ -507,7 +535,9 @@
                             <outlet property="delegate" destination="YKl-MX-qUD" id="dWg-Pw-tgK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="NSZ-KT-YCe"/>
+                    <navigationItem key="navigationItem" id="NSZ-KT-YCe">
+                        <barButtonItem key="backBarButtonItem" title="Wróć" id="eZK-DL-8u2"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5m4-Ta-aaP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

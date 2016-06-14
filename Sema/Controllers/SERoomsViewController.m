@@ -7,10 +7,13 @@
 //
 
 #import "SERoomsViewController.h"
+#import "SERoomViewController.h"
 
 #import "SERoomsViewModel.h"
+#import "SERoomViewModel.h"
 
 #import "SERoomCell.h"
+
 
 @interface SERoomsViewController ()
 
@@ -78,9 +81,10 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //SEFriendship *friendship = [self.viewModel friendshipForIndexPath:indexPath];
-    
-    //[self.delegate loginPicker:self didPickActionSubject:friendship];
-    [self.navigationController popViewControllerAnimated:YES];
+    SERoom *room = [self.viewModel roomForIndexPath:indexPath];
+    SERoomViewModel *roomViewModel = [[SERoomViewModel alloc] initWithRoom:room];
+    SERoomViewController *roomViewController = [[UIStoryboard storyboardWithName:@"Game" bundle:nil] instantiateViewControllerWithIdentifier:@"RoomView"];
+    roomViewController.viewModel = roomViewModel;
+    [self.navigationController pushViewController:roomViewController animated:YES];
 }
 @end

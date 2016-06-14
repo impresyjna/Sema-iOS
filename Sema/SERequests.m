@@ -83,6 +83,16 @@
                                                error:nil];
 }
 
+#pragma mark -
+#pragma mark - Room Users
+
+- (NSMutableURLRequest *)requestRoomUsersIndexWithParams:(SERoomParams *)params {
+    return [self.requestSerializer requestWithMethod:@"GET"
+                                           URLString:[NSString stringWithFormat:@"%@/room_users",self.baseURL]
+                                          parameters:[params params]
+                                               error:nil];
+}
+
 
 
 @end
