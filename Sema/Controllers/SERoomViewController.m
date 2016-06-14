@@ -38,6 +38,8 @@
     [refreshControl endRefreshing];
 }
 
+- (IBAction)joinRoomAction:(id)sender {
+}
 
 - (void)reloadData {
     __weak typeof (self) wSelf = self;

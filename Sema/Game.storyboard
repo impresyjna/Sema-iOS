@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Ustawienia-->
+        <!--Settings-->
         <scene sceneID="lRU-zW-Zfo">
             <objects>
-                <tableViewController id="jQv-7k-Lfu" customClass="SESettingsViewController" sceneMemberID="viewController">
+                <tableViewController title="Settings" id="jQv-7k-Lfu" customClass="SESettingsViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="v0x-Ps-a9V">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="697" y="1147"/>
         </scene>
-        <!--Edycja profilu-->
+        <!--EditProfile-->
         <scene sceneID="Ihd-0H-0Gw">
             <objects>
-                <tableViewController id="zJ5-bH-2eT" customClass="SEEditProfileViewController" sceneMemberID="viewController">
+                <tableViewController title="EditProfile" id="zJ5-bH-2eT" customClass="SEEditProfileViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="IRS-2r-S3Q">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -372,17 +372,17 @@
             </objects>
             <point key="canvasLocation" x="1285" y="433"/>
         </scene>
-        <!--Room View Controller-->
+        <!--Room-->
         <scene sceneID="GsM-1r-3ff">
             <objects>
-                <tableViewController storyboardIdentifier="RoomView" id="hi1-h1-5VC" customClass="SERoomViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RoomView" title="Room" id="hi1-h1-5VC" customClass="SERoomViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="M2W-Is-8cO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Kxb-v1-7Io">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kxb-v1-7Io" id="xaU-H2-k1g">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -395,10 +395,27 @@
                             <outlet property="delegate" destination="hi1-h1-5VC" id="6xj-aK-dHo"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Gracze w pokoju" id="gf1-od-RcP">
+                        <barButtonItem key="rightBarButtonItem" title="Wejdź" id="Zpz-qi-qJa">
+                            <connections>
+                                <action selector="joinRoomAction:" destination="hi1-h1-5VC" id="cIJ-oH-P0G"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsf-1M-80l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2089" y="-276"/>
+            <point key="canvasLocation" x="2333" y="-2522"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="NiN-rv-Kxn">
+            <objects>
+                <pageViewController storyboardIdentifier="GameView" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Kmc-HH-TWL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pg1-mq-jbH"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvX-we-Nnt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3745" y="413"/>
         </scene>
         <!--Add Friend View Controller-->
         <scene sceneID="asf-w6-Vcp">
@@ -541,7 +558,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5m4-Ta-aaP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1299" y="-276"/>
+            <point key="canvasLocation" x="933" y="-2490"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qjd-X6-Eww">
@@ -579,7 +596,105 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWi-VG-b6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="487" y="-276"/>
+            <point key="canvasLocation" x="261" y="-2490"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6cy-6q-Cf6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sfU-aM-6ly" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bTz-Ff-FBd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hi1-h1-5VC" kind="relationship" relationship="rootViewController" id="tFh-V3-cxv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1O-YZ-xZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689" y="-2522"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lC3-z6-8a2">
+            <objects>
+                <viewController id="8CD-q3-gKn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P85-8d-M2G"/>
+                        <viewControllerLayoutGuide type="bottom" id="3kc-O4-kY2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T0U-Fx-9A6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSo-Vs-DRH">
+                                <rect key="frame" x="255" y="160" width="55" height="30"/>
+                                <state key="normal" title="Odbierz"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcd-as-yjg">
+                                <rect key="frame" x="253" y="241" width="40" height="30"/>
+                                <state key="normal" title="Wyślij"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUV-44-yYK">
+                                <rect key="frame" x="251" y="341" width="45" height="30"/>
+                                <state key="normal" title="Opuść"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tcd-as-yjg" firstAttribute="top" secondItem="SSo-Vs-DRH" secondAttribute="bottom" constant="51" id="0fc-63-Vkt"/>
+                            <constraint firstItem="dUV-44-yYK" firstAttribute="top" secondItem="tcd-as-yjg" secondAttribute="bottom" constant="70" id="1Uq-IR-70k"/>
+                            <constraint firstItem="SSo-Vs-DRH" firstAttribute="leading" secondItem="T0U-Fx-9A6" secondAttribute="leading" constant="259" id="9PA-kk-72b"/>
+                            <constraint firstAttribute="trailing" secondItem="dUV-44-yYK" secondAttribute="trailing" constant="304" id="Ayi-xn-wsj"/>
+                            <constraint firstItem="dUV-44-yYK" firstAttribute="leading" secondItem="T0U-Fx-9A6" secondAttribute="leading" constant="250" id="CHP-gB-xVa"/>
+                            <constraint firstAttribute="trailing" secondItem="tcd-as-yjg" secondAttribute="trailing" constant="304" id="II2-Ky-EHI"/>
+                            <constraint firstItem="SSo-Vs-DRH" firstAttribute="top" secondItem="T0U-Fx-9A6" secondAttribute="topMargin" constant="160" id="bar-IG-Di1"/>
+                            <constraint firstAttribute="trailing" secondItem="SSo-Vs-DRH" secondAttribute="trailing" constant="295" id="dYH-6n-SC4"/>
+                            <constraint firstItem="tcd-as-yjg" firstAttribute="leading" secondItem="T0U-Fx-9A6" secondAttribute="leading" constant="250" id="pBm-6X-dVx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fq3-bN-iDc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6zQ-9q-Se5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856" y="-1638"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xwj-gG-hIQ">
+            <objects>
+                <navigationController storyboardIdentifier="GameView" automaticallyAdjustsScrollViewInsets="NO" id="DlK-zZ-kz5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H71-Zv-xsL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kmc-HH-TWL" kind="relationship" relationship="rootViewController" id="lCd-lc-05Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLy-j9-roj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2901" y="413"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jAt-wm-zDY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IQ4-Xg-hZT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kg6-NK-Y7i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8CD-q3-gKn" kind="relationship" relationship="rootViewController" id="gZy-Pw-M6u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSF-hY-yxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174" y="-1646"/>
         </scene>
     </scenes>
     <resources>
