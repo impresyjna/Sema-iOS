@@ -9,15 +9,15 @@
 #import "SESendCardViewController.h"
 
 @interface SESendCardViewController ()
-
 @end
 
 @implementation SESendCardViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self setDataSource:self.dataSource];
-    // Do any additional setup after loading the view.
+    self.dataSource = _cardsDataSource;
+    
+    [self setViewControllers:@[_cardsDataSource.selectedViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
 }
 
 

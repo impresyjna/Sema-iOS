@@ -83,10 +83,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     //SERoomUser *roomUser = [self.viewModel roomUserForIndexPath:indexPath];
     SESendCardViewController *roomViewController = [[UIStoryboard storyboardWithName:@"Game" bundle:nil] instantiateViewControllerWithIdentifier:@"SendCard"];
-    SELoginViewController *loginController = [SELoginViewController new];
+    SELoginViewController *loginController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SELoginViewController"];
     SERegisterViewController *registerController = [SERegisterViewController new];
     _controllers = @[loginController, registerController];
-    roomViewController.dataSource = [[SEPageViewControllerDataSource alloc] initWithControllers:_controllers];
+    roomViewController.cardsDataSource = [[SEPageViewControllerDataSource alloc] initWithControllers:_controllers];
     [self.navigationController pushViewController:roomViewController animated:YES];
 }
 

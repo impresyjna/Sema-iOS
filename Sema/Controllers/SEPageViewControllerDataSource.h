@@ -10,8 +10,10 @@
 
 @interface SEPageViewControllerDataSource : NSObject <UIPageViewControllerDataSource>
 
-@property (nonatomic, assign) NSInteger selectedIndex;
-@property (nonatomic, strong) NSArray <UIViewController *> *controllers;
+@property (nonatomic, assign, readonly) NSUInteger selectedIndex;
+@property (nonatomic, strong, readonly) NSArray <UIViewController *> *controllers;
+
+- (UIViewController *)selectedViewController;
 
 - (instancetype)initWithControllers:(NSArray <UIViewController *> *)controllers; 
 
