@@ -8,11 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "SERoom.h"
+#import "SEGameCard.h"
+
+#import "SEGameCardsService.h"
+
+typedef void(^SEGameCardsViewModelFetchSubjectsCompletion)(NSArray <SEGameCard *> *gameCards, UIAlertController *alert);
 
 @interface SEGameMenuViewModel : NSObject
 
+@property (nonatomic, strong) NSArray <SEGameCard *> *gameCards;
 @property (nonatomic, strong, readonly) SERoom *room;
 
 - (instancetype)initWithRoom:(SERoom *)room; 
+- (void)fetchGameCardsWithCompletionBlock:(SEGameCardsViewModelFetchSubjectsCompletion)block;
 
 @end

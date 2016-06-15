@@ -23,5 +23,5 @@ typedef void(^SEGameCardCompletionBlock)(BOOL success, NSArray <SEGameCard *> *g
 - (instancetype)initWithQueue:(NSOperationQueue *)queue;
 
 - (void)fetchGameCardsWithParams:(SERoomParams *)params completion:(SEGameCardCompletionBlock)block;
-
+- (void)fetchUnreceivedGameCardsWithParams:(SERoomParams *)params completion:(SEGameCardCompletionBlock)block; 
 @end

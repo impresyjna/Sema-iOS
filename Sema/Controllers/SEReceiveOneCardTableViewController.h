@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SEReceiveOneCardViewModel.h"
 
 @interface SEReceiveOneCardTableViewController : UITableViewController
+
+@property (nonatomic, strong) SEReceiveOneCardViewModel *viewModel;
 
 @end

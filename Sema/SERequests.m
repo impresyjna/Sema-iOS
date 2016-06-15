@@ -110,6 +110,13 @@
                                                error:nil];
 }
 
+- (NSMutableURLRequest *)requestUnreceivedGameCardsIndexWithParams:(SERoomParams *)params {
+    return [self.requestSerializer requestWithMethod:@"GET"
+                                           URLString:[NSString stringWithFormat:@"%@/unreceived_cards",self.baseURL]
+                                          parameters:[params params]
+                                               error:nil];
+}
+
 
 
 @end

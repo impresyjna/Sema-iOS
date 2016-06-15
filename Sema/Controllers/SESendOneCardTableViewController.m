@@ -7,7 +7,6 @@
 //
 
 #import "SESendOneCardTableViewController.h"
-#import "SESendOneCardViewModel.h"
 
 #import "SEQuestionCell.h"
 

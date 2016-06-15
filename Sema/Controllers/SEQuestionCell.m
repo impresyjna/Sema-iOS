@@ -19,7 +19,7 @@
 @implementation SEQuestionCell
 
 + (CGFloat)height {
-    return 72.0f;
+    return 40.0f;
 }
 
 - (void)populateWithViewModel:(SEQuestionCellViewModel *)viewModel {

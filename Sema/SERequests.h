@@ -32,6 +32,7 @@
 - (NSMutableURLRequest *)requestJoinRoomWithParams:(SERoomParams *)params;
 
 - (NSMutableURLRequest *)requestGameCardsIndexWithParams:(SERoomParams *)params;
+- (NSMutableURLRequest *)requestUnreceivedGameCardsIndexWithParams:(SERoomParams *)params; 
 
 
 @end

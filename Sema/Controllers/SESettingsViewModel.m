@@ -10,7 +10,7 @@
 
 #import "UIAlertController+Errors.h"
 
-//Operations
+//Operations 
 #import "SESessionOperationsDispatcher.h"
 
 //Account
@@ -25,6 +25,8 @@
 
 - (void)logoutWithCompletion:(SESettingsViewModelCompletionBlock)block {
     
+    
+    
     [[SESessionOperationsDispatcher new] logoutUserWithCompletion:^(BOOL success, SEUser *user, NSError *error) {
         if (success && !error) {
             
@@ -34,7 +36,7 @@
             block(success, error ? [UIAlertController alertControllerWithError:error] : nil);
         }
     }];
-    
+
     //Update user
     [[SEAccount account] updateUser:nil];
 }

@@ -45,4 +45,24 @@
     _queue ? [_queue addOperation:operation] : [[SEApiClient sharedManager] enqueueOperation:operation];
 }
 
+- (void)fetchUnreceivedGameCardsWithParams:(SERoomParams *)params completion:(SEGameCardCompletionBlock)block {
+    
+    NSURLRequest *request = [[SEApiClient sharedManager] requestUnreceivedGameCardsIndexWithParams:params];
+    
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    operation.responseSerializer = [SEGameCardsSerializer serializer];
+    
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *innerOperation, NSDictionary *responseObject) {
+        if (block) {
+            block(YES, responseObject[@"game_cards"], nil);
+        }
+    } failure:^(AFHTTPRequestOperation *innerOperation, NSError *error) {
+        if (block) {
+            block(NO, nil, error);
+        }
+    }];
+    
+    _queue ? [_queue addOperation:operation] : [[SEApiClient sharedManager] enqueueOperation:operation];
+}
+
 @end

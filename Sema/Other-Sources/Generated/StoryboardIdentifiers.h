@@ -7,6 +7,7 @@
 
 extern const struct SEGameStoryboardIDs {
     struct {
+        __unsafe_unretained NSString *receiveOneCard;
         __unsafe_unretained NSString *menu;
         __unsafe_unretained NSString *roomView;
         __unsafe_unretained NSString *chooseWhoToSend;

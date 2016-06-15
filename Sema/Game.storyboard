@@ -644,6 +644,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="receiveCardsAction:" destination="8CD-q3-gKn" eventType="touchUpInside" id="DnE-qC-7A3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcd-as-yjg">
                                         <rect key="frame" x="0.0" y="141" width="520" height="118"/>
@@ -696,6 +699,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6zQ-9q-Se5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1856" y="-1638"/>
+        </scene>
+        <!--Receive One Card Table View Controller-->
+        <scene sceneID="jg6-8W-rQr">
+            <objects>
+                <tableViewController storyboardIdentifier="ReceiveOneCard" id="s6N-5y-bQ2" customClass="SEReceiveOneCardTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="u04-Js-eVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qte-T4-ULD">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qte-T4-ULD" id="UuU-Dw-38A">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="s6N-5y-bQ2" id="Auq-Yt-fIh"/>
+                            <outlet property="delegate" destination="s6N-5y-bQ2" id="X4T-k9-eLz"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pp0-kC-Ocy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2541" y="-1633"/>
         </scene>
         <!--Choose Who To Send Table View Controller-->
         <scene sceneID="9CF-t0-iQk">
