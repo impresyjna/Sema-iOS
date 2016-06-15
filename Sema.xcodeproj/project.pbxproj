@@ -14,6 +14,8 @@
 		1A1852311D10CB7D00BEA270 /* SERoomUserSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852301D10CB7D00BEA270 /* SERoomUserSerializer.m */; };
 		1A1852351D11285400BEA270 /* SEChooseWhoToSendTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852341D11285400BEA270 /* SEChooseWhoToSendTableViewController.m */; };
 		1A1852391D11286A00BEA270 /* SEChooseWhoToSendViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852381D11286A00BEA270 /* SEChooseWhoToSendViewModel.m */; };
+		1A18523D1D112D5D00BEA270 /* SEPageViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18523C1D112D5D00BEA270 /* SEPageViewControllerDataSource.m */; };
+		1A1852401D11351000BEA270 /* SESendCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18523F1D11351000BEA270 /* SESendCardViewController.m */; };
 		1A4439E31D05772E00E96873 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4439E21D05772E00E96873 /* Game.storyboard */; };
 		1A4439E81D05881C00E96873 /* SESessionOperationsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4439E71D05881C00E96873 /* SESessionOperationsDispatcher.m */; };
 		1A5BC3E01D0C491E004165EE /* SENewQuestionParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC3DF1D0C491E004165EE /* SENewQuestionParams.m */; };
@@ -113,6 +115,10 @@
 		1A1852341D11285400BEA270 /* SEChooseWhoToSendTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEChooseWhoToSendTableViewController.m; sourceTree = "<group>"; };
 		1A1852371D11286A00BEA270 /* SEChooseWhoToSendViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEChooseWhoToSendViewModel.h; sourceTree = "<group>"; };
 		1A1852381D11286A00BEA270 /* SEChooseWhoToSendViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEChooseWhoToSendViewModel.m; sourceTree = "<group>"; };
+		1A18523B1D112D5D00BEA270 /* SEPageViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPageViewControllerDataSource.h; sourceTree = "<group>"; };
+		1A18523C1D112D5D00BEA270 /* SEPageViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPageViewControllerDataSource.m; sourceTree = "<group>"; };
+		1A18523E1D11351000BEA270 /* SESendCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESendCardViewController.h; sourceTree = "<group>"; };
+		1A18523F1D11351000BEA270 /* SESendCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESendCardViewController.m; sourceTree = "<group>"; };
 		1A4439E21D05772E00E96873 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		1A4439E61D05881C00E96873 /* SESessionOperationsDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESessionOperationsDispatcher.h; sourceTree = "<group>"; };
 		1A4439E71D05881C00E96873 /* SESessionOperationsDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESessionOperationsDispatcher.m; sourceTree = "<group>"; };
@@ -326,6 +332,25 @@
 				1A1852381D11286A00BEA270 /* SEChooseWhoToSendViewModel.m */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		1A18523A1D112D3F00BEA270 /* SendCard */ = {
+			isa = PBXGroup;
+			children = (
+				1A1852411D113B3F00BEA270 /* ViewModels */,
+				1A18523B1D112D5D00BEA270 /* SEPageViewControllerDataSource.h */,
+				1A18523C1D112D5D00BEA270 /* SEPageViewControllerDataSource.m */,
+				1A18523E1D11351000BEA270 /* SESendCardViewController.h */,
+				1A18523F1D11351000BEA270 /* SESendCardViewController.m */,
+			);
+			name = SendCard;
+			sourceTree = "<group>";
+		};
+		1A1852411D113B3F00BEA270 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 		1A4439E41D05812000E96873 /* Helpers */ = {
@@ -795,6 +820,7 @@
 		BDB71B2618EA471400579B97 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1A18523A1D112D3F00BEA270 /* SendCard */,
 				1A1852321D11282E00BEA270 /* ChooseWhoToSend */,
 				1A1852211D10BC9C00BEA270 /* GameMenu */,
 				1AE6EDA11D1053FA00349BB3 /* Room */,
@@ -1108,6 +1134,7 @@
 				1AC1D72D1CD777B900F9723A /* SEApiClient.m in Sources */,
 				1AC188A61D04547400FB5B3E /* SERegisterViewController.m in Sources */,
 				1A5BC4161D0E244B004165EE /* SEFriendshipViewModel.m in Sources */,
+				1A1852401D11351000BEA270 /* SESendCardViewController.m in Sources */,
 				1A5BC41D1D0E9DF2004165EE /* SETableViewCell.m in Sources */,
 				1A18522E1D10CA3C00BEA270 /* SERoomUserOperationsDispatcher.m in Sources */,
 				1AC1D7431CD7E07900F9723A /* SEUserSerializer.m in Sources */,
@@ -1145,6 +1172,7 @@
 				1A5BC4261D0EA1C9004165EE /* SEFriendshipCell.m in Sources */,
 				1A5BC3F51D0C9647004165EE /* SESettingsViewController.m in Sources */,
 				1AE6ED7C1D0F405D00349BB3 /* SEAddFriendViewController.m in Sources */,
+				1A18523D1D112D5D00BEA270 /* SEPageViewControllerDataSource.m in Sources */,
 				1A5BC4051D0DAD7D004165EE /* SESplashViewController.m in Sources */,
 				1AB8BA771D06D27F00B6F698 /* NSString+Validation.m in Sources */,
 				BD6951CF18EA4B0800F2F410 /* main.m in Sources */,

@@ -5,6 +5,11 @@
 
 @interface SEImagesCatalog: NSObject
 
++(UIImage *)icAddQuestion;
++(UIImage *)icEdit;
++(UIImage *)icEditUser;
++(UIImage *)icFavorites;
++(UIImage *)icGame;
 +(UIImage *)icSettings;
 
 @end

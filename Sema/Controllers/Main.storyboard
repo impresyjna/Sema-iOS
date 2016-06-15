@@ -146,10 +146,10 @@
         <scene sceneID="cze-kx-0N0">
             <objects>
                 <tableViewController id="Ujy-3h-vlv" customClass="SERegisterViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="dgk-QS-kAe">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="dgk-QS-kAe">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rejestracja" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DTT-Lr-XOl">
                             <rect key="frame" x="0.0" y="64" width="600" height="115"/>
@@ -169,15 +169,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3N-f2-hKy">
-                                                    <rect key="frame" x="40" y="11" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u7e-4L-NNL">
-                                                    <rect key="frame" x="106" y="7" width="454" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u7e-4L-NNL">
+                                                    <rect key="frame" x="40" y="7" width="520" height="30"/>
+                                                    <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                     <connections>
                                                         <action selector="textFieldTextHasChangedAction:" destination="Ujy-3h-vlv" eventType="editingChanged" id="VWd-ni-Dqt"/>
@@ -186,10 +180,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="u7e-4L-NNL" secondAttribute="trailing" constant="40" id="7jh-Ja-q6y"/>
-                                                <constraint firstItem="C3N-f2-hKy" firstAttribute="leading" secondItem="lOw-v8-IjH" secondAttribute="leading" constant="40" id="Eeq-lx-itp"/>
-                                                <constraint firstItem="C3N-f2-hKy" firstAttribute="centerY" secondItem="lOw-v8-IjH" secondAttribute="centerY" id="Fuw-KB-yQM"/>
                                                 <constraint firstItem="u7e-4L-NNL" firstAttribute="centerY" secondItem="lOw-v8-IjH" secondAttribute="centerY" id="N8t-vS-hPb"/>
-                                                <constraint firstItem="u7e-4L-NNL" firstAttribute="leading" secondItem="C3N-f2-hKy" secondAttribute="trailing" constant="24" id="n1e-wh-9Re"/>
+                                                <constraint firstItem="u7e-4L-NNL" firstAttribute="leading" secondItem="lOw-v8-IjH" secondAttribute="leading" constant="40" id="dTI-8S-KHU"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
@@ -201,26 +193,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ANf-hH-rmZ">
-                                                    <rect key="frame" x="105" y="7" width="455" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ANf-hH-rmZ">
+                                                    <rect key="frame" x="40" y="7" width="520" height="30"/>
+                                                    <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
                                                     <connections>
                                                         <action selector="textFieldTextHasChangedAction:" destination="Ujy-3h-vlv" eventType="editingChanged" id="asE-iE-pvF"/>
                                                     </connections>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGZ-k8-1HH">
-                                                    <rect key="frame" x="40" y="11" width="41" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="bGZ-k8-1HH" firstAttribute="centerY" secondItem="9NU-XJ-GPQ" secondAttribute="centerY" id="BTy-LV-RxG"/>
-                                                <constraint firstItem="ANf-hH-rmZ" firstAttribute="leading" secondItem="bGZ-k8-1HH" secondAttribute="trailing" constant="24" id="FXQ-xP-9jR"/>
-                                                <constraint firstItem="bGZ-k8-1HH" firstAttribute="leading" secondItem="9NU-XJ-GPQ" secondAttribute="leading" constant="40" id="KJK-IH-C5H"/>
+                                                <constraint firstItem="ANf-hH-rmZ" firstAttribute="leading" secondItem="9NU-XJ-GPQ" secondAttribute="leading" constant="40" id="8Az-6f-6Mn"/>
                                                 <constraint firstAttribute="trailing" secondItem="ANf-hH-rmZ" secondAttribute="trailing" constant="40" id="UF0-b7-TNp"/>
                                                 <constraint firstItem="ANf-hH-rmZ" firstAttribute="centerY" secondItem="9NU-XJ-GPQ" secondAttribute="centerY" id="UyC-1b-3wT"/>
                                             </constraints>
@@ -233,28 +217,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cpf-I5-n9j">
-                                                    <rect key="frame" x="108" y="7" width="452" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hasło" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cpf-I5-n9j">
+                                                    <rect key="frame" x="40" y="7" width="520" height="30"/>
+                                                    <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
                                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     <connections>
                                                         <action selector="textFieldTextHasChangedAction:" destination="Ujy-3h-vlv" eventType="editingChanged" id="ptS-qO-Ysa"/>
                                                     </connections>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hasło" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bq-yt-XAc">
-                                                    <rect key="frame" x="40" y="11" width="44" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="cpf-I5-n9j" firstAttribute="leading" secondItem="2bq-yt-XAc" secondAttribute="trailing" constant="24" id="0js-hL-pOB"/>
-                                                <constraint firstItem="2bq-yt-XAc" firstAttribute="leading" secondItem="rjF-kW-Upc" secondAttribute="leading" constant="40" id="95t-sK-e8d"/>
                                                 <constraint firstItem="cpf-I5-n9j" firstAttribute="centerY" secondItem="rjF-kW-Upc" secondAttribute="centerY" id="PQX-ol-sRU"/>
-                                                <constraint firstItem="2bq-yt-XAc" firstAttribute="centerY" secondItem="rjF-kW-Upc" secondAttribute="centerY" id="ck1-lY-SqB"/>
                                                 <constraint firstAttribute="trailing" secondItem="cpf-I5-n9j" secondAttribute="trailing" constant="40" id="k3N-Fu-Nph"/>
+                                                <constraint firstItem="cpf-I5-n9j" firstAttribute="leading" secondItem="rjF-kW-Upc" secondAttribute="leading" constant="40" id="u0B-af-pxP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -265,28 +241,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ug6-gf-aY5">
-                                                    <rect key="frame" x="172" y="7" width="388" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Powtórz hasło" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ug6-gf-aY5">
+                                                    <rect key="frame" x="40" y="7" width="520" height="30"/>
+                                                    <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
                                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     <connections>
                                                         <action selector="textFieldTextHasChangedAction:" destination="Ujy-3h-vlv" eventType="editingChanged" id="U6V-6G-D9p"/>
                                                     </connections>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powtórz hasło" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljH-N9-tBP">
-                                                    <rect key="frame" x="40" y="11" width="108" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="Ug6-gf-aY5" firstAttribute="leading" secondItem="ljH-N9-tBP" secondAttribute="trailing" constant="24" id="DkW-Me-frf"/>
                                                 <constraint firstItem="Ug6-gf-aY5" firstAttribute="centerY" secondItem="EBy-7f-AZl" secondAttribute="centerY" id="I6P-fl-TIk"/>
                                                 <constraint firstAttribute="trailing" secondItem="Ug6-gf-aY5" secondAttribute="trailing" constant="40" id="az8-Td-ihg"/>
-                                                <constraint firstItem="ljH-N9-tBP" firstAttribute="leading" secondItem="EBy-7f-AZl" secondAttribute="leading" constant="40" id="cAo-Q4-tgv"/>
-                                                <constraint firstItem="ljH-N9-tBP" firstAttribute="centerY" secondItem="EBy-7f-AZl" secondAttribute="centerY" id="pIu-6S-f9b"/>
+                                                <constraint firstItem="Ug6-gf-aY5" firstAttribute="leading" secondItem="EBy-7f-AZl" secondAttribute="leading" constant="40" id="zPt-xX-kdt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -297,9 +265,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjd-ec-sR3">
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjd-ec-sR3">
                                                     <rect key="frame" x="40" y="6" width="520" height="30"/>
                                                     <color key="backgroundColor" red="0.27572983503341675" green="0.62328392267227173" blue="0.51743841171264648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
                                                     <state key="normal" title="Zarejestruj się">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -334,6 +303,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="ciH-XZ-8fI">
                         <barButtonItem key="leftBarButtonItem" title="Anuluj" id="5tg-Zm-cqK">
+                            <color key="tintColor" red="0.27572983499999998" green="0.62328392269999999" blue="0.51743841170000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="cancelAction:" destination="Ujy-3h-vlv" id="wGG-80-8s3"/>
                             </connections>
@@ -377,6 +347,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ETW-CB-mmD"/>
+        <segue reference="3Xu-Kx-8g6"/>
     </inferredMetricsTieBreakers>
 </document>

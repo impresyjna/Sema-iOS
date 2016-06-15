@@ -7,14 +7,20 @@
 //
 
 #import "SEChooseWhoToSendTableViewController.h"
+#import "SESendCardViewController.h"
+
+#import "SELoginViewController.h"
+#import "SERegisterViewController.h"
 
 #import "SERoomUserCell.h"
+
+#import "SEPageViewControllerDataSource.h"
 
 //Views
 #import "MBProgressHUD.h"
 
 @interface SEChooseWhoToSendTableViewController ()
-
+@property (nonatomic, strong) NSArray <UIViewController *> *controllers;
 @end
 
 @implementation SEChooseWhoToSendTableViewController
@@ -75,9 +81,13 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    SERoomUser *roomUser = [self.viewModel roomUserForIndexPath:indexPath];
-    //[self.navigationController pushViewController:<#(nonnull UIViewController *)#> animated:<#(BOOL)#>]
-    //[self.delegate loginPicker:self didPickActionSubject:friendship];
+    //SERoomUser *roomUser = [self.viewModel roomUserForIndexPath:indexPath];
+    SESendCardViewController *roomViewController = [[UIStoryboard storyboardWithName:@"Game" bundle:nil] instantiateViewControllerWithIdentifier:@"SendCard"];
+    SELoginViewController *loginController = [SELoginViewController new];
+    SERegisterViewController *registerController = [SERegisterViewController new];
+    _controllers = @[loginController, registerController];
+    roomViewController.dataSource = [[SEPageViewControllerDataSource alloc] initWithControllers:_controllers];
+    [self.navigationController pushViewController:roomViewController animated:YES];
 }
 
 @end
