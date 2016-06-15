@@ -11,7 +11,5 @@
 #import "SEPageViewControllerDataSource.h"
 
 @interface SESendCardViewController : UIPageViewController
-
-@property (nonatomic, assign) SEPageViewControllerDataSource *dataSource;
-
+@property (nonatomic, strong) SEPageViewControllerDataSource *cardsDataSource;
 @end

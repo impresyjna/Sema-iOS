@@ -19,13 +19,17 @@
     return self;
 }
 
+- (UIViewController *)selectedViewController {
+    return [_controllers objectAtIndex:_selectedIndex];
+}
+
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
-    if(_selectedIndex - 1 < 0) {
+    if(_selectedIndex == 0) {
         return nil;
     }
     
     _selectedIndex = _selectedIndex - 1;
-    return [_controllers objectAtIndex:_selectedIndex];
+    return [self selectedViewController];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
@@ -35,7 +39,7 @@
     }
     
     _selectedIndex = _selectedIndex + 1;
-    return [_controllers objectAtIndex:_selectedIndex];
+    return [self selectedViewController];
 }
 
 @end
