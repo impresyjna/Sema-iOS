@@ -8,13 +8,27 @@
 
 #import <Foundation/Foundation.h>
 
+@class SEPageViewControllerDataSource;
+
+@protocol SECardControllerProtocol
+
+- (NSString *)navigationTitle;
+
+@end
+
+@protocol SEPageDataSourceDelegate
+
+- (void)dataSource:(SEPageViewControllerDataSource *)dataSource willChangeController:(UIViewController <SECardControllerProtocol> *)viewController;
+
+@end
+
 @interface SEPageViewControllerDataSource : NSObject <UIPageViewControllerDataSource>
-
+@property (nonatomic, weak) id<SEPageDataSourceDelegate> delegate; 
 @property (nonatomic, assign, readonly) NSUInteger selectedIndex;
-@property (nonatomic, strong, readonly) NSArray <UIViewController *> *controllers;
+@property (nonatomic, strong, readonly) NSArray <UIViewController <SECardControllerProtocol> *> *controllers;
 
-- (UIViewController *)selectedViewController;
+- (UIViewController<SECardControllerProtocol> *)selectedViewController;
 
-- (instancetype)initWithControllers:(NSArray <UIViewController *> *)controllers; 
+- (instancetype)initWithControllers:(NSArray <UIViewController <SECardControllerProtocol> *> *)controllers; 
 
 @end

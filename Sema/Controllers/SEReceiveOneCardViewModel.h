@@ -21,6 +21,7 @@
 #import "UIAlertController+Errors.h"
 
 typedef void(^SEReceiveOneCardFetchCompletion)(NSArray <SEQuestionInCard *> *questionInCards, UIAlertController *alert);
+typedef void(^SEAcceptGameCardViewModelCompletionBlock)(BOOL success, UIAlertController *alert);
 
 @interface SEReceiveOneCardViewModel : NSObject
 
@@ -35,5 +36,6 @@ typedef void(^SEReceiveOneCardFetchCompletion)(NSArray <SEQuestionInCard *> *que
 - (SEQuestionCellViewModel *)cellViewModelForIndexPath:(NSIndexPath *)indexPath;
 
 - (void)fetchOneCardWithCompletionBlock:(SEReceiveOneCardFetchCompletion)block;
+- (void)updateGameCardWithCompletion:(SEAcceptGameCardViewModelCompletionBlock)block; 
 
 @end

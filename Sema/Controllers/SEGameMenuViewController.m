@@ -28,7 +28,7 @@
 }
 
 - (IBAction)receiveCardsAction:(id)sender {
-    NSMutableArray <UIViewController *> *controllers = [NSMutableArray new];
+    NSMutableArray <UIViewController <SECardControllerProtocol> *> *controllers = [NSMutableArray new];
     __weak typeof (self) wSelf = self;
     [_viewModel fetchGameCardsWithCompletionBlock:^(NSArray<SEGameCard *> *gameCards, UIAlertController *alert) {
         SESendCardViewController *receiveCardViewController = [[UIStoryboard storyboardWithName:@"Game" bundle:nil] instantiateViewControllerWithIdentifier:@"SendCard"];

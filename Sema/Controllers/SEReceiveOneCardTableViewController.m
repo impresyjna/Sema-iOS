@@ -9,10 +9,12 @@
 #import "SEReceiveOneCardTableViewController.h"
 
 #import "SEQuestionCell.h"
+#import "SEQuestion.h"
 
 //Views
 #import "MBProgressHUD.h"
 
+#import "UIView+Toast.h"
 
 @interface SEReceiveOneCardTableViewController ()
 
@@ -31,7 +33,7 @@
     
     [self.tableView registerNib:[SEQuestionCell nib]
          forCellReuseIdentifier:[SEQuestionCell reuseIdentifier]];
-    
+    self.navigationItem.title = _viewModel.card.senderLogin; 
     self.tableView.rowHeight = [SEQuestionCell height];
     [self reloadData];
 }
@@ -46,6 +48,24 @@
     
 }
 
+- (IBAction)acceptCardAction:(id)sender {
+    __weak typeof (self) wSelf = self;
+    [_viewModel updateGameCardWithCompletion:^(BOOL success, UIAlertController *alert) {
+        [MBProgressHUD hideHUDForView:wSelf.view animated:YES];
+        
+        if (!success && alert) {
+            [wSelf presentViewController:alert animated:YES completion:nil];
+            return ;
+        } else {
+            [wSelf.view makeToast:@"Wysłano"
+                         duration:2.0
+                         position:CSToastPositionCenter];
+            [wSelf.navigationController popViewControllerAnimated:YES];
+        }
+    }];
+}
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.viewModel numberOfQuestions];
 }
@@ -55,9 +75,18 @@
     SEQuestionCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     SEQuestionCellViewModel *cellViewModel = [self.viewModel cellViewModelForIndexPath:indexPath];
-    [cell populateWithViewModel:cellViewModel];
+    SEQuestionInCard *question = [self.viewModel questionInCardForIndexPath:indexPath];
+    if([_viewModel.card.questionNumber integerValue] == [question.cardNumber integerValue]) {
+        [cell populateWithViewModel:cellViewModel colorMode:1];
+    } else {
+        [cell populateWithViewModel:cellViewModel colorMode:0];
+    }
     
     return cell;
+}
+
+-(NSString *)navigationTitle {
+    return _viewModel.card.senderLogin; 
 }
 
 @end

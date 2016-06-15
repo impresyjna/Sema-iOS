@@ -10,6 +10,7 @@
 #import "NSString+Validation.h"
 #import "UIAlertController+Errors.h"
 
+#import "SEGameCardOperationsDispatcher.h"
 
 //Account
 #import "SEAccount.h"
@@ -45,6 +46,21 @@
 }
 
 - (void)fetchOneCardWithCompletionBlock:(SEReceiveOneCardFetchCompletion)block {
+}
+
+- (void)updateGameCardWithCompletion:(SEAcceptGameCardViewModelCompletionBlock)block {
+    
+    SEGameCardParams *params = [[SEGameCardParams alloc] initWithCardId:_card.cId roomUserId:0 questionId:0 ready:@(1) roomId:@(_room.rId)];
+    
+    [[SEGameCardOperationsDispatcher new] updateGameCardWithParams:params completion:^(BOOL success, SEGameCard *gameCard, NSError *error) {
+        if (success && !error) {
+            
+        }
+        
+        if (block) {
+            block(success, error ? [UIAlertController alertControllerWithError:error] : nil);
+        }
+    }];
 }
 
 @end

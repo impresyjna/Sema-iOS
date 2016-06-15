@@ -555,6 +555,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="NSZ-KT-YCe">
                         <barButtonItem key="backBarButtonItem" title="Wróć" id="eZK-DL-8u2"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="A2u-ZV-vHm"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5m4-Ta-aaP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -700,14 +701,26 @@
             </objects>
             <point key="canvasLocation" x="1856" y="-1638"/>
         </scene>
-        <!--Receive One Card Table View Controller-->
+        <!--Title-->
         <scene sceneID="jg6-8W-rQr">
             <objects>
                 <tableViewController storyboardIdentifier="ReceiveOneCard" id="s6N-5y-bQ2" customClass="SEReceiveOneCardTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="u04-Js-eVQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="syJ-8d-x2d">
+                            <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
+                            <state key="normal" title="Akceptuj">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="acceptCardAction:" destination="s6N-5y-bQ2" eventType="touchUpInside" id="Kvm-IB-tZu"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qte-T4-ULD">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
@@ -723,10 +736,11 @@
                             <outlet property="delegate" destination="s6N-5y-bQ2" id="X4T-k9-eLz"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="RQJ-Mb-brX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pp0-kC-Ocy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2541" y="-1633"/>
+            <point key="canvasLocation" x="2547" y="-1638"/>
         </scene>
         <!--Choose Who To Send Table View Controller-->
         <scene sceneID="9CF-t0-iQk">
@@ -764,7 +778,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pZf-Vd-EKi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Qm6-eN-xs1">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
@@ -792,6 +806,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAU-e0-GKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2541" y="-953"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QNZ-Qc-nN5">
+            <objects>
+                <viewController id="uhF-Jw-tln" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jck-eZ-Rao"/>
+                        <viewControllerLayoutGuide type="bottom" id="P8Q-Ec-lhK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZLE-ZX-fpE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m6G-ot-IuI">
+                                <rect key="frame" x="40" y="101" width="520" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KpB-1Y-iIR">
+                                <rect key="frame" x="40" y="171" width="520" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oy-3a-aa3">
+                                <rect key="frame" x="40" y="40" width="520" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KpB-1Y-iIR" firstAttribute="leading" secondItem="ZLE-ZX-fpE" secondAttribute="leading" constant="40" id="Olh-K8-ruT"/>
+                            <constraint firstItem="9Oy-3a-aa3" firstAttribute="top" secondItem="ZLE-ZX-fpE" secondAttribute="topMargin" constant="40" id="WDA-gI-mot"/>
+                            <constraint firstItem="m6G-ot-IuI" firstAttribute="leading" secondItem="ZLE-ZX-fpE" secondAttribute="leading" constant="40" id="WSk-gL-r5F"/>
+                            <constraint firstAttribute="trailing" secondItem="m6G-ot-IuI" secondAttribute="trailing" constant="40" id="ZqD-XR-WSc"/>
+                            <constraint firstItem="9Oy-3a-aa3" firstAttribute="leading" secondItem="ZLE-ZX-fpE" secondAttribute="leading" constant="40" id="bxb-nu-wdZ"/>
+                            <constraint firstAttribute="trailing" secondItem="KpB-1Y-iIR" secondAttribute="trailing" constant="40" id="mXa-Zx-rR6"/>
+                            <constraint firstAttribute="trailing" secondItem="9Oy-3a-aa3" secondAttribute="trailing" constant="40" id="qnG-qy-JUs"/>
+                            <constraint firstItem="m6G-ot-IuI" firstAttribute="top" secondItem="9Oy-3a-aa3" secondAttribute="bottom" constant="40" id="uLO-c2-mAR"/>
+                            <constraint firstItem="KpB-1Y-iIR" firstAttribute="top" secondItem="m6G-ot-IuI" secondAttribute="bottom" constant="40" id="vhy-dS-pIg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pMJ-hP-aYY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="451" y="-1705"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jAt-wm-zDY">

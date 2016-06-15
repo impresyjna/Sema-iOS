@@ -28,6 +28,9 @@
 		1A1852631D11AFEE00BEA270 /* SEQuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852621D11AFEE00BEA270 /* SEQuestionCell.m */; };
 		1A1852651D11AFFB00BEA270 /* SEQuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1852641D11AFFB00BEA270 /* SEQuestionCell.xib */; };
 		1A1852681D11B01200BEA270 /* SEQuestionCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852671D11B01200BEA270 /* SEQuestionCellViewModel.m */; };
+		1A18526B1D11DCC400BEA270 /* SEGameCardParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18526A1D11DCC400BEA270 /* SEGameCardParams.m */; };
+		1A18526E1D11E20400BEA270 /* SEGameCardOperationsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18526D1D11E20400BEA270 /* SEGameCardOperationsDispatcher.m */; };
+		1A1852711D11E23900BEA270 /* SEGameCardSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852701D11E23900BEA270 /* SEGameCardSerializer.m */; };
 		1A4439E31D05772E00E96873 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4439E21D05772E00E96873 /* Game.storyboard */; };
 		1A4439E81D05881C00E96873 /* SESessionOperationsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4439E71D05881C00E96873 /* SESessionOperationsDispatcher.m */; };
 		1A5BC3E01D0C491E004165EE /* SENewQuestionParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC3DF1D0C491E004165EE /* SENewQuestionParams.m */; };
@@ -154,6 +157,12 @@
 		1A1852641D11AFFB00BEA270 /* SEQuestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SEQuestionCell.xib; sourceTree = "<group>"; };
 		1A1852661D11B01200BEA270 /* SEQuestionCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEQuestionCellViewModel.h; sourceTree = "<group>"; };
 		1A1852671D11B01200BEA270 /* SEQuestionCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEQuestionCellViewModel.m; sourceTree = "<group>"; };
+		1A1852691D11DCC400BEA270 /* SEGameCardParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGameCardParams.h; sourceTree = "<group>"; };
+		1A18526A1D11DCC400BEA270 /* SEGameCardParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGameCardParams.m; sourceTree = "<group>"; };
+		1A18526C1D11E20400BEA270 /* SEGameCardOperationsDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGameCardOperationsDispatcher.h; sourceTree = "<group>"; };
+		1A18526D1D11E20400BEA270 /* SEGameCardOperationsDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGameCardOperationsDispatcher.m; sourceTree = "<group>"; };
+		1A18526F1D11E23900BEA270 /* SEGameCardSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGameCardSerializer.h; sourceTree = "<group>"; };
+		1A1852701D11E23900BEA270 /* SEGameCardSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGameCardSerializer.m; sourceTree = "<group>"; };
 		1A4439E21D05772E00E96873 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		1A4439E61D05881C00E96873 /* SESessionOperationsDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESessionOperationsDispatcher.h; sourceTree = "<group>"; };
 		1A4439E71D05881C00E96873 /* SESessionOperationsDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESessionOperationsDispatcher.m; sourceTree = "<group>"; };
@@ -451,6 +460,8 @@
 				1A18522A1D10C98500BEA270 /* SEGameOperationsDispatcher.m */,
 				1A18522C1D10CA3C00BEA270 /* SERoomUserOperationsDispatcher.h */,
 				1A18522D1D10CA3C00BEA270 /* SERoomUserOperationsDispatcher.m */,
+				1A18526C1D11E20400BEA270 /* SEGameCardOperationsDispatcher.h */,
+				1A18526D1D11E20400BEA270 /* SEGameCardOperationsDispatcher.m */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -670,6 +681,8 @@
 				1A1852301D10CB7D00BEA270 /* SERoomUserSerializer.m */,
 				1A18524E1D11AA2700BEA270 /* SEGameCardsSerializer.h */,
 				1A18524F1D11AA2700BEA270 /* SEGameCardsSerializer.m */,
+				1A18526F1D11E23900BEA270 /* SEGameCardSerializer.h */,
+				1A1852701D11E23900BEA270 /* SEGameCardSerializer.m */,
 			);
 			name = Serializers;
 			sourceTree = "<group>";
@@ -688,6 +701,8 @@
 				1AE6ED771D0F3A2100349BB3 /* SEFriendParams.m */,
 				1AE6EDB81D1058CC00349BB3 /* SERoomParams.h */,
 				1AE6EDB91D1058CC00349BB3 /* SERoomParams.m */,
+				1A1852691D11DCC400BEA270 /* SEGameCardParams.h */,
+				1A18526A1D11DCC400BEA270 /* SEGameCardParams.m */,
 			);
 			name = Params;
 			sourceTree = "<group>";
@@ -1280,6 +1295,7 @@
 				1A1852501D11AA2700BEA270 /* SEGameCardsSerializer.m in Sources */,
 				1A5BC40E1D0E087B004165EE /* SEFriendship.m in Sources */,
 				1AE6EDBA1D1058CC00349BB3 /* SERoomParams.m in Sources */,
+				1A1852711D11E23900BEA270 /* SEGameCardSerializer.m in Sources */,
 				1A18525F1D11AEC500BEA270 /* SEReceiveOneCardTableViewController.m in Sources */,
 				1AE6ED861D0F4DBF00349BB3 /* SEError.m in Sources */,
 				1AC1D7311CD7D23A00F9723A /* SERequests.m in Sources */,
@@ -1292,6 +1308,7 @@
 				1AE6EDB41D10563800349BB3 /* SERoomViewModel.m in Sources */,
 				1A5BC4011D0D9505004165EE /* SEEditProfileViewModel.m in Sources */,
 				1AE6ED781D0F3A2100349BB3 /* SEFriendParams.m in Sources */,
+				1A18526B1D11DCC400BEA270 /* SEGameCardParams.m in Sources */,
 				1AC1D73D1CD7D8F700F9723A /* SERegisterUserParams.m in Sources */,
 				1A5BC3F91D0C966A004165EE /* SESettingsViewModel.m in Sources */,
 				1A5BC3EB1D0C6436004165EE /* SEQuestionSerializer.m in Sources */,
@@ -1329,6 +1346,7 @@
 				1A5BC3EE1D0C64DB004165EE /* SEQuestion.m in Sources */,
 				1AE6ED8C1D0F6D6B00349BB3 /* SERoom.m in Sources */,
 				1A1852281D10BD3800BEA270 /* SEGameMenuViewModel.m in Sources */,
+				1A18526E1D11E20400BEA270 /* SEGameCardOperationsDispatcher.m in Sources */,
 				1AC1D7341CD7D38000F9723A /* SEUser.m in Sources */,
 				1A1852441D119D6100BEA270 /* SEQuestionInCard.m in Sources */,
 				1A5BC3F11D0C6A77004165EE /* SEQuestionOperationsDispatcher.m in Sources */,

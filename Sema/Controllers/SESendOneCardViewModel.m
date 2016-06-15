@@ -11,12 +11,13 @@
 #import "NSString+Validation.h"
 #import "UIAlertController+Errors.h"
 
+#import "SEGameCardOperationsDispatcher.h"
 
 //Account
 #import "SEAccount.h"
 
 @interface SESendOneCardViewModel()
-@property (nonatomic, strong) NSArray <SEQuestionInCard *> *questionInCards;
+
 @end
 
 @implementation SESendOneCardViewModel
@@ -47,6 +48,21 @@
 }
 
 - (void)fetchOneCardWithCompletionBlock:(SEOneCardFetchCompletion)block {
+}
+
+- (void)updateGameCardWithCompletion:(SEEditGameCardViewModelCompletionBlock)block {
+    
+    SEGameCardParams *params = [[SEGameCardParams alloc] initWithCardId:_card.cId roomUserId:@(_roomUser.rId) questionId:_question.cardNumber ready:@(0) roomId:@(_room.rId)];
+    
+    [[SEGameCardOperationsDispatcher new] updateGameCardWithParams:params completion:^(BOOL success, SEGameCard *gameCard, NSError *error) {
+        if (success && !error) {
+            
+        }
+        
+        if (block) {
+            block(success, error ? [UIAlertController alertControllerWithError:error] : nil);
+        }
+    }];
 }
 
 @end

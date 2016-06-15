@@ -41,7 +41,7 @@
 
 - (NSMutableURLRequest *)requestUpdateUserWithParams:(SERegisterUserParams *)params {
     return [self.requestSerializer requestWithMethod:@"PUT"
-                                           URLString:[NSString stringWithFormat:@"%@/users/%d",self.baseURL, [SEAccount account].user.uId]
+                                           URLString:[NSString stringWithFormat:@"%@/users/%ld",self.baseURL, [SEAccount account].user.uId]
                                           parameters:[params params]
                                                error:nil];
 }
@@ -113,6 +113,13 @@
 - (NSMutableURLRequest *)requestUnreceivedGameCardsIndexWithParams:(SERoomParams *)params {
     return [self.requestSerializer requestWithMethod:@"GET"
                                            URLString:[NSString stringWithFormat:@"%@/unreceived_cards",self.baseURL]
+                                          parameters:[params params]
+                                               error:nil];
+}
+
+- (NSMutableURLRequest *)requestUpdateGameCardWithParams:(SEGameCardParams *)params {
+    return [self.requestSerializer requestWithMethod:@"PUT"
+                                           URLString:[NSString stringWithFormat:@"%@/game_cards/%ld",self.baseURL, params.cId]
                                           parameters:[params params]
                                                error:nil];
 }

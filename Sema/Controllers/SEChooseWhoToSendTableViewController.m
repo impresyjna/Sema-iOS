@@ -79,7 +79,7 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSMutableArray <UIViewController *> *controllers = [NSMutableArray new];
+    NSMutableArray <UIViewController <SECardControllerProtocol> *> *controllers = [NSMutableArray new];
     SERoomUser *roomUser = [self.viewModel roomUserForIndexPath:indexPath];
     __weak typeof (self) wSelf = self;
     [_viewModel fetchGameCardsWithCompletionBlock:^(NSArray<SEGameCard *> *gameCards, UIAlertController *alert) {

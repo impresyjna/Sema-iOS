@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SEReceiveOneCardViewModel.h"
+#import "SEPageViewControllerDataSource.h"
 
-@interface SEReceiveOneCardTableViewController : UITableViewController
+@interface SEReceiveOneCardTableViewController : UITableViewController <SECardControllerProtocol>
 
 @property (nonatomic, strong) SEReceiveOneCardViewModel *viewModel;
 

@@ -13,6 +13,8 @@
 //Views
 #import "MBProgressHUD.h"
 
+#import "UIView+Toast.h"
+
 @interface SESendOneCardTableViewController ()
 
 @end
@@ -53,9 +55,33 @@
     SEQuestionCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     SEQuestionCellViewModel *cellViewModel = [self.viewModel cellViewModelForIndexPath:indexPath];
-    [cell populateWithViewModel:cellViewModel];
+    [cell populateWithViewModel:cellViewModel colorMode:0];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    _viewModel.question = [self.viewModel questionInCardForIndexPath:indexPath];
+    
+    __weak typeof (self) wSelf = self;
+    [_viewModel updateGameCardWithCompletion:^(BOOL success, UIAlertController *alert) {
+        [MBProgressHUD hideHUDForView:wSelf.view animated:YES];
+        
+        if (!success && alert) {
+            [wSelf presentViewController:alert animated:YES completion:nil];
+            return ;
+        } else {
+            [wSelf.view makeToast:@"Wysłano"
+                         duration:2.0
+                         position:CSToastPositionCenter];
+            [wSelf.navigationController popViewControllerAnimated:YES];
+        }
+    }];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (NSString *)navigationTitle {
+    return @""; 
 }
 
 

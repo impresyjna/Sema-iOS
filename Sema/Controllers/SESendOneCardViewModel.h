@@ -21,12 +21,15 @@
 #import "UIAlertController+Errors.h"
 
 typedef void(^SEOneCardFetchCompletion)(NSArray <SEQuestionInCard *> *questionInCards, UIAlertController *alert);
+typedef void(^SEEditGameCardViewModelCompletionBlock)(BOOL success, UIAlertController *alert);
 
 @interface SESendOneCardViewModel : NSObject
 
 @property (nonatomic, strong, readonly) SERoom *room;
 @property (nonatomic, strong, readonly) SERoomUser *roomUser;
 @property (nonatomic, strong, readonly) SEGameCard *card;
+@property (nonatomic, strong) NSArray <SEQuestionInCard *> *questionInCards;
+@property (nonatomic, strong) SEQuestionInCard *question; 
 
 - (instancetype)initWithRoom:(SERoom *)room roomUser:(SERoomUser *)roomUSer card:(SEGameCard *)card;
 
@@ -36,5 +39,6 @@ typedef void(^SEOneCardFetchCompletion)(NSArray <SEQuestionInCard *> *questionIn
 - (SEQuestionCellViewModel *)cellViewModelForIndexPath:(NSIndexPath *)indexPath;
 
 - (void)fetchOneCardWithCompletionBlock:(SEOneCardFetchCompletion)block;
+- (void)updateGameCardWithCompletion:(SEEditGameCardViewModelCompletionBlock)block; 
 
 @end

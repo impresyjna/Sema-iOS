@@ -13,6 +13,6 @@
 
 + (CGFloat)height;
 
-- (void)populateWithViewModel:(SEQuestionCellViewModel *)viewModel;
+- (void)populateWithViewModel:(SEQuestionCellViewModel *)viewModel colorMode:(NSInteger)colorable;
 
 @end

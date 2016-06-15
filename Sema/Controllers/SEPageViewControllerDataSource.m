@@ -10,7 +10,7 @@
 
 @implementation SEPageViewControllerDataSource
 
-- (instancetype)initWithControllers:(NSArray <UIViewController *> *)controllers {
+- (instancetype)initWithControllers:(NSArray <UIViewController <SECardControllerProtocol> *> *)controllers {
     self = [super init];
     if (self) {
         _controllers = controllers;
@@ -19,7 +19,7 @@
     return self;
 }
 
-- (UIViewController *)selectedViewController {
+- (UIViewController<SECardControllerProtocol> *)selectedViewController {
     return [_controllers objectAtIndex:_selectedIndex];
 }
 
@@ -29,7 +29,9 @@
     }
     
     _selectedIndex = _selectedIndex - 1;
-    return [self selectedViewController];
+    UIViewController<SECardControllerProtocol> *selectedViewController = [self selectedViewController];
+    [self.delegate dataSource:self willChangeController:selectedViewController];
+    return selectedViewController;
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
@@ -39,7 +41,9 @@
     }
     
     _selectedIndex = _selectedIndex + 1;
-    return [self selectedViewController];
+    UIViewController<SECardControllerProtocol> *selectedViewController = [self selectedViewController];
+    [self.delegate dataSource:self willChangeController:selectedViewController];
+    return selectedViewController;
 }
 
 @end

@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 #import "SESendOneCardViewModel.h"
+#import "SEPageViewControllerDataSource.h"
 
-@interface SESendOneCardTableViewController : UITableViewController
+@interface SESendOneCardTableViewController : UITableViewController <SECardControllerProtocol>
 
 @property (nonatomic, strong) SESendOneCardViewModel *viewModel; 
 

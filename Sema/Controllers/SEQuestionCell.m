@@ -22,9 +22,13 @@
     return 40.0f;
 }
 
-- (void)populateWithViewModel:(SEQuestionCellViewModel *)viewModel {
+- (void)populateWithViewModel:(SEQuestionCellViewModel *)viewModel colorMode:(NSInteger)colorable {
     self.numberLabel.text = [viewModel.cardNumber stringValue];
     self.questionContentLabel.text = viewModel.questionContent;
+    if(colorable==1){
+        self.numberLabel.textColor = [UIColor magentaColor];
+        self.questionContentLabel.textColor = [UIColor magentaColor];
+    }
 }
 
 @end
