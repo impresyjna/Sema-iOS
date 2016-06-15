@@ -985,6 +985,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDDB998418C3943B003EBC42 /* Build configuration list for PBXNativeTarget "Sema" */;
 			buildPhases = (
+				D0AB9483C48BB2D5D1CBF425 /* 📦 Check Pods Manifest.lock */,
 				EADD9DFA0B4A2390A55E60D9 /* [CP] Check Pods Manifest.lock */,
 				BDF4202019B8F31200FE6C13 /* Generate Storyboard Identifier File */,
 				BD79800C19C0CF3E0087DCCA /* Generate Asset Catalog Identifier File */,
@@ -996,6 +997,8 @@
 				BD35136319BE21BD00A19841 /* Badge App Icons */,
 				DB4ED46866499C7FC97B9879 /* [CP] Embed Pods Frameworks */,
 				AE7962412D74E8D6E580B775 /* [CP] Copy Pods Resources */,
+				058F88142ABEC455255D2B2B /* 📦 Embed Pods Frameworks */,
+				7C580877B3EF0022B9ADAF00 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1086,6 +1089,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		058F88142ABEC455255D2B2B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sema/Pods-Sema-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C580877B3EF0022B9ADAF00 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sema/Pods-Sema-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AE7962412D74E8D6E580B775 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1174,6 +1207,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# This script walks the storyboards in your project and creates\n# StoryboardIdentifiers.{h,m} with constants for all the segue,\n# reuse, restoration, and storyboard identifiers.\n# The generated files live in the Other Sources group.\n\n# If this is not desired behavior for you, or you don't use\n# storyboards, feel free to remove this build phase and the\n# generated files in Other Sources.\n\n# If you would like constants generated for restoration IDs,\n# uncomment this line:\n#export NEED_RESTORATION_IDS=1\n\n\"${SRCROOT}/Scripts/GenerateStoryboardIDs.py\"";
+			showEnvVarsInLog = 0;
+		};
+		D0AB9483C48BB2D5D1CBF425 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		DB4ED46866499C7FC97B9879 /* [CP] Embed Pods Frameworks */ = {
