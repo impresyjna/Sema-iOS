@@ -24,7 +24,6 @@
     [super viewDidLoad];
     // Initialize Refresh Control
     UIRefreshControl *refreshControl = [UIRefreshControl new];
-    self.automaticallyAdjustsScrollViewInsets = YES;
     // Configure Refresh Control
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
     [self.tableView addSubview:refreshControl];

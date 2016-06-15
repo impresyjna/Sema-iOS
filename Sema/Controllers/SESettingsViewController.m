@@ -44,10 +44,6 @@
     [_viewModel logoutWithCompletion:^(BOOL success, UIAlertController *alert) {
         [MBProgressHUD hideHUDForView:wSelf.view animated:YES];
         
-        if (!success && alert) {
-            [wSelf presentViewController:alert animated:YES completion:nil];
-        }
-        
         UIViewController *loginViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SELoginViewController"];
         [wSelf presentViewController:loginViewController animated:YES completion:^{
             [[[UIApplication sharedApplication] keyWindow] setRootViewController:loginViewController];

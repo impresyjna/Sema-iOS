@@ -17,6 +17,8 @@
     [super viewDidLoad];
     self.dataSource = _cardsDataSource;
     
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     [self setViewControllers:@[_cardsDataSource.selectedViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
 }
 
