@@ -21,7 +21,7 @@
 @implementation SERoomCell
 
 + (CGFloat)height {
-    return 140.0f;
+    return 120.0f;
 }
 
 - (void)populateWithViewModel:(SERoomCellViewModel *)viewModel {

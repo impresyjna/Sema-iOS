@@ -10,6 +10,7 @@
 +(UIImage *)icEditUser { return [UIImage imageNamed:@"ic_edit_user"]; }
 +(UIImage *)icFavorites { return [UIImage imageNamed:@"ic_favorites"]; }
 +(UIImage *)icGame { return [UIImage imageNamed:@"ic_game"]; }
++(UIImage *)icPerson { return [UIImage imageNamed:@"ic_person"]; }
 +(UIImage *)icSettings { return [UIImage imageNamed:@"ic_settings"]; }
 
 @end

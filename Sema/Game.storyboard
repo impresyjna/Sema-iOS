@@ -370,7 +370,13 @@
                             <outlet property="delegate" destination="man-jb-XQl" id="l5J-bO-QVY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Przyjaciele" id="glP-P4-08f"/>
+                    <navigationItem key="navigationItem" title="Przyjaciele" id="glP-P4-08f">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qLW-Du-G1R">
+                            <connections>
+                                <segue destination="sFz-eN-UdD" kind="show" id="Zhg-uf-1DZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bK-rF-oqp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -383,7 +389,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="M2W-Is-8cO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Kxb-v1-7Io">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -527,10 +533,11 @@
         <scene sceneID="KdV-n0-ndq">
             <objects>
                 <tableViewController id="YKl-MX-qUD" customClass="SERoomsViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jmk-Fh-KtK">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jmk-Fh-KtK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MEu-MR-3Fc">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -622,33 +629,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSo-Vs-DRH">
-                                <rect key="frame" x="24" y="100" width="552" height="30"/>
-                                <state key="normal" title="Odbierz"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcd-as-yjg">
-                                <rect key="frame" x="24" y="146" width="552" height="30"/>
-                                <state key="normal" title="Wyślij"/>
-                                <connections>
-                                    <action selector="chooseWhoToSendAction:" destination="8CD-q3-gKn" eventType="touchUpInside" id="cPp-iU-jKj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUV-44-yYK">
-                                <rect key="frame" x="24" y="192" width="552" height="30"/>
-                                <state key="normal" title="Opuść"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="YtV-fc-TVr">
+                                <rect key="frame" x="40" y="100" width="520" height="400"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYh-TY-Zei">
+                                        <rect key="frame" x="0.0" y="0.0" width="520" height="117"/>
+                                        <color key="backgroundColor" red="0.086274509803921567" green="0.62745098039215685" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
+                                        <state key="normal" title="Odbierz">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcd-as-yjg">
+                                        <rect key="frame" x="0.0" y="141" width="520" height="118"/>
+                                        <color key="backgroundColor" red="0.94509803921568625" green="0.76862745098039209" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
+                                        <state key="normal" title="Wyślij">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chooseWhoToSendAction:" destination="8CD-q3-gKn" eventType="touchUpInside" id="cPp-iU-jKj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUV-44-yYK">
+                                        <rect key="frame" x="0.0" y="283" width="520" height="117"/>
+                                        <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
+                                        <state key="normal" title="Opuść">
+                                            <color key="titleColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dUV-44-yYK" firstAttribute="top" secondItem="tcd-as-yjg" secondAttribute="bottom" constant="24" id="ywB-at-DTK"/>
+                                    <constraint firstItem="tcd-as-yjg" firstAttribute="top" secondItem="PYh-TY-Zei" secondAttribute="bottom" constant="24" id="zkx-9P-HhY"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="tcd-as-yjg" firstAttribute="top" secondItem="SSo-Vs-DRH" secondAttribute="bottom" constant="16" id="0fc-63-Vkt"/>
-                            <constraint firstItem="dUV-44-yYK" firstAttribute="top" secondItem="tcd-as-yjg" secondAttribute="bottom" constant="16" id="1Uq-IR-70k"/>
-                            <constraint firstItem="SSo-Vs-DRH" firstAttribute="leading" secondItem="T0U-Fx-9A6" secondAttribute="leading" constant="24" id="9PA-kk-72b"/>
-                            <constraint firstAttribute="trailing" secondItem="dUV-44-yYK" secondAttribute="trailing" constant="24" id="Ayi-xn-wsj"/>
-                            <constraint firstItem="dUV-44-yYK" firstAttribute="leading" secondItem="T0U-Fx-9A6" secondAttribute="leading" constant="24" id="CHP-gB-xVa"/>
-                            <constraint firstAttribute="trailing" secondItem="tcd-as-yjg" secondAttribute="trailing" constant="24" id="II2-Ky-EHI"/>
-                            <constraint firstItem="SSo-Vs-DRH" firstAttribute="top" secondItem="T0U-Fx-9A6" secondAttribute="topMargin" constant="100" id="bar-IG-Di1"/>
-                            <constraint firstAttribute="trailing" secondItem="SSo-Vs-DRH" secondAttribute="trailing" constant="24" id="dYH-6n-SC4"/>
-                            <constraint firstItem="tcd-as-yjg" firstAttribute="leading" secondItem="T0U-Fx-9A6" secondAttribute="leading" constant="24" id="pBm-6X-dVx"/>
+                            <constraint firstAttribute="trailing" secondItem="YtV-fc-TVr" secondAttribute="trailing" constant="40" id="1Oy-Ce-ZuC"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="YtV-fc-TVr" secondAttribute="bottom" constant="100" id="fY3-OK-huu"/>
+                            <constraint firstItem="YtV-fc-TVr" firstAttribute="leading" secondItem="T0U-Fx-9A6" secondAttribute="leading" constant="40" id="mFv-ZV-A0g"/>
+                            <constraint firstItem="YtV-fc-TVr" firstAttribute="top" secondItem="T0U-Fx-9A6" secondAttribute="topMargin" constant="100" id="qj0-a4-3HF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fq3-bN-iDc">
@@ -666,7 +704,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qTn-ET-Ikn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FvK-Ja-LOW">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
@@ -675,6 +713,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>

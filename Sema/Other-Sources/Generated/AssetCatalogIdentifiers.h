@@ -10,6 +10,7 @@
 +(UIImage *)icEditUser;
 +(UIImage *)icFavorites;
 +(UIImage *)icGame;
++(UIImage *)icPerson;
 +(UIImage *)icSettings;
 
 @end

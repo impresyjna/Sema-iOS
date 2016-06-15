@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *loginLabel;
 
+
 @end
 
 @implementation SERoomUserCell

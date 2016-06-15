@@ -19,7 +19,7 @@
 @implementation SEFriendshipCell
 
 + (CGFloat)height {
-    return 76.0f;
+    return 40.0f;
 }
 
 - (void)populateWithViewModel:(SEFriendshipCellViewModel *)viewModel {
