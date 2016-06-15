@@ -46,9 +46,8 @@
         
         if (!success && alert) {
             [wSelf presentViewController:alert animated:YES completion:nil];
-            
-            return ;
         }
+        
         UIViewController *loginViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SELoginViewController"];
         [wSelf presentViewController:loginViewController animated:YES completion:^{
             [[[UIApplication sharedApplication] keyWindow] setRootViewController:loginViewController];
