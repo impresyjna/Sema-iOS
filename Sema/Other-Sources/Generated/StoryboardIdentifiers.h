@@ -10,8 +10,9 @@ extern const struct SEGameStoryboardIDs {
         __unsafe_unretained NSString *menu;
         __unsafe_unretained NSString *roomView;
         __unsafe_unretained NSString *chooseWhoToSend;
-        __unsafe_unretained NSString *sendCard;
         __unsafe_unretained NSString *tabBar;
+        __unsafe_unretained NSString *sendOneCard;
+        __unsafe_unretained NSString *sendCard;
     } viewControllers;
 
 } SEGameStoryboardIDs;

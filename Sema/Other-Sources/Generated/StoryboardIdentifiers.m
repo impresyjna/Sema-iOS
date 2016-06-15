@@ -10,8 +10,9 @@ const struct SEGameStoryboardIDs SEGameStoryboardIDs = {
         .menu = @"GameMenu",
         .roomView = @"RoomView",
         .chooseWhoToSend = @"ChooseWhoToSend",
-        .sendCard = @"SendCard",
         .tabBar = @"GameTabBarController",
+        .sendOneCard = @"SendOneCard",
+        .sendCard = @"SendCard",
     },
 
 };

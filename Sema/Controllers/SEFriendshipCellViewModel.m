@@ -13,7 +13,7 @@
 - (instancetype)initWithFriendship:(SEFriendship *)friendship {
     self = [super init];
     if (self) {
-        _login = friendship.friend.login;
+        _login = friendship.friendUser.login;
     }
     return self;
 };

@@ -726,6 +726,34 @@
             </objects>
             <point key="canvasLocation" x="1857" y="-955"/>
         </scene>
+        <!--Send One Card Table View Controller-->
+        <scene sceneID="qzA-LY-AJ8">
+            <objects>
+                <tableViewController storyboardIdentifier="SendOneCard" id="Jkv-j2-7fb" customClass="SESendOneCardTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pZf-Vd-EKi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Qm6-eN-xs1">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qm6-eN-xs1" id="2qD-JL-Q2T">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Jkv-j2-7fb" id="ndR-gn-U9G"/>
+                            <outlet property="delegate" destination="Jkv-j2-7fb" id="CiE-tT-BkL"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebY-Ts-h0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1867" y="-278"/>
+        </scene>
         <!--Send Card View Controller-->
         <scene sceneID="akR-zJ-USJ">
             <objects>

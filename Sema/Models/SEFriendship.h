@@ -13,6 +13,6 @@
 @interface SEFriendship : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, assign, readonly) NSInteger fId;
-@property (nonatomic, strong, readonly) SEUser *friend;
+@property (nonatomic, strong, readonly) SEUser *friendUser;
 
 @end

@@ -11,20 +11,24 @@
 //Model
 #import "SERoomUser.h"
 #import "SERoom.h"
+#import "SEGameCard.h"
 
 //View Model
 #import "SERoomUserCellViewModel.h"
 
 //Service
 #import "SERoomUsersService.h"
+#import "SEGameCardsService.h"
 
 //Category
 #import "UIAlertController+Errors.h"
 
-typedef void(^SERoomUsersViewModelFetchSubjectsCompletion)(NSArray <SERoomUser *> *roomUsers, UIAlertController *alert);
+typedef void(^SERoomUsersViewModelFetchSubjectsCompletion)(NSArray <SERoomUser *> *gameUsers, UIAlertController *alert);
+typedef void(^SEGameCardsViewModelFetchSubjectsCompletion)(NSArray <SEGameCard *> *gameCards, UIAlertController *alert);
 
 @interface SEChooseWhoToSendViewModel : NSObject
 
+@property (nonatomic, strong) NSArray <SEGameCard *> *gameCards;
 @property (nonatomic, strong, readonly) SERoom *room;
 
 - (instancetype)initWithRoom:(SERoom *)room;
@@ -35,5 +39,6 @@ typedef void(^SERoomUsersViewModelFetchSubjectsCompletion)(NSArray <SERoomUser *
 - (SERoomUserCellViewModel *)cellViewModelForIndexPath:(NSIndexPath *)indexPath;
 
 - (void)fetchRoomUsersWithCompletionBlock:(SERoomUsersViewModelFetchSubjectsCompletion)block;
+- (void)fetchGameCardsWithCompletionBlock:(SEGameCardsViewModelFetchSubjectsCompletion)block;
 
 @end

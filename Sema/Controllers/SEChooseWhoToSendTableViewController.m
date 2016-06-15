@@ -8,11 +8,10 @@
 
 #import "SEChooseWhoToSendTableViewController.h"
 #import "SESendCardViewController.h"
-
-#import "SELoginViewController.h"
-#import "SERegisterViewController.h"
+#import "SESendOneCardTableViewController.h"
 
 #import "SERoomUserCell.h"
+#import "SESendOneCardViewModel.h"
 
 #import "SEPageViewControllerDataSource.h"
 
@@ -20,7 +19,6 @@
 #import "MBProgressHUD.h"
 
 @interface SEChooseWhoToSendTableViewController ()
-@property (nonatomic, strong) NSArray <UIViewController *> *controllers;
 @end
 
 @implementation SEChooseWhoToSendTableViewController
@@ -81,13 +79,22 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //SERoomUser *roomUser = [self.viewModel roomUserForIndexPath:indexPath];
-    SESendCardViewController *roomViewController = [[UIStoryboard storyboardWithName:@"Game" bundle:nil] instantiateViewControllerWithIdentifier:@"SendCard"];
-    SELoginViewController *loginController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"SELoginViewController"];
-    SERegisterViewController *registerController = [SERegisterViewController new];
-    _controllers = @[loginController, registerController];
-    roomViewController.cardsDataSource = [[SEPageViewControllerDataSource alloc] initWithControllers:_controllers];
-    [self.navigationController pushViewController:roomViewController animated:YES];
+    NSMutableArray <UIViewController *> *controllers = [NSMutableArray new];
+    SERoomUser *roomUser = [self.viewModel roomUserForIndexPath:indexPath];
+    __weak typeof (self) wSelf = self;
+    [_viewModel fetchGameCardsWithCompletionBlock:^(NSArray<SEGameCard *> *gameCards, UIAlertController *alert) {
+        SESendCardViewController *sendCardViewController = [[UIStoryboard storyboardWithName:@"Game" bundle:nil] instantiateViewControllerWithIdentifier:@"SendCard"];
+        for(SEGameCard *gameCard in gameCards) {
+            SESendOneCardTableViewController *sendOneCardViewController = [[UIStoryboard storyboardWithName:@"Game" bundle:nil] instantiateViewControllerWithIdentifier:@"SendOneCard"];
+            SESendOneCardViewModel *sendOneViewModel = [[SESendOneCardViewModel alloc] initWithRoom:wSelf.viewModel.room roomUser:roomUser card:gameCard];
+            sendOneCardViewController.viewModel = sendOneViewModel;
+            [controllers addObject:sendOneCardViewController];
+        }
+        sendCardViewController.cardsDataSource = [[SEPageViewControllerDataSource alloc] initWithControllers:controllers];
+        [wSelf.navigationController pushViewController:sendCardViewController animated:YES];
+    }];
+    
+    
 }
 
 @end

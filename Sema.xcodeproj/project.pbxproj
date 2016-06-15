@@ -16,6 +16,18 @@
 		1A1852391D11286A00BEA270 /* SEChooseWhoToSendViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852381D11286A00BEA270 /* SEChooseWhoToSendViewModel.m */; };
 		1A18523D1D112D5D00BEA270 /* SEPageViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18523C1D112D5D00BEA270 /* SEPageViewControllerDataSource.m */; };
 		1A1852401D11351000BEA270 /* SESendCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18523F1D11351000BEA270 /* SESendCardViewController.m */; };
+		1A1852441D119D6100BEA270 /* SEQuestionInCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852431D119D6100BEA270 /* SEQuestionInCard.m */; };
+		1A1852471D119FF600BEA270 /* SECard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852461D119FF600BEA270 /* SECard.m */; };
+		1A18524A1D11A69300BEA270 /* SEGameCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852491D11A69300BEA270 /* SEGameCard.m */; };
+		1A18524D1D11A94600BEA270 /* SEGameCardsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18524C1D11A94600BEA270 /* SEGameCardsService.m */; };
+		1A1852501D11AA2700BEA270 /* SEGameCardsSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18524F1D11AA2700BEA270 /* SEGameCardsSerializer.m */; };
+		1A1852541D11AD9B00BEA270 /* SESendOneCardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852531D11AD9B00BEA270 /* SESendOneCardTableViewController.m */; };
+		1A1852591D11AE6700BEA270 /* SEReceiveOneCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852581D11AE6700BEA270 /* SEReceiveOneCardViewModel.m */; };
+		1A18525C1D11AE7C00BEA270 /* SESendOneCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18525B1D11AE7C00BEA270 /* SESendOneCardViewModel.m */; };
+		1A18525F1D11AEC500BEA270 /* SEReceiveOneCardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18525E1D11AEC500BEA270 /* SEReceiveOneCardTableViewController.m */; };
+		1A1852631D11AFEE00BEA270 /* SEQuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852621D11AFEE00BEA270 /* SEQuestionCell.m */; };
+		1A1852651D11AFFB00BEA270 /* SEQuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1852641D11AFFB00BEA270 /* SEQuestionCell.xib */; };
+		1A1852681D11B01200BEA270 /* SEQuestionCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852671D11B01200BEA270 /* SEQuestionCellViewModel.m */; };
 		1A4439E31D05772E00E96873 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4439E21D05772E00E96873 /* Game.storyboard */; };
 		1A4439E81D05881C00E96873 /* SESessionOperationsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4439E71D05881C00E96873 /* SESessionOperationsDispatcher.m */; };
 		1A5BC3E01D0C491E004165EE /* SENewQuestionParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC3DF1D0C491E004165EE /* SENewQuestionParams.m */; };
@@ -119,6 +131,29 @@
 		1A18523C1D112D5D00BEA270 /* SEPageViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPageViewControllerDataSource.m; sourceTree = "<group>"; };
 		1A18523E1D11351000BEA270 /* SESendCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESendCardViewController.h; sourceTree = "<group>"; };
 		1A18523F1D11351000BEA270 /* SESendCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESendCardViewController.m; sourceTree = "<group>"; };
+		1A1852421D119D6100BEA270 /* SEQuestionInCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEQuestionInCard.h; sourceTree = "<group>"; };
+		1A1852431D119D6100BEA270 /* SEQuestionInCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEQuestionInCard.m; sourceTree = "<group>"; };
+		1A1852451D119FF600BEA270 /* SECard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SECard.h; sourceTree = "<group>"; };
+		1A1852461D119FF600BEA270 /* SECard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SECard.m; sourceTree = "<group>"; };
+		1A1852481D11A69300BEA270 /* SEGameCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGameCard.h; sourceTree = "<group>"; };
+		1A1852491D11A69300BEA270 /* SEGameCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGameCard.m; sourceTree = "<group>"; };
+		1A18524B1D11A94600BEA270 /* SEGameCardsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGameCardsService.h; sourceTree = "<group>"; };
+		1A18524C1D11A94600BEA270 /* SEGameCardsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGameCardsService.m; sourceTree = "<group>"; };
+		1A18524E1D11AA2700BEA270 /* SEGameCardsSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGameCardsSerializer.h; sourceTree = "<group>"; };
+		1A18524F1D11AA2700BEA270 /* SEGameCardsSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGameCardsSerializer.m; sourceTree = "<group>"; };
+		1A1852521D11AD9B00BEA270 /* SESendOneCardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESendOneCardTableViewController.h; sourceTree = "<group>"; };
+		1A1852531D11AD9B00BEA270 /* SESendOneCardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESendOneCardTableViewController.m; sourceTree = "<group>"; };
+		1A1852571D11AE6700BEA270 /* SEReceiveOneCardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEReceiveOneCardViewModel.h; sourceTree = "<group>"; };
+		1A1852581D11AE6700BEA270 /* SEReceiveOneCardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEReceiveOneCardViewModel.m; sourceTree = "<group>"; };
+		1A18525A1D11AE7C00BEA270 /* SESendOneCardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESendOneCardViewModel.h; sourceTree = "<group>"; };
+		1A18525B1D11AE7C00BEA270 /* SESendOneCardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESendOneCardViewModel.m; sourceTree = "<group>"; };
+		1A18525D1D11AEC500BEA270 /* SEReceiveOneCardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEReceiveOneCardTableViewController.h; sourceTree = "<group>"; };
+		1A18525E1D11AEC500BEA270 /* SEReceiveOneCardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEReceiveOneCardTableViewController.m; sourceTree = "<group>"; };
+		1A1852611D11AFEE00BEA270 /* SEQuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEQuestionCell.h; sourceTree = "<group>"; };
+		1A1852621D11AFEE00BEA270 /* SEQuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEQuestionCell.m; sourceTree = "<group>"; };
+		1A1852641D11AFFB00BEA270 /* SEQuestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SEQuestionCell.xib; sourceTree = "<group>"; };
+		1A1852661D11B01200BEA270 /* SEQuestionCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEQuestionCellViewModel.h; sourceTree = "<group>"; };
+		1A1852671D11B01200BEA270 /* SEQuestionCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEQuestionCellViewModel.m; sourceTree = "<group>"; };
 		1A4439E21D05772E00E96873 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		1A4439E61D05881C00E96873 /* SESessionOperationsDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESessionOperationsDispatcher.h; sourceTree = "<group>"; };
 		1A4439E71D05881C00E96873 /* SESessionOperationsDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESessionOperationsDispatcher.m; sourceTree = "<group>"; };
@@ -337,6 +372,7 @@
 		1A18523A1D112D3F00BEA270 /* SendCard */ = {
 			isa = PBXGroup;
 			children = (
+				1A1852511D11AD7B00BEA270 /* OneCard */,
 				1A1852411D113B3F00BEA270 /* ViewModels */,
 				1A18523B1D112D5D00BEA270 /* SEPageViewControllerDataSource.h */,
 				1A18523C1D112D5D00BEA270 /* SEPageViewControllerDataSource.m */,
@@ -351,6 +387,42 @@
 			children = (
 			);
 			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		1A1852511D11AD7B00BEA270 /* OneCard */ = {
+			isa = PBXGroup;
+			children = (
+				1A1852601D11AFDE00BEA270 /* Views */,
+				1A1852551D11ADBF00BEA270 /* ViewModel */,
+				1A1852521D11AD9B00BEA270 /* SESendOneCardTableViewController.h */,
+				1A1852531D11AD9B00BEA270 /* SESendOneCardTableViewController.m */,
+				1A18525D1D11AEC500BEA270 /* SEReceiveOneCardTableViewController.h */,
+				1A18525E1D11AEC500BEA270 /* SEReceiveOneCardTableViewController.m */,
+			);
+			name = OneCard;
+			sourceTree = "<group>";
+		};
+		1A1852551D11ADBF00BEA270 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A1852571D11AE6700BEA270 /* SEReceiveOneCardViewModel.h */,
+				1A1852581D11AE6700BEA270 /* SEReceiveOneCardViewModel.m */,
+				1A18525A1D11AE7C00BEA270 /* SESendOneCardViewModel.h */,
+				1A18525B1D11AE7C00BEA270 /* SESendOneCardViewModel.m */,
+				1A1852661D11B01200BEA270 /* SEQuestionCellViewModel.h */,
+				1A1852671D11B01200BEA270 /* SEQuestionCellViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		1A1852601D11AFDE00BEA270 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A1852611D11AFEE00BEA270 /* SEQuestionCell.h */,
+				1A1852621D11AFEE00BEA270 /* SEQuestionCell.m */,
+				1A1852641D11AFFB00BEA270 /* SEQuestionCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		1A4439E41D05812000E96873 /* Helpers */ = {
@@ -502,6 +574,8 @@
 				1AE6ED881D0F5F4B00349BB3 /* SERoomsService.m */,
 				1AE6EDA71D10547E00349BB3 /* SERoomUsersService.h */,
 				1AE6EDA81D10547E00349BB3 /* SERoomUsersService.m */,
+				1A18524B1D11A94600BEA270 /* SEGameCardsService.h */,
+				1A18524C1D11A94600BEA270 /* SEGameCardsService.m */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -594,6 +668,8 @@
 				1AE6EDBC1D105DC200349BB3 /* SERoomUsersSerializer.m */,
 				1A18522F1D10CB7D00BEA270 /* SERoomUserSerializer.h */,
 				1A1852301D10CB7D00BEA270 /* SERoomUserSerializer.m */,
+				1A18524E1D11AA2700BEA270 /* SEGameCardsSerializer.h */,
+				1A18524F1D11AA2700BEA270 /* SEGameCardsSerializer.m */,
 			);
 			name = Serializers;
 			sourceTree = "<group>";
@@ -768,6 +844,12 @@
 				1AE6ED8B1D0F6D6B00349BB3 /* SERoom.m */,
 				1AE6EDAA1D10553500349BB3 /* SERoomUser.h */,
 				1AE6EDAB1D10553500349BB3 /* SERoomUser.m */,
+				1A1852421D119D6100BEA270 /* SEQuestionInCard.h */,
+				1A1852431D119D6100BEA270 /* SEQuestionInCard.m */,
+				1A1852451D119FF600BEA270 /* SECard.h */,
+				1A1852461D119FF600BEA270 /* SECard.m */,
+				1A1852481D11A69300BEA270 /* SEGameCard.h */,
+				1A1852491D11A69300BEA270 /* SEGameCard.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -988,6 +1070,7 @@
 				1AE6ED9A1D0F796F00349BB3 /* SERoomCell.xib in Resources */,
 				BDDB996E18C3943B003EBC42 /* Images.xcassets in Resources */,
 				BD304C8318E77F7E0034105E /* Settings.bundle in Resources */,
+				1A1852651D11AFFB00BEA270 /* SEQuestionCell.xib in Resources */,
 				1AE6EDB11D10560300349BB3 /* SERoomUserCell.xib in Resources */,
 				BDF68AF11B713C3400153C8D /* Main.storyboard in Resources */,
 			);
@@ -1146,13 +1229,16 @@
 				1A5BC3FE1D0D94F1004165EE /* SEEditProfileViewController.m in Sources */,
 				1A4439E81D05881C00E96873 /* SESessionOperationsDispatcher.m in Sources */,
 				1A1852251D10BD2500BEA270 /* SEGameMenuViewController.m in Sources */,
+				1A1852501D11AA2700BEA270 /* SEGameCardsSerializer.m in Sources */,
 				1A5BC40E1D0E087B004165EE /* SEFriendship.m in Sources */,
 				1AE6EDBA1D1058CC00349BB3 /* SERoomParams.m in Sources */,
+				1A18525F1D11AEC500BEA270 /* SEReceiveOneCardTableViewController.m in Sources */,
 				1AE6ED861D0F4DBF00349BB3 /* SEError.m in Sources */,
 				1AC1D7311CD7D23A00F9723A /* SERequests.m in Sources */,
 				1A5BC3E81D0C513E004165EE /* SEAddQuestionViewModel.m in Sources */,
 				1AB8BA7D1D06DA5800B6F698 /* SEAccount.m in Sources */,
 				1AE6ED9D1D0F79CD00349BB3 /* SERoomsViewModel.m in Sources */,
+				1A1852541D11AD9B00BEA270 /* SESendOneCardTableViewController.m in Sources */,
 				1AC1D7401CD7DDBB00F9723A /* SEJSONResponseSerializer.m in Sources */,
 				1AC188A31D04541C00FB5B3E /* SELoginViewController.m in Sources */,
 				1AE6EDB41D10563800349BB3 /* SERoomViewModel.m in Sources */,
@@ -1167,6 +1253,7 @@
 				1A5BC42F1D0EB99B004165EE /* SEFriendshipsService.m in Sources */,
 				1A5BC4121D0E22DF004165EE /* SEFriendshipsViewController.m in Sources */,
 				1AE6EDA41D10542B00349BB3 /* SERoomViewController.m in Sources */,
+				1A1852471D119FF600BEA270 /* SECard.m in Sources */,
 				1AE6EDB71D10566400349BB3 /* SERoomUserCellViewModel.m in Sources */,
 				1AB8BA7A1D06D94800B6F698 /* UIAlertController+Errors.m in Sources */,
 				1A5BC4261D0EA1C9004165EE /* SEFriendshipCell.m in Sources */,
@@ -1180,7 +1267,9 @@
 				1A1852351D11285400BEA270 /* SEChooseWhoToSendTableViewController.m in Sources */,
 				1A5BC3E01D0C491E004165EE /* SENewQuestionParams.m in Sources */,
 				1A1852391D11286A00BEA270 /* SEChooseWhoToSendViewModel.m in Sources */,
+				1A18525C1D11AE7C00BEA270 /* SESendOneCardViewModel.m in Sources */,
 				1AE6ED931D0F789A00349BB3 /* SERoomsViewController.m in Sources */,
+				1A1852681D11B01200BEA270 /* SEQuestionCellViewModel.m in Sources */,
 				1A5BC42B1D0EA55B004165EE /* SEFriendshipCellViewModel.m in Sources */,
 				1AE6ED831D0F425000349BB3 /* SEFriendshipOperationsDispatcher.m in Sources */,
 				1AE6ED891D0F5F4B00349BB3 /* SERoomsService.m in Sources */,
@@ -1193,11 +1282,16 @@
 				1AE6ED8C1D0F6D6B00349BB3 /* SERoom.m in Sources */,
 				1A1852281D10BD3800BEA270 /* SEGameMenuViewModel.m in Sources */,
 				1AC1D7341CD7D38000F9723A /* SEUser.m in Sources */,
+				1A1852441D119D6100BEA270 /* SEQuestionInCard.m in Sources */,
 				1A5BC3F11D0C6A77004165EE /* SEQuestionOperationsDispatcher.m in Sources */,
 				1AE6ED8F1D0F76F700349BB3 /* SERoomsSerializer.m in Sources */,
 				1A5BC40B1D0E062F004165EE /* SEFriendshipsSerializer.m in Sources */,
 				1AB8BA821D0723D600B6F698 /* SELoginViewModel.m in Sources */,
+				1A1852591D11AE6700BEA270 /* SEReceiveOneCardViewModel.m in Sources */,
+				1A18524A1D11A69300BEA270 /* SEGameCard.m in Sources */,
+				1A1852631D11AFEE00BEA270 /* SEQuestionCell.m in Sources */,
 				1AC1D73A1CD7D63C00F9723A /* SELoginUserParams.m in Sources */,
+				1A18524D1D11A94600BEA270 /* SEGameCardsService.m in Sources */,
 				1A5BC4081D0DB593004165EE /* SEUserOperationsDispatcher.m in Sources */,
 				1AC1D7241CD7678A00F9723A /* SEEnvironment.m in Sources */,
 			);

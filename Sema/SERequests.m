@@ -100,6 +100,16 @@
                                                error:nil];
 }
 
+#pragma mark - 
+#pragma mark - Game Cards
+
+- (NSMutableURLRequest *)requestGameCardsIndexWithParams:(SERoomParams *)params {
+    return [self.requestSerializer requestWithMethod:@"GET"
+                                           URLString:[NSString stringWithFormat:@"%@/game_cards",self.baseURL]
+                                          parameters:[params params]
+                                               error:nil];
+}
+
 
 
 @end

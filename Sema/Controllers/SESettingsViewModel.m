@@ -28,15 +28,15 @@
     [[SESessionOperationsDispatcher new] logoutUserWithCompletion:^(BOOL success, SEUser *user, NSError *error) {
         if (success && !error) {
             
-            //Update user
-            [[SEAccount account] updateUser:nil];
-            
         }
         
         if (block) {
             block(success, error ? [UIAlertController alertControllerWithError:error] : nil);
         }
     }];
+    
+    //Update user
+    [[SEAccount account] updateUser:nil];
 }
 
 @end
