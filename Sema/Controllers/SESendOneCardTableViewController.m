@@ -41,10 +41,6 @@
     [refreshControl endRefreshing];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-
 - (void)reloadData {
  
 }
