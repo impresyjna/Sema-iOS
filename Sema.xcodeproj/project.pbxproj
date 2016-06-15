@@ -31,6 +31,12 @@
 		1A18526B1D11DCC400BEA270 /* SEGameCardParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18526A1D11DCC400BEA270 /* SEGameCardParams.m */; };
 		1A18526E1D11E20400BEA270 /* SEGameCardOperationsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18526D1D11E20400BEA270 /* SEGameCardOperationsDispatcher.m */; };
 		1A1852711D11E23900BEA270 /* SEGameCardSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852701D11E23900BEA270 /* SEGameCardSerializer.m */; };
+		1A1852751D11FFBD00BEA270 /* SEPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852741D11FFBD00BEA270 /* SEPickerView.m */; };
+		1A1852781D1202B000BEA270 /* SEAddRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852771D1202B000BEA270 /* SEAddRoomViewController.m */; };
+		1A18527C1D1202CA00BEA270 /* SEAddRoomViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18527B1D1202CA00BEA270 /* SEAddRoomViewModel.m */; };
+		1A1852851D12046B00BEA270 /* SEAddRoomParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852841D12046B00BEA270 /* SEAddRoomParams.m */; };
+		1A1852881D12067C00BEA270 /* SERoomOperationsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1852871D12067C00BEA270 /* SERoomOperationsDispatcher.m */; };
+		1A18528B1D1206CF00BEA270 /* SERoomSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A18528A1D1206CF00BEA270 /* SERoomSerializer.m */; };
 		1A4439E31D05772E00E96873 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4439E21D05772E00E96873 /* Game.storyboard */; };
 		1A4439E81D05881C00E96873 /* SESessionOperationsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4439E71D05881C00E96873 /* SESessionOperationsDispatcher.m */; };
 		1A5BC3E01D0C491E004165EE /* SENewQuestionParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BC3DF1D0C491E004165EE /* SENewQuestionParams.m */; };
@@ -163,6 +169,18 @@
 		1A18526D1D11E20400BEA270 /* SEGameCardOperationsDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGameCardOperationsDispatcher.m; sourceTree = "<group>"; };
 		1A18526F1D11E23900BEA270 /* SEGameCardSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGameCardSerializer.h; sourceTree = "<group>"; };
 		1A1852701D11E23900BEA270 /* SEGameCardSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGameCardSerializer.m; sourceTree = "<group>"; };
+		1A1852731D11FFBD00BEA270 /* SEPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPickerView.h; sourceTree = "<group>"; };
+		1A1852741D11FFBD00BEA270 /* SEPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPickerView.m; sourceTree = "<group>"; };
+		1A1852761D1202B000BEA270 /* SEAddRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEAddRoomViewController.h; sourceTree = "<group>"; };
+		1A1852771D1202B000BEA270 /* SEAddRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEAddRoomViewController.m; sourceTree = "<group>"; };
+		1A18527A1D1202CA00BEA270 /* SEAddRoomViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEAddRoomViewModel.h; sourceTree = "<group>"; };
+		1A18527B1D1202CA00BEA270 /* SEAddRoomViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEAddRoomViewModel.m; sourceTree = "<group>"; };
+		1A1852831D12046B00BEA270 /* SEAddRoomParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEAddRoomParams.h; sourceTree = "<group>"; };
+		1A1852841D12046B00BEA270 /* SEAddRoomParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEAddRoomParams.m; sourceTree = "<group>"; };
+		1A1852861D12067C00BEA270 /* SERoomOperationsDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERoomOperationsDispatcher.h; sourceTree = "<group>"; };
+		1A1852871D12067C00BEA270 /* SERoomOperationsDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERoomOperationsDispatcher.m; sourceTree = "<group>"; };
+		1A1852891D1206CF00BEA270 /* SERoomSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERoomSerializer.h; sourceTree = "<group>"; };
+		1A18528A1D1206CF00BEA270 /* SERoomSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SERoomSerializer.m; sourceTree = "<group>"; };
 		1A4439E21D05772E00E96873 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		1A4439E61D05881C00E96873 /* SESessionOperationsDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SESessionOperationsDispatcher.h; sourceTree = "<group>"; };
 		1A4439E71D05881C00E96873 /* SESessionOperationsDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SESessionOperationsDispatcher.m; sourceTree = "<group>"; };
@@ -434,6 +452,25 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		1A1852721D11FF4100BEA270 /* AddRoom */ = {
+			isa = PBXGroup;
+			children = (
+				1A1852791D1202B400BEA270 /* ViewModel */,
+				1A1852761D1202B000BEA270 /* SEAddRoomViewController.h */,
+				1A1852771D1202B000BEA270 /* SEAddRoomViewController.m */,
+			);
+			name = AddRoom;
+			sourceTree = "<group>";
+		};
+		1A1852791D1202B400BEA270 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A18527A1D1202CA00BEA270 /* SEAddRoomViewModel.h */,
+				1A18527B1D1202CA00BEA270 /* SEAddRoomViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		1A4439E41D05812000E96873 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +499,8 @@
 				1A18522D1D10CA3C00BEA270 /* SERoomUserOperationsDispatcher.m */,
 				1A18526C1D11E20400BEA270 /* SEGameCardOperationsDispatcher.h */,
 				1A18526D1D11E20400BEA270 /* SEGameCardOperationsDispatcher.m */,
+				1A1852861D12067C00BEA270 /* SERoomOperationsDispatcher.h */,
+				1A1852871D12067C00BEA270 /* SERoomOperationsDispatcher.m */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -683,6 +722,8 @@
 				1A18524F1D11AA2700BEA270 /* SEGameCardsSerializer.m */,
 				1A18526F1D11E23900BEA270 /* SEGameCardSerializer.h */,
 				1A1852701D11E23900BEA270 /* SEGameCardSerializer.m */,
+				1A1852891D1206CF00BEA270 /* SERoomSerializer.h */,
+				1A18528A1D1206CF00BEA270 /* SERoomSerializer.m */,
 			);
 			name = Serializers;
 			sourceTree = "<group>";
@@ -703,6 +744,8 @@
 				1AE6EDB91D1058CC00349BB3 /* SERoomParams.m */,
 				1A1852691D11DCC400BEA270 /* SEGameCardParams.h */,
 				1A18526A1D11DCC400BEA270 /* SEGameCardParams.m */,
+				1A1852831D12046B00BEA270 /* SEAddRoomParams.h */,
+				1A1852841D12046B00BEA270 /* SEAddRoomParams.m */,
 			);
 			name = Params;
 			sourceTree = "<group>";
@@ -887,6 +930,8 @@
 			children = (
 				1A5BC41B1D0E9DF2004165EE /* SETableViewCell.h */,
 				1A5BC41C1D0E9DF2004165EE /* SETableViewCell.m */,
+				1A1852731D11FFBD00BEA270 /* SEPickerView.h */,
+				1A1852741D11FFBD00BEA270 /* SEPickerView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -917,6 +962,7 @@
 		BDB71B2618EA471400579B97 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1A1852721D11FF4100BEA270 /* AddRoom */,
 				1A18523A1D112D3F00BEA270 /* SendCard */,
 				1A1852321D11282E00BEA270 /* ChooseWhoToSend */,
 				1A1852211D10BC9C00BEA270 /* GameMenu */,
@@ -1293,6 +1339,7 @@
 				1A4439E81D05881C00E96873 /* SESessionOperationsDispatcher.m in Sources */,
 				1A1852251D10BD2500BEA270 /* SEGameMenuViewController.m in Sources */,
 				1A1852501D11AA2700BEA270 /* SEGameCardsSerializer.m in Sources */,
+				1A18527C1D1202CA00BEA270 /* SEAddRoomViewModel.m in Sources */,
 				1A5BC40E1D0E087B004165EE /* SEFriendship.m in Sources */,
 				1AE6EDBA1D1058CC00349BB3 /* SERoomParams.m in Sources */,
 				1A1852711D11E23900BEA270 /* SEGameCardSerializer.m in Sources */,
@@ -1303,6 +1350,7 @@
 				1AB8BA7D1D06DA5800B6F698 /* SEAccount.m in Sources */,
 				1AE6ED9D1D0F79CD00349BB3 /* SERoomsViewModel.m in Sources */,
 				1A1852541D11AD9B00BEA270 /* SESendOneCardTableViewController.m in Sources */,
+				1A18528B1D1206CF00BEA270 /* SERoomSerializer.m in Sources */,
 				1AC1D7401CD7DDBB00F9723A /* SEJSONResponseSerializer.m in Sources */,
 				1AC188A31D04541C00FB5B3E /* SELoginViewController.m in Sources */,
 				1AE6EDB41D10563800349BB3 /* SERoomViewModel.m in Sources */,
@@ -1315,12 +1363,14 @@
 				1AE6EDBD1D105DC200349BB3 /* SERoomUsersSerializer.m in Sources */,
 				1AB7826D1D0566DD002E0DA6 /* SERegisterViewModel.m in Sources */,
 				BD934CD519C211F600B48551 /* StoryboardIdentifiers.m in Sources */,
+				1A1852851D12046B00BEA270 /* SEAddRoomParams.m in Sources */,
 				1A5BC42F1D0EB99B004165EE /* SEFriendshipsService.m in Sources */,
 				1A5BC4121D0E22DF004165EE /* SEFriendshipsViewController.m in Sources */,
 				1AE6EDA41D10542B00349BB3 /* SERoomViewController.m in Sources */,
 				1A1852471D119FF600BEA270 /* SECard.m in Sources */,
 				1AE6EDB71D10566400349BB3 /* SERoomUserCellViewModel.m in Sources */,
 				1AB8BA7A1D06D94800B6F698 /* UIAlertController+Errors.m in Sources */,
+				1A1852881D12067C00BEA270 /* SERoomOperationsDispatcher.m in Sources */,
 				1A5BC4261D0EA1C9004165EE /* SEFriendshipCell.m in Sources */,
 				1A5BC3F51D0C9647004165EE /* SESettingsViewController.m in Sources */,
 				1AE6ED7C1D0F405D00349BB3 /* SEAddFriendViewController.m in Sources */,
@@ -1355,7 +1405,9 @@
 				1AB8BA821D0723D600B6F698 /* SELoginViewModel.m in Sources */,
 				1A1852591D11AE6700BEA270 /* SEReceiveOneCardViewModel.m in Sources */,
 				1A18524A1D11A69300BEA270 /* SEGameCard.m in Sources */,
+				1A1852751D11FFBD00BEA270 /* SEPickerView.m in Sources */,
 				1A1852631D11AFEE00BEA270 /* SEQuestionCell.m in Sources */,
+				1A1852781D1202B000BEA270 /* SEAddRoomViewController.m in Sources */,
 				1AC1D73A1CD7D63C00F9723A /* SELoginUserParams.m in Sources */,
 				1A18524D1D11A94600BEA270 /* SEGameCardsService.m in Sources */,
 				1A5BC4081D0DB593004165EE /* SEUserOperationsDispatcher.m in Sources */,

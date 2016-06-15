@@ -555,12 +555,16 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="NSZ-KT-YCe">
                         <barButtonItem key="backBarButtonItem" title="Wróć" id="eZK-DL-8u2"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="A2u-ZV-vHm"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="A2u-ZV-vHm">
+                            <connections>
+                                <segue destination="uhF-Jw-tln" kind="show" id="iFx-Xs-bgo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5m4-Ta-aaP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="933" y="-2490"/>
+            <point key="canvasLocation" x="949" y="-2484"/>
         </scene>
         <!--Przyjaciele-->
         <scene sceneID="Qjd-X6-Eww">
@@ -807,10 +811,10 @@
             </objects>
             <point key="canvasLocation" x="2541" y="-953"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Room View Controller-->
         <scene sceneID="QNZ-Qc-nN5">
             <objects>
-                <viewController id="uhF-Jw-tln" sceneMemberID="viewController">
+                <viewController id="uhF-Jw-tln" customClass="SEAddRoomViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jck-eZ-Rao"/>
                         <viewControllerLayoutGuide type="bottom" id="P8Q-Ec-lhK"/>
@@ -819,36 +823,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m6G-ot-IuI">
-                                <rect key="frame" x="40" y="101" width="520" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nazwa pokoju" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m6G-ot-IuI">
+                                <rect key="frame" x="40" y="172" width="520" height="30"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldTextHasChangedAction:" destination="uhF-Jw-tln" eventType="editingChanged" id="Nxv-pB-eaw"/>
+                                </connections>
                             </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KpB-1Y-iIR">
-                                <rect key="frame" x="40" y="171" width="520" height="216"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oy-3a-aa3">
-                                <rect key="frame" x="40" y="40" width="520" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dodaj pokój" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oy-3a-aa3">
+                                <rect key="frame" x="40" y="100" width="520" height="32"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
                                 <color key="textColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPR-ci-Gmq">
+                                <rect key="frame" x="40" y="242" width="520" height="37"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
+                                <state key="normal" title="Dodaj">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addNewRoomAction:" destination="uhF-Jw-tln" eventType="touchUpInside" id="m6w-iL-Pt6"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="KpB-1Y-iIR" firstAttribute="leading" secondItem="ZLE-ZX-fpE" secondAttribute="leading" constant="40" id="Olh-K8-ruT"/>
-                            <constraint firstItem="9Oy-3a-aa3" firstAttribute="top" secondItem="ZLE-ZX-fpE" secondAttribute="topMargin" constant="40" id="WDA-gI-mot"/>
+                            <constraint firstItem="9Oy-3a-aa3" firstAttribute="top" secondItem="ZLE-ZX-fpE" secondAttribute="topMargin" constant="100" id="WDA-gI-mot"/>
                             <constraint firstItem="m6G-ot-IuI" firstAttribute="leading" secondItem="ZLE-ZX-fpE" secondAttribute="leading" constant="40" id="WSk-gL-r5F"/>
+                            <constraint firstAttribute="trailing" secondItem="JPR-ci-Gmq" secondAttribute="trailing" constant="40" id="ZBS-nR-5ve"/>
                             <constraint firstAttribute="trailing" secondItem="m6G-ot-IuI" secondAttribute="trailing" constant="40" id="ZqD-XR-WSc"/>
                             <constraint firstItem="9Oy-3a-aa3" firstAttribute="leading" secondItem="ZLE-ZX-fpE" secondAttribute="leading" constant="40" id="bxb-nu-wdZ"/>
-                            <constraint firstAttribute="trailing" secondItem="KpB-1Y-iIR" secondAttribute="trailing" constant="40" id="mXa-Zx-rR6"/>
+                            <constraint firstItem="JPR-ci-Gmq" firstAttribute="leading" secondItem="ZLE-ZX-fpE" secondAttribute="leading" constant="40" id="qds-hP-KXp"/>
                             <constraint firstAttribute="trailing" secondItem="9Oy-3a-aa3" secondAttribute="trailing" constant="40" id="qnG-qy-JUs"/>
+                            <constraint firstItem="JPR-ci-Gmq" firstAttribute="top" secondItem="m6G-ot-IuI" secondAttribute="bottom" constant="40" id="tvv-2V-6N1"/>
                             <constraint firstItem="m6G-ot-IuI" firstAttribute="top" secondItem="9Oy-3a-aa3" secondAttribute="bottom" constant="40" id="uLO-c2-mAR"/>
-                            <constraint firstItem="KpB-1Y-iIR" firstAttribute="top" secondItem="m6G-ot-IuI" secondAttribute="bottom" constant="40" id="vhy-dS-pIg"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="yK5-qV-Qzx" appends="YES" id="r77-Ha-WMs"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="m6G-ot-IuI" id="fPP-Dc-TwK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMJ-hP-aYY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yK5-qV-Qzx">
+                    <connections>
+                        <action selector="tapOnViewAction:" destination="uhF-Jw-tln" id="eci-Dv-il0"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="451" y="-1705"/>
         </scene>

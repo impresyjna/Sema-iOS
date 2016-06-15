@@ -13,6 +13,7 @@
 #import "SEFriendParams.h"
 #import "SERoomParams.h"
 #import "SEGameCardParams.h"
+#import "SEAddRoomParams.h"
 
 @interface AFHTTPSessionManager (SERequests)
 
@@ -35,6 +36,8 @@
 - (NSMutableURLRequest *)requestGameCardsIndexWithParams:(SERoomParams *)params;
 - (NSMutableURLRequest *)requestUnreceivedGameCardsIndexWithParams:(SERoomParams *)params;
 - (NSMutableURLRequest *)requestUpdateGameCardWithParams:(SEGameCardParams *)params;
+
+- (NSMutableURLRequest *)requestAddNewRoomWithParams:(SEAddRoomParams *)params;
 
 
 @end

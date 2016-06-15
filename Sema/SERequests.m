@@ -83,6 +83,13 @@
                                                error:nil];
 }
 
+- (NSMutableURLRequest *)requestAddNewRoomWithParams:(SEAddRoomParams *)params {
+    return [self.requestSerializer requestWithMethod:@"POST"
+                                           URLString:[NSString stringWithFormat:@"%@/rooms", self.baseURL]
+                                          parameters:[params params]
+                                               error:nil];
+}
+
 #pragma mark -
 #pragma mark - Room Users
 
