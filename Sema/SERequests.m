@@ -93,6 +93,13 @@
                                                error:nil];
 }
 
+- (NSMutableURLRequest *)requestJoinRoomWithParams:(SERoomParams *)params {
+    return [self.requestSerializer requestWithMethod:@"GET"
+                                           URLString:[NSString stringWithFormat:@"%@/join_room",self.baseURL]
+                                          parameters:[params params]
+                                               error:nil];
+}
+
 
 
 @end

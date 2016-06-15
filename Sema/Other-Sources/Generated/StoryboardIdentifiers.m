@@ -7,7 +7,9 @@
 
 const struct SEGameStoryboardIDs SEGameStoryboardIDs = {
     .viewControllers = {
+        .menu = @"GameMenu",
         .roomView = @"RoomView",
+        .chooseWhoToSend = @"ChooseWhoToSend",
         .tabBar = @"GameTabBarController",
     },
 

@@ -1,25 +1,23 @@
 //
-//  SERoomViewController.m
+//  SEChooseWhoToSendTableViewController.m
 //  Sema
 //
-//  Created by Joanna Furmaniak on 14.06.2016.
+//  Created by Joanna Furmaniak on 15.06.2016.
 //  Copyright © 2016 The Company. All rights reserved.
 //
 
-#import "SERoomViewController.h"
-#import "SEGameMenuViewController.h"
+#import "SEChooseWhoToSendTableViewController.h"
 
 #import "SERoomUserCell.h"
-#import "SEGameMenuViewModel.h"
 
 //Views
 #import "MBProgressHUD.h"
 
-@interface SERoomViewController ()
+@interface SEChooseWhoToSendTableViewController ()
 
 @end
 
-@implementation SERoomViewController
+@implementation SEChooseWhoToSendTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,27 +41,6 @@
     [refreshControl endRefreshing];
 }
 
-- (IBAction)joinRoomAction:(id)sender {
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    
-    [self.view endEditing:YES];
-    
-    __weak typeof (self) wSelf = self;
-    [_viewModel joinRoomWithCompletion:^(BOOL success, UIAlertController *alert) {
-        [MBProgressHUD hideHUDForView:wSelf.view animated:YES];
-        
-        if (!success && alert) {
-            [wSelf presentViewController:alert animated:YES completion:nil];
-            
-            return ;
-        }
-        SERoom *room = self.viewModel.room;
-        SEGameMenuViewModel *gameMenuViewModel = [[SEGameMenuViewModel alloc] initWithRoom:room];
-        SEGameMenuViewController *gameMenuViewController = [[UIStoryboard storyboardWithName:@"Game" bundle:nil] instantiateViewControllerWithIdentifier:@"GameMenu"];
-        gameMenuViewController.viewModel = gameMenuViewModel;
-        [wSelf.navigationController pushViewController:gameMenuViewController animated:YES];
-    }];
-}
 
 - (void)reloadData {
     __weak typeof (self) wSelf = self;
@@ -97,5 +74,10 @@
 #pragma mark -
 #pragma mark - UITableViewDelegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    SERoomUser *roomUser = [self.viewModel roomUserForIndexPath:indexPath];
+    //[self.navigationController pushViewController:<#(nonnull UIViewController *)#> animated:<#(BOOL)#>]
+    //[self.delegate loginPicker:self didPickActionSubject:friendship];
+}
 
 @end

@@ -1,27 +1,24 @@
 //
-//  SERoomViewModel.m
+//  SEChooseWhoToSendViewModel.m
 //  Sema
 //
-//  Created by Joanna Furmaniak on 14.06.2016.
+//  Created by Joanna Furmaniak on 15.06.2016.
 //  Copyright © 2016 The Company. All rights reserved.
 //
 
-#import "SERoomViewModel.h"
+#import "SEChooseWhoToSendViewModel.h"
 
 #import "NSString+Validation.h"
 #import "UIAlertController+Errors.h"
 
-//Operations
-#import "SERoomUserOperationsDispatcher.h"
-
 //Account
 #import "SEAccount.h"
 
-@interface SERoomViewModel ()
+@interface SEChooseWhoToSendViewModel ()
 @property (nonatomic, strong) NSArray <SERoomUser *> *roomUsers;
 @end
 
-@implementation SERoomViewModel
+@implementation SEChooseWhoToSendViewModel
 
 - (instancetype)initWithRoom:(SERoom *)room {
     self = [super init];
@@ -62,16 +59,4 @@
     }];
 }
 
-- (void)joinRoomWithCompletion:(SEJoinRoomViewModelCompletionBlock)block {
-    SERoomParams *roomParams = [[SERoomParams alloc] initWithRoomId:_room.rId];
-    [[SERoomUserOperationsDispatcher new] joinRoomWithParams:roomParams completion:^(BOOL success, SERoomUser *roomUser, NSError *error) {
-        if (success && !error) {
-            
-        }
-        
-        if (block) {
-            block(success, error ? [UIAlertController alertControllerWithError:error] : nil);
-        }
-    }];
-}
 @end

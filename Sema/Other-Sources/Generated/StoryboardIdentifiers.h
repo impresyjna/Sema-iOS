@@ -7,7 +7,9 @@
 
 extern const struct SEGameStoryboardIDs {
     struct {
+        __unsafe_unretained NSString *menu;
         __unsafe_unretained NSString *roomView;
+        __unsafe_unretained NSString *chooseWhoToSend;
         __unsafe_unretained NSString *tabBar;
     } viewControllers;
 

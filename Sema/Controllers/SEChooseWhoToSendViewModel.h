@@ -1,8 +1,8 @@
 //
-//  SERoomViewModel.h
+//  SEChooseWhoToSendViewModel.h
 //  Sema
 //
-//  Created by Joanna Furmaniak on 14.06.2016.
+//  Created by Joanna Furmaniak on 15.06.2016.
 //  Copyright © 2016 The Company. All rights reserved.
 //
 
@@ -22,13 +22,12 @@
 #import "UIAlertController+Errors.h"
 
 typedef void(^SERoomUsersViewModelFetchSubjectsCompletion)(NSArray <SERoomUser *> *roomUsers, UIAlertController *alert);
-typedef void(^SEJoinRoomViewModelCompletionBlock)(BOOL success, UIAlertController *alert);
 
-@interface SERoomViewModel : NSObject
+@interface SEChooseWhoToSendViewModel : NSObject
 
 @property (nonatomic, strong, readonly) SERoom *room;
 
-- (instancetype)initWithRoom:(SERoom *)room; 
+- (instancetype)initWithRoom:(SERoom *)room;
 
 - (NSInteger)numberOfRoomUsers;
 
@@ -36,7 +35,5 @@ typedef void(^SEJoinRoomViewModelCompletionBlock)(BOOL success, UIAlertControlle
 - (SERoomUserCellViewModel *)cellViewModelForIndexPath:(NSIndexPath *)indexPath;
 
 - (void)fetchRoomUsersWithCompletionBlock:(SERoomUsersViewModelFetchSubjectsCompletion)block;
-
-- (void) joinRoomWithCompletion:(SEJoinRoomViewModelCompletionBlock)block;
 
 @end
