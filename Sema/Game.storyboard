@@ -681,6 +681,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="leaveRoomAction:" destination="8CD-q3-gKn" eventType="touchUpInside" id="9nJ-Sf-XJA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

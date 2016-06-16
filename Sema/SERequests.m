@@ -107,6 +107,13 @@
                                                error:nil];
 }
 
+- (NSMutableURLRequest *)requestLeaveRoomWithParams:(SERoomParams *)params {
+        return [self.requestSerializer requestWithMethod:@"DELETE"
+                                               URLString:[NSString stringWithFormat:@"%@/leave_room",self.baseURL]
+                                              parameters:[params params]
+                                                   error:nil];
+}
+
 #pragma mark - 
 #pragma mark - Game Cards
 

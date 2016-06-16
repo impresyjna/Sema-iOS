@@ -16,6 +16,9 @@
 
 #import "UIView+Toast.h"
 
+//Views
+#import "MBProgressHUD.h"
+
 @interface SEGameMenuViewController ()
 
 @end
@@ -57,5 +60,16 @@
     [self.navigationController pushViewController:roomViewController animated:YES];
 }
 
+- (IBAction)leaveRoomAction:(id)sender {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    [self.view endEditing:YES];
+    
+    __weak typeof (self) wSelf = self;
+    [_viewModel leaveRoomWithCompletion:^(BOOL success, UIAlertController *alert) {
+        [MBProgressHUD hideHUDForView:wSelf.view animated:YES];
+        [wSelf.navigationController popViewControllerAnimated:YES];
+    }];
+}
 
 @end

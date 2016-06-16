@@ -20,5 +20,6 @@ typedef void(^SERoomUserOperationsDispatcherCompletionBlock)(BOOL success, SERoo
 @interface SERoomUserOperationsDispatcher : NSObject
 
 - (void)joinRoomWithParams:(SERoomParams *)params completion: (SERoomUserOperationsDispatcherCompletionBlock)block;
+- (void)leaveRoomWithParams:(SERoomParams *)params completion:(SERoomUserOperationsDispatcherCompletionBlock)block;
 
 @end

@@ -11,6 +11,8 @@
 #import "NSString+Validation.h"
 #import "UIAlertController+Errors.h"
 
+#import "SERoomUserOperationsDispatcher.h"
+
 @implementation SEGameMenuViewModel
 
 - (instancetype)initWithRoom:(SERoom *)room {
@@ -35,5 +37,19 @@
             block([wSelf.gameCards copy], nil);
         }
     }];
+}
+
+- (void)leaveRoomWithCompletion:(SELeaveRoomViewModelCompletionBlock)block {
+    SERoomParams *roomParams = [[SERoomParams alloc] initWithRoomId:_room.rId];
+    [[SERoomUserOperationsDispatcher new] leaveRoomWithParams:roomParams completion:^(BOOL success, SERoomUser *user, NSError *error) {
+        if (success && !error) {
+            
+        }
+        
+        if (block) {
+            block(success, error ? [UIAlertController alertControllerWithError:error] : nil);
+        }
+    }];
+    
 }
 @end

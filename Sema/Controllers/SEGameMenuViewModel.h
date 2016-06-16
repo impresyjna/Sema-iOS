@@ -13,6 +13,7 @@
 #import "SEGameCardsService.h"
 
 typedef void(^SEGameCardsViewModelFetchSubjectsCompletion)(NSArray <SEGameCard *> *gameCards, UIAlertController *alert);
+typedef void(^SELeaveRoomViewModelCompletionBlock)(BOOL success, UIAlertController *alert);
 
 @interface SEGameMenuViewModel : NSObject
 
@@ -21,5 +22,6 @@ typedef void(^SEGameCardsViewModelFetchSubjectsCompletion)(NSArray <SEGameCard *
 
 - (instancetype)initWithRoom:(SERoom *)room; 
 - (void)fetchGameCardsWithCompletionBlock:(SEGameCardsViewModelFetchSubjectsCompletion)block;
+- (void) leaveRoomWithCompletion: (SELeaveRoomViewModelCompletionBlock)block;
 
 @end

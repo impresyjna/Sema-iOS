@@ -29,4 +29,22 @@
     [[SEApiClient sharedManager] enqueueOperation:operation];
 }
 
+- (void)leaveRoomWithParams:(SERoomParams *)params completion:(SERoomUserOperationsDispatcherCompletionBlock)block {
+    NSURLRequest *request = [[SEApiClient sharedManager] requestLeaveRoomWithParams:params];
+    
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *innerOperation, NSDictionary *responseObject) {
+        if (block) {
+            block(YES, nil, nil);
+        }
+    } failure:^(AFHTTPRequestOperation *innerOperation, NSError *error) {
+        if (block) {
+            block(NO, nil, error);
+        }
+    }];
+    
+    [[SEApiClient sharedManager] enqueueOperation:operation];
+}
+
 @end
